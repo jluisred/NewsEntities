@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Carole Middleton,64.0,0,64,0.8174,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Family_of_Catherine,_Duchess_of_Cambridge
+queen consort,61.0,3,58,1.61139,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Queen_consort
+British Royal Family,51.0,0,51,0.8822,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/British_Royal_Family
+England,42.0,0,42,0.7904,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Kingdom_of_England
+bookmaker,35.0,0,35,0.8318,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Bookmaker
+family,19.25,0,77,0.6903,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Family
+press,17.0,0,68,0.0665455,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Associated_Press
+United Kingdom,6.222222222222222,1,55,0.7671,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_Kingdom
+Bucklebury,5.333333333333333,0,48,0.8742,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Bucklebury
+Alexander the Great,4.5,1,71,0.903,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Alexander_the_Great
+His Royal Highness,4.333333333333333,0,39,0.7745,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Royal_Highness
+birth,4.3125,0,69,0.6528,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Birth
+monarch,3.8125,0,61,0.7442,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Monarch
+Diana Princess of Wales,3.6875,0,59,2.08872,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Diana,_Princess_of_Wales
+Royal Family,3.4722222222222223,1,124,0.7223,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Royal_family
+grandfather,3.24,0,81,0.6752,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Grandparent
+Lord Mountbatten,3.125,2,48,1.23014,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Louis_Mountbatten,_1st_Earl_Mountbatten_of_Burma
+LONDON,2.5555555555555554,0,92,0.7506,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/London
+reporters,2.3125,0,37,0.0761543,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Reporter
+George,2.2544378698224854,4,377,0.32387,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/George_V_of_the_United_Kingdom
+country,2.0625,1,32,0.100655,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Country_music
+Duchess,1.2975206611570247,0,157,0.6875,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Duke
+son,1.271604938271605,0,103,0.6561,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Son
+Duchess of Cambridge,1.24,0,124,1.22274,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Catherine,_Duchess_of_Cambridge
+throne,1.140625,2,71,0.289254,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Throne
+hospital,1.13,0,113,0.6303,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Hospital
+names,1.1239669421487604,1,135,0.104567,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Name
+Kate,1.00390625,2,255,0.200922,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Kate_Austen
+father,1.0,2,119,0.6728,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Father
+Elizabeth Alexandra Mary,0.8775510204081632,1,171,2.17699,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Elizabeth_II
+Prince William Duke of Cambridge,0.8676748582230623,2,457,1.69326,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Prince_William,_Duke_of_Cambridge
+George VI,0.8571428571428571,2,40,0.8416,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/George_VI
+boys,0.8163265306122449,0,40,0.0794384,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Boy
+parents,0.7986111111111112,0,115,0.0846356,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Parents_%28magazine%29
+the Prince of Wales,0.7370242214532872,2,211,2.01659,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Charles,_Prince_of_Wales
+Prince Harry,0.6388888888888888,0,92,1.05217,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Prince_Harry
+motherhood,0.5918367346938775,0,29,0.7255,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Mother
+baby,0.555,1,221,0.6861,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Infant
+Queen Victoria,0.5432098765432098,0,44,0.8962,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Queen_Victoria
+uncle,0.46938775510204084,1,22,0.0794411,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Uncle
+Christening,0.4583333333333333,0,66,0.7514,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Infant_baptism
+Berkshire,0.390625,0,25,0.8148,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Berkshire
+will,0.37037037037037035,0,30,0.6834,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Free_will
+Kensington Palace,0.3506944444444444,1,201,1.88036,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Kensington_Palace
+child,0.34,0,34,0.6818,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Child
+Edward VIII,0.3333333333333333,0,27,1.51563,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Edward_VIII
+world news,0.31,1,30,0.0251406,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC_World_News
+media,0.31,0,31,0.174968,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Mass_media
+Wing,0.2727272727272727,0,33,0.0515769,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Wings_%28band%29
+sister,0.27,0,27,0.6372,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Sibling
