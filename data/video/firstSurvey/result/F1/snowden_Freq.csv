@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Russia,1.0,6,432,0.869,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Russia
+Edward Snowden,0.5855263157894737,2,259,2.25896,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Edward_Snowden
+Vladimir Putin,0.5043859649122807,3,218,0.9263,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Vladimir_Putin
+United States,0.4824561403508772,3,208,0.7758,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_States
+Latin America,0.2894736842105263,1,128,0.8197,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Latin_America
+Moscow,0.28289473684210525,2,121,0.82,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Moscow
+National Security Agency,0.19517543859649122,0,89,2.32738,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/National_Security_Agency
+Barack Obama,0.17543859649122806,1,76,0.9116,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Barack_Obama
+Russians,0.14473684210526316,0,66,0.7306,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Russians
+Venezuela,0.14035087719298245,1,60,0.8885,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Venezuela
+Washington,0.09868421052631579,0,45,0.7005,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Washington,_D.C.
+Bolivia,0.08114035087719298,1,33,0.8982,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Bolivia
+Human Rights Watch,0.07236842105263158,1,29,1.60851,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Human_Rights_Watch
+Iran,0.06578947368421052,2,22,0.8874,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Iran
+Nicaragua,0.06578947368421052,1,26,0.8966,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Nicaragua
+White House,0.06578947368421052,0,30,0.8297,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/White_House
+John Kerry,0.05921052631578947,0,27,0.9206,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/John_Kerry
+US Department of State,0.05701754385964912,0,26,0.8359,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Department_of_State
+CIA,0.046052631578947366,1,17,0.8477,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Central_Intelligence_Agency
+Syria,0.046052631578947366,1,17,0.8805,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Syria
+Europe,0.043859649122807015,0,20,0.7631,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Europe
+Jay Carney,0.043859649122807015,0,20,0.9091,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Jay_Carney
+Asylum,0.041666666666666664,4,3,0.173699,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Right_of_asylum
+Federal Migration Service,0.041666666666666664,1,15,0.8874,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Federal_Migration_Service_(Russia)
+Kremlin,0.03508771929824561,1,12,0.782,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Moscow_Kremlin
+secrets,0.03508771929824561,0,16,0.0279744,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Dave_Matthews_Band
+Ecuador,0.03289473684210526,0,15,0.8936,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Ecuador
+Soviet Union,0.03070175438596491,0,14,0.857,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Soviet_Union
+united nations,0.03070175438596491,0,14,0.8196,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_Nations
+North Korea,0.03070175438596491,0,14,0.9143,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/North_Korea
+China,0.03070175438596491,0,14,0.8178,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/China
+U.S. State Department,0.02850877192982456,0,13,0.8212,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Department_of_State
+Glenn Greenwald,0.02850877192982456,0,13,1.29388,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Glenn_Greenwald
+Amnesty International,0.02412280701754386,0,11,0.9077,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Amnesty_International
+Hong Kong,0.021929824561403508,0,10,0.835,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Hong_Kong
+Bush Administration,0.019736842105263157,1,5,0.7688,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Presidency_of_George_W._Bush
+Chechen Republic,0.019736842105263157,0,9,1.23254,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Chechnya
+Evo Morales,0.019736842105263157,0,9,0.9031,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Evo_Morales
+Center for Strategic and International Studies,0.017543859649122806,1,4,1.24021,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Center_for_Strategic_and_International_Studies
+KGB,0.017543859649122806,0,8,0.8857,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/KGB
+United States Senate,0.017543859649122806,0,8,0.847,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Senate
+RT.com,0.017543859649122806,0,8,0.8439,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/RT_(TV_network)
+Comedy Central,0.017543859649122806,0,8,0.919,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Comedy_Central
+Gogland,0.015350877192982455,0,7,0.8881,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Gogland
+Sergei Lavrov,0.015350877192982455,0,7,0.8963,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Sergey_Lavrov
+Saint Petersburg,0.015350877192982455,0,7,0.8757,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Saint_Petersburg
+US Congress,0.015350877192982455,0,7,0.8181,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_States_Congress
+Wikileaks,0.015350877192982455,0,7,1.00946,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/WikiLeaks
+Booz Allen Hamilton,0.015350877192982455,0,7,0.97156,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Booz_Allen_Hamilton
+legislation,0.013157894736842105,1,2,0.0977758,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Legislation

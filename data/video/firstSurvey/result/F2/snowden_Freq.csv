@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Edward Snowden,0.9727891156462585,2,564,2.25896,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Edward_Snowden
+Russia,0.7108843537414966,6,394,0.869,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Russia
+political asylum,0.4064625850340136,4,223,0.8264,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Right_of_asylum
+United States,0.3299319727891156,3,182,0.7758,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_States
+Vladimir Putin,0.304421768707483,0,179,1.78211,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Vladimir_Putin
+Moscow,0.2789115646258503,2,156,0.82,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Moscow
+Russian President,0.23129251700680273,3,124,0.8253,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/President_of_Russia
+Latin America,0.17517006802721088,1,99,0.8197,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Latin_America
+human rights violations,0.16326530612244897,0,96,0.771328,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Human_rights
+National Security Agency,0.1326530612244898,0,78,2.32738,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/National_Security_Agency
+Sheremetyevo International Airport,0.11224489795918367,0,66,0.9141,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Sheremetyevo_International_Airport
+Venezuela,0.10884353741496598,1,60,0.8885,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Venezuela
+Barack Obama,0.10374149659863946,1,57,1.66995,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Barack_Obama
+espionage,0.09523809523809523,0,56,0.7758,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Espionage
+Russians,0.08503401360544217,0,50,0.7306,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Russians
+Kremlin,0.07993197278911565,1,43,0.7689,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Kremlin
+extradition,0.07653061224489796,1,41,0.7624,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Extradition
+surveillance,0.07312925170068027,0,43,0.7308,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Surveillance
+national security,0.06972789115646258,0,41,0.736,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/National_security
+Washington,0.0663265306122449,0,39,0.7005,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Washington,_D.C.
+Wikileaks,0.06462585034013606,0,38,1.00946,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/WikiLeaks
+Bolivia,0.06292517006802721,1,33,0.8982,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Bolivia
+White House,0.06292517006802721,0,37,0.8297,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/White_House
+human rights violations,0.05782312925170068,1,30,0.900354,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Human_rights
+Nicaragua,0.05612244897959184,1,29,0.8966,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Nicaragua
+Hong Kong,0.05442176870748299,0,32,1.72221,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Hong_Kong
+government,0.05442176870748299,0,32,0.702,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Government
+Iran,0.05272108843537415,2,23,0.8874,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Iran
+law,0.05102040816326531,1,26,0.6858,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Law
+US intelligence,0.05102040816326531,0,30,0.7426,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_States_Intelligence_Community
+whistleblower,0.05102040816326531,0,30,0.8519,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Whistleblower
+Syria,0.04931972789115646,1,25,0.8805,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Syria
+classified information,0.047619047619047616,0,28,0.7781,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Classified_information
+Federal Migration Service,0.04421768707482993,1,22,0.8874,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Federal_Migration_Service_(Russia)
+right,0.04421768707482993,0,26,0.7066,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Rights
+passport,0.04251700680272109,0,25,0.7238,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Passport
+John Kerry,0.04251700680272109,0,25,0.9206,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/John_Kerry
+internet,0.03741496598639456,0,22,0.7247,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Internet
+united nations,0.03571428571428571,0,21,0.8196,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_Nations
+Europe,0.034013605442176874,0,20,0.7631,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Europe
+country,0.03231292517006803,1,15,0.6887,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Nation_state
+fugitive,0.03231292517006803,0,19,0.7092,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Fugitive
+personal liberties,0.03231292517006803,0,19,0.7055,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Political_freedom
+Jay Carney,0.03231292517006803,0,19,0.9091,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Jay_Carney
+bilateral relations,0.03231292517006803,0,19,0.734,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Bilateralism
+asylum seekers,0.030612244897959183,0,18,0.7717,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Refugee
+U.S. Secretary of State,0.030612244897959183,0,18,0.8156,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_States_Secretary_of_State
+CIA,0.02891156462585034,1,13,0.8477,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Central_Intelligence_Agency
+defense contractor,0.02891156462585034,1,13,0.7741,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Arms_industry
+U.S. State Department,0.02891156462585034,0,17,0.8212,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Department_of_State

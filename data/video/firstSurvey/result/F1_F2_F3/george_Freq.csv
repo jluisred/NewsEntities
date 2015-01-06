@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Kensington Palace,0.9318181818181818,1,160,1.88036,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Kensington_Palace
+Prince Charles,0.6761363636363636,2,111,0.858,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Charles,_Prince_of_Wales
+Queen Elizabeth II,0.5852272727272727,3,91,0.837,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Elizabeth_II
+King George V,0.48863636363636365,4,70,0.8596,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/George_V
+Prince William Duke of Cambridge,0.4431818181818182,2,70,1.69326,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Prince_William,_Duke_of_Cambridge
+Alexander the Great,0.375,1,62,0.903,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Alexander_the_Great
+George VI,0.3693181818181818,2,57,0.8524,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/George_VI
+LONDON,0.36363636363636365,0,64,0.7506,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/London
+Queen,0.2784090909090909,1,45,0.7452,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Elizabeth_II
+Bucklebury,0.26136363636363635,0,46,0.8742,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Bucklebury
+Lord Mountbatten,0.23295454545454544,2,33,1.23014,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Louis_Mountbatten,_1st_Earl_Mountbatten_of_Burma
+St. Mary?s Hospital Paddington,0.22727272727272727,0,40,0.8053,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/St_Mary's_Hospital,_London
+Cambridge,0.19886363636363635,0,35,0.7149,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Cambridge
+England,0.17613636363636365,0,31,0.7904,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Kingdom_of_England
+Balmoral Castle,0.13068181818181818,1,19,1.34075,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Balmoral_Castle
+Berkshire,0.13068181818181818,0,23,0.8148,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Berkshire
+United Kingdom,0.11931818181818182,1,17,0.7671,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_Kingdom
+Catherine Duchess of Cambridge,0.11931818181818182,2,13,1.20527,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Catherine,_Duchess_of_Cambridge
+BBC,0.10227272727272728,0,18,0.7984,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC
+British,0.08522727272727272,0,15,0.7282,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/British_Empire
+Nottingham,0.07386363636363637,0,13,0.7902,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Nottingham
+father,0.06818181818181818,2,4,0.142605,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Father
+Princess Victoria,0.06818181818181818,0,12,0.7956,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Queen_Victoria
+Royal,0.0625,1,7,0.241977,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Royal_family
+Wales,0.056818181818181816,0,10,0.7193,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Wales
+St. James? Palace,0.056818181818181816,0,10,0.8921,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/St_James's_Palace
+David Cameron,0.05113636363636364,0,9,0.917,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/David_Cameron
+Scotland,0.05113636363636364,0,9,0.7996,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Scotland
+Edward VIII,0.05113636363636364,0,9,0.8695,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Edward_VIII
+Eton College,0.05113636363636364,0,9,1.18229,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Eton_College
+Hanoverian,0.045454545454545456,1,4,0.0494334,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Electorate_of_Brunswick-L?neburg
+throne,0.045454545454545456,2,0,0.187312,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Throne
+Anglesey,0.045454545454545456,0,8,0.8827,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Anglesey
+Sky News,0.045454545454545456,0,8,0.8751,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Sky_News
+Australia,0.045454545454545456,0,8,0.8079,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Australia
+Windsor Castle,0.045454545454545456,0,8,1.71976,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Windsor_Castle
+monarchy,0.03977272727272727,1,3,0.189111,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Monarchy
+names,0.03977272727272727,1,3,0.104567,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Name
+great uncle,0.03977272727272727,1,3,0.158858,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Cousin
+Henry,0.03409090909090909,0,6,0.6814,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Henry_II_of_England
+Europe,0.03409090909090909,0,6,0.7272,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Europe
+William?s,0.03409090909090909,0,6,0.6964,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/William_III_of_England
+Margaret,0.028409090909090908,1,1,0.0717771,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Margaret_River,_Western_Australia
+country,0.028409090909090908,1,1,0.100655,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Country_music
+Burma,0.028409090909090908,1,1,0.8084,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Burma_Campaign
+Albert,0.028409090909090908,0,5,0.7255,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Albert,_Prince_Consort
+Suffolk,0.028409090909090908,0,5,0.7936,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Suffolk
+New Zealand,0.028409090909090908,0,5,0.8149,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/New_Zealand
+Green Park,0.028409090909090908,0,5,0.7753,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Green_Park
+Louis,0.028409090909090908,0,5,0.6835,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Louis_IV,_Grand_Duke_of_Hesse

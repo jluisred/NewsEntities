@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Fukushima Daiichi nuclear power plant,60.0,0,60,1.60426,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Fukushima_Daiichi_Nuclear_Power_Plant
+China Syndrome,50.0,1,49,0.8971,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Nuclear_meltdown
+seawater,42.0,0,42,0.7526,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Seawater
+earthquake,39.0,0,39,0.75,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Earthquake
+Nuclear Regulation Authority,33.0,0,33,0.9094,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Nuclear_Regulation_Authority
+radiation,13.0,0,117,0.7629,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Radiation
+H2O,7.4375,0,119,0.7994,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Water
+radioactive contamination,7.222222222222222,0,65,0.925086,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Radioactive_contamination
+cesium,3.08,0,77,1.06964,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Caesium
+steam,2.625,2,40,0.7178,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Steam
+nuclear energy,2.44,1,60,0.7831,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Nuclear_power
+cancer,1.96,2,47,0.7348,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Cancer
+nuclear fuel,1.52,0,38,0.986032,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Nuclear_fuel
+Nuclear Power Plant,1.489795918367347,5,68,1.29828,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Nuclear_power_plant
+nuclear reactor,0.9097222222222222,3,128,1.55413,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Nuclear_reactor
+groundwater,0.6923076923076923,0,117,0.8001,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Groundwater
+Tokyo Electric Power Company,0.6691871455576559,5,349,1.91924,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Tokyo_Electric_Power_Company
+tsunami,0.6326530612244898,0,31,0.8112,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Tsunami
+Chernobyl disaster,0.6122448979591837,0,30,0.922806,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Chernobyl_disaster
+Pacific Ocean,0.5867768595041323,1,70,0.8542,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Pacific_Ocean
+Fukushima Daiichi nuclear disaster,0.5600907029478458,3,244,0.9278,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Fukushima_Daiichi_nuclear_disaster
+Japan,0.47265625,1,120,0.8429,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Japan
+radioactive,0.4690082644628099,4,223,0.807,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Radioactive_decay
+oceanic,0.4375,0,28,0.7225,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Ocean
+environment,0.40625,0,26,0.6802,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Natural_environment
+tritium,0.4049586776859504,0,49,1.55137,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Tritium
+NRA,0.3333333333333333,0,27,0.7105,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/National_Rifle_Association
+period,0.32098765432098764,0,26,0.7133,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Time
+radioactive isotopes,0.24,0,24,0.975516,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Radionuclide
+national government,0.2231404958677686,1,26,0.6882,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Government
+fish,0.2152777777777778,0,31,0.7539,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Fish
+soil,0.19008264462809918,0,23,0.721,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Soil
+Bq,0.15916955017301038,0,46,0.829,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Becquerel
+Earth,0.15384615384615385,0,26,0.7486,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Earth
+concrete,0.1487603305785124,0,18,0.6937,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Concrete
+Prime Minister,0.13609467455621302,0,23,0.7916,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Prime_Minister_of_Japan
+air,0.13194444444444445,0,19,0.71,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Atmosphere_of_Earth
+level,0.11734693877551021,1,22,0.6663,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Energy_level
+containment,0.09765625,0,25,0.7088,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Containment_building
+Health,0.09722222222222222,0,14,0.6923,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Health
+plutonium,0.08888888888888889,0,20,1.49924,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Plutonium
+Politics,0.0859375,0,22,0.6887,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Politics
+nuclear fission,0.0859375,0,22,1.40338,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Nuclear_fission
+effect,0.0859375,0,22,0.6892,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Causality
+chemical,0.08284023668639054,0,14,0.6908,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Chemical_substance
+risk,0.08,0,18,0.711,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Risk
+Natural,0.07653061224489796,0,15,0.6965,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Nature
+turbine,0.07653061224489796,0,15,0.7153,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Turbine
+regulation,0.07421875,0,19,0.7188,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Regulation
+Barack Obama,0.06802721088435375,0,30,1.06313,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Barack_Obama

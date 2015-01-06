@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Mohamed Morsi,1.0,6,834,1.742,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Mohamed_Morsi
+Egypt,0.7237762237762237,4,605,0.8781,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Egypt
+Egyptian President,0.3974358974358974,3,329,0.7857,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/President_of_Egypt
+Cairo,0.3776223776223776,3,312,0.8581,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Cairo
+Muslim Brotherhood,0.317016317016317,0,272,2.13691,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Muslim_Brotherhood
+Islamist movement,0.28554778554778554,0,245,1.29841,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Islamism
+demonstration,0.22261072261072262,1,187,0.7618,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Demonstration_(protest)
+protester,0.20862470862470864,1,175,0.742,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Protest
+coup d'etat,0.17365967365967366,0,149,0.8122,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Coup_d'%C3%A9tat
+democratic,0.17132867132867133,0,147,0.7789,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Democracy
+Constitution,0.1282051282051282,0,110,0.7564,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Constitution
+Tahrir Square,0.1258741258741259,2,100,1.54267,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Tahrir_Square
+Twitter,0.1258741258741259,0,108,0.8409,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Twitter
+Egyptian Armed Forces,0.1048951048951049,0,90,0.9489,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Egyptian_Armed_Forces
+Mohammed Badie,0.09090909090909091,0,78,0.9279,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Mohammed_Badie
+government,0.08624708624708624,0,74,0.7344,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Government
+Hosni Mubarak,0.08508158508158509,0,73,1.67025,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Hosni_Mubarak
+power,0.08391608391608392,2,64,0.7205,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Power_(social_and_political)
+police,0.08158508158508158,0,70,0.7207,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Police
+Adly Mansour,0.07575757575757576,0,65,0.9334,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Adly_Mansour
+violence,0.07459207459207459,1,60,0.7218,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Violence
+Military coup,0.06993006993006994,0,60,0.7698,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/2013_Egyptian_coup_d'%C3%A9tat
+Republican Guard,0.0675990675990676,0,58,0.8575,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Army_of_the_Guardians_of_the_Islamic_Revolution
+nations,0.0675990675990676,0,58,0.7214,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Nation
+Arab Spring,0.06293706293706294,0,54,0.9215,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Arab_Spring
+revolution,0.06293706293706294,0,54,0.7396,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Revolution
+BBC,0.06177156177156177,0,53,0.8009,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC
+Abdel-Fattah El-Sisi,0.06060606060606061,0,52,0.8952,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Abdel_Fattah_el-Sisi
+arrests,0.06060606060606061,0,52,0.7377,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Arrest
+liberal,0.05827505827505827,0,50,0.7995,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Liberalism
+will,0.055944055944055944,0,48,0.7104,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Free_will
+freedom of expression,0.054778554778554776,2,39,0.988041,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Freedom_of_speech
+Associated Press,0.054778554778554776,0,47,0.872,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Associated_Press
+head of state,0.05244755244755245,0,45,0.8365,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Head_of_state
+Jeremy Bowen,0.05128205128205128,1,40,0.9088,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Jeremy_Bowen
+electoral process,0.05128205128205128,0,44,0.7214,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Election
+US State Department,0.05128205128205128,0,44,0.8209,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Department_of_State
+clashes,0.05011655011655012,0,43,0.7479,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Syrian_Civil_War_spillover_in_Lebanon
+Sinai Peninsula,0.05011655011655012,0,43,1.46139,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Sinai_Peninsula
+Middle East,0.04895104895104895,1,38,0.7872,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Middle_East
+Israel,0.04895104895104895,0,42,0.8463,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Israel
+Supreme Leader,0.04895104895104895,0,42,0.7537,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Supreme_leader
+toppled,0.04895104895104895,0,42,0.7335,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/1963_Syrian_coup_d'%C3%A9tat
+Agence France-Presse,0.047785547785547784,0,41,1.03179,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Agence_France-Presse
+country,0.046620046620046623,2,32,0.6868,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Nation_state
+will,0.046620046620046623,0,40,0.6706,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Will_and_testament
+Reuters,0.04428904428904429,0,38,0.8399,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Reuters
+tear gas,0.04312354312354312,0,37,1.08834,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Tear_gas
+el-Arish,0.04312354312354312,0,37,0.864,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Arish
+human-rights,0.04312354312354312,0,37,0.7782,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Human_rights

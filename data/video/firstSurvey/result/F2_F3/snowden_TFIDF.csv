@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Barack Obama,57.0,1,56,1.66995,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Barack_Obama
+Bolivia,34.0,1,33,0.8982,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Bolivia
+Nicaragua,27.0,1,26,0.8966,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Nicaragua
+Venezuela,15.0,1,59,0.8885,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Venezuela
+Kremlin,2.6875,1,42,0.7689,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Kremlin
+Washington,2.3125,0,37,0.7005,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Washington,_D.C.
+Russians,2.0,0,50,0.7306,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Russians
+United States,1.4132231404958677,3,168,0.7758,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_States
+Human Rights Watch,1.4,1,34,1.60851,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Human_Rights_Watch
+Hong Kong,1.28,0,32,1.72221,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Hong_Kong
+National Security Agency,1.123456790123457,0,91,2.32738,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/National_Security_Agency
+Edward Snowden,0.9056,2,564,2.25896,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Edward_Snowden
+Russia,0.6304,6,388,0.869,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Russia
+Sheremetyevo International Airport,0.47107438016528924,0,57,0.9141,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Sheremetyevo_International_Airport
+Vladimir Putin,0.3677685950413223,0,178,1.78211,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Vladimir_Putin
+Russian President,0.356401384083045,3,100,0.8253,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/President_of_Russia
+Latin America,0.3391003460207612,1,97,0.8197,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Latin_America
+Moscow,0.29867674858223064,2,156,0.82,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Moscow
+Wikileaks,0.2962962962962963,0,24,1.00946,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/WikiLeaks
+White House,0.256198347107438,0,31,0.8297,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/White_House
+Federal Migration Service,0.1487603305785124,1,17,0.8874,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Federal_Migration_Service_(Russia)
+Jay Carney,0.09693877551020408,0,19,0.9091,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Jay_Carney
+Iran,0.08203125,2,19,0.8874,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Iran
+US Department of State,0.08,0,18,0.8359,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Department_of_State
+Syria,0.07421875,1,18,0.8805,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Syria
+CIA,0.07142857142857142,1,13,0.8477,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Central_Intelligence_Agency
+Ecuador,0.07111111111111111,0,16,0.8936,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Ecuador
+Europe,0.06666666666666667,0,15,0.7631,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Europe
+Vyacheslav Nikonov,0.06222222222222222,0,14,0.8703,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Vyacheslav_Nikonov
+American,0.05859375,0,15,0.6821,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Americans
+John Kerry,0.05668934240362812,0,25,0.9206,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/John_Kerry
+China,0.0546875,0,14,0.8178,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/China
+United Nations,0.05246913580246913,0,17,0.8082,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_Nations
+Stalin,0.05078125,1,12,0.7637,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Joseph_Stalin
+Gogland,0.0390625,0,10,0.8881,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Gogland
+Interfax,0.0390625,0,10,0.8347,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Interfax
+Evo Morales,0.0390625,0,10,1.07828,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Evo_Morales
+Soviet Union,0.037037037037037035,0,12,0.857,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Soviet_Union
+US intelligence,0.033950617283950615,0,11,0.7426,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_States_Intelligence_Community
+New York Times,0.033950617283950615,0,11,0.861,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/The_New_York_Times
+RIA Novosti,0.030864197530864196,0,10,0.937405,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/RIA_Novosti
+U.S. Secretary of State,0.03,0,12,0.8156,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_States_Secretary_of_State
+G20,0.027700831024930747,0,10,0.7864,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/G-20_major_economies
+Gulf of Finland,0.02768166089965398,0,8,0.8981,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Gulf_of_Finland
+Associated Press,0.02768166089965398,0,8,0.8526,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Associated_Press
+NATO,0.0275,0,11,0.8651,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/NATO
+Western,0.024930747922437674,0,9,0.7068,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Western_world
+Glenn Greenwald,0.024930747922437674,0,9,1.29388,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Glenn_Greenwald
+KGB,0.024691358024691357,0,8,0.8857,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/KGB
+Dmitry Peskov,0.024691358024691357,0,8,0.8804,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Dmitry_Peskov

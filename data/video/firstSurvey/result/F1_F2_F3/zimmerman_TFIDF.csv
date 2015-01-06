@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Florida,1.5061728395061729,1,121,0.772,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Florida
+African-American,1.2222222222222223,0,44,0.8856,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/African_American
+Sanford Fla,1.1111111111111112,0,40,0.8904,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Sanford,_Florida
+New York City,0.30864197530864196,1,24,0.8334,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/New_York_City
+Miami,0.19444444444444445,0,28,0.7932,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Miami
+Atlanta,0.14795918367346939,0,29,0.8049,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Atlanta
+Los Angeles,0.14201183431952663,1,23,0.765,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Los_Angeles
+U.S. Justice Department,0.1388888888888889,1,19,0.8272,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Department_of_Justice
+president Barack Obama,0.1322314049586777,1,15,1.02774,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Barack_Obama
+Seminole County,0.10222222222222223,0,23,0.8637,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Seminole_County,_Florida
+Oakland California,0.08875739644970414,0,15,0.8536,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Oakland,_California
+First Baptist Church,0.08163265306122448,1,15,0.8017,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Baptists
+Chicago,0.06666666666666667,0,15,0.7937,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Chicago
+NPR,0.05215419501133787,0,23,1.1222,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/NPR
+San Francisco,0.04844290657439446,1,13,0.7875,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/San_Francisco
+Orlando,0.046296296296296294,0,15,0.7947,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Orlando,_Florida
+Alexander,0.043402777777777776,0,25,0.6569,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Alexander_the_Great
+United States of America.,0.043209876543209874,5,9,1.25735,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_States
+CNN,0.040123456790123455,0,13,0.8406,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/CNN
+Philadelphia,0.040123456790123455,0,13,0.8049,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Philadelphia
+Mississippi,0.0390625,0,10,0.7528,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Mississippi
+Al Sharpton,0.03460207612456748,1,9,0.9,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Al_Sharpton
+Washington,0.030864197530864196,1,9,0.704,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Washington,_D.C.
+Jesse Jackson,0.030864197530864196,0,10,0.8904,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Jesse_Jackson
+Columbia University,0.027700831024930747,0,10,0.8386,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Columbia_University
+White,0.022675736961451247,0,10,0.735,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/White_people
+Middle Collegiate Church,0.021604938271604937,0,7,0.756,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Collegiate_Reformed_Protestant_Dutch_Church
+Burbank,0.020793950850661626,0,11,0.7363,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Burbank,_California
+Republican Party,0.02040816326530612,0,9,0.7951,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Republican_Party_(United_States)
+Trayvon Martin,0.0175,3,4,0.8589,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Shooting_of_Trayvon_Martin
+Fox News,0.0175,0,7,0.8257,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Fox_News_Channel
+EPA,0.017013232514177693,0,9,0.6932,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Environmental_Protection_Agency
+St. Paul Minnesota,0.01662049861495845,1,5,0.796,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Saint_Paul,_Minnesota
+Jim Walsh,0.015625,0,9,0.864,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/James_T._Walsh
+Minneapolis,0.015122873345935728,1,7,0.7768,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Minneapolis
+CBS,0.014462809917355372,0,7,0.8419,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/CBS
+Harlem,0.0125,0,5,0.7658,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Harlem
+Eric Garcetti,0.0125,0,5,0.8892,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Eric_Garcetti
+Liberty Bell,0.0125,0,5,0.8225,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Liberty_Bell
+Milwaukee,0.0125,0,5,0.7954,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Milwaukee
+George Zimmerman,0.011342155009451797,5,1,0.8702,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/George_Zimmerman
+Don West,0.011337868480725623,0,5,0.8596,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Don_West_(sportscaster)
+MSNBC,0.011337868480725623,0,5,0.8719,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/MSNBC
+Minnesota,0.010330578512396695,0,5,0.7422,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Minnesota
+Benjamin Jealous,0.009070294784580499,0,4,0.8991,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Benjamin_Jealous
+Wisconsin,0.009070294784580499,0,4,0.7503,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Wisconsin
+Hollywood,0.009070294784580499,0,4,0.7188,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Hollywood
+San Leandro,0.009070294784580499,0,4,0.7957,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/San_Leandro,_California
+Maya,0.009070294784580499,0,4,0.6874,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Maya_civilization
+Serino,0.008264462809917356,1,3,0.6672,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Serino

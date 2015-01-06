@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Egyptians,8.3125,3,130,0.7597,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Egyptians
+Tahrir Square,2.3469387755102042,2,113,1.54267,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Tahrir_Square
+Hosni Mubarak,2.0555555555555554,0,74,1.67025,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Hosni_Mubarak
+Muslim Brotherhood,2.048611111111111,0,295,2.13691,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Muslim_Brotherhood
+Egypt,1.7335640138408304,4,497,0.8781,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Egypt
+BBC,1.6666666666666667,0,60,0.8009,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC
+Mohamed Morsi,1.4878472222222223,6,851,1.742,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Mohamed_Morsi
+Mohammed Badie,1.078125,0,69,0.9279,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Mohammed_Badie
+Cairo,1.0030864197530864,3,322,0.8581,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Cairo
+Mohamed ElBaradei,0.35802469135802467,0,29,0.9228,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Mohamed_ElBaradei
+Sinai Peninsula,0.35537190082644626,0,43,1.46139,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Sinai_Peninsula
+Rafah,0.24,0,24,1.51424,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Rafah
+Alexandria,0.18055555555555555,0,26,0.8253,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Alexandria
+Gaza Strip,0.13609467455621302,0,23,2.15909,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Gaza_Strip
+Bowen,0.12,1,26,0.0692106,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Bowen,_Queensland
+Israel,0.1111111111111111,0,36,0.8463,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Israel
+Al Jazeera,0.10714285714285714,0,21,0.982402,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Al_Jazeera
+Mediterranean,0.08875739644970414,0,15,0.7445,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Mediterranean_Sea
+United States,0.0859375,1,21,0.7606,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_States
+Barack?Obama,0.0859375,0,22,0.9093,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Barack_Obama
+US State Department,0.08203125,0,21,0.8209,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Department_of_State
+Madinat Nasr,0.078125,2,18,0.8961,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Nasr_City
+Hamas,0.078125,0,20,1.08959,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Hamas
+Saad,0.07653061224489796,0,15,0.7195,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Saad_Zaghloul
+Libya,0.07653061224489796,0,15,0.8873,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Libya
+African Union,0.07098765432098765,0,23,0.9289,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/African_Union
+Palestinian,0.05555555555555555,0,18,0.832,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Palestinian_people
+Freedom and Justice Party,0.0546875,0,14,1.00518,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Freedom_and_Justice_Party_(Egypt)
+Adli,0.05190311418685121,0,15,0.8014,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Habib_el-Adly
+William Hague,0.04888888888888889,0,11,0.926667,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/William_Hague
+Bashar al-Assad,0.04844290657439446,0,14,1.29065,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Bashar_al-Assad
+Arab League,0.04709141274238227,0,17,0.9088,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Arab_League
+Khaled,0.046875,0,12,0.0190789,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Khaled_%28musician%29
+Asiut,0.046875,0,12,0.8731,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Asyut
+Qina,0.046875,0,12,0.8623,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Qena
+United Nations,0.04498269896193772,0,13,0.8312,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_Nations
+Ban Ki-moon,0.0390625,0,10,1.40733,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Ban_Ki-moon
+Mohamed Kamel Amr,0.038781163434903045,0,14,0.9133,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Mohamed_Kamel_Amr
+CNN,0.03806228373702422,0,11,0.8608,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/CNN
+Ismailia,0.03460207612456748,0,10,0.8887,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Isma%C3%AFlia
+Washington DC,0.03460207612456748,0,10,0.8054,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Washington,_D.C.
+Nile Delta,0.033950617283950615,0,11,1.01906,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Nile_Delta
+Marsa Matrouh,0.031141868512110725,0,9,0.902,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Mersa_Matruh
+Syria,0.030991735537190084,0,15,0.8894,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Syria
+Tweet,0.029513888888888888,0,17,7.08154E-4,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Tweet_%28singer%29
+Luxor,0.027777777777777776,0,9,0.8477,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Luxor
+Al Azhar,0.02768166089965398,0,8,0.868138,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Al-Azhar_University
+El-Arish,0.027210884353741496,0,12,0.8486,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Arish
+Yemen,0.027210884353741496,0,12,0.8866,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Yemen
+NPR,0.024943310657596373,0,11,0.8429,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/NPR

@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+United States of America.,81.0,5,76,1.25735,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_States
+Sanford Fla,66.0,0,66,0.8904,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Sanford,_Florida
+African-American,6.111111111111111,0,55,0.8856,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/African_American
+president Barack Obama,1.24,1,30,1.02774,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Barack_Obama
+U.S. Justice Department,1.0277777777777777,1,36,0.8272,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Department_of_Justice
+Martin,1.0110803324099722,3,362,0.0619664,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Lockheed_Martin
+George Zimmerman,0.96875,5,553,1.05492,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/George_Zimmerman
+Florida,0.9375,1,134,0.772,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Florida
+National Association for the Advancement of Coloured People,0.53125,0,34,0.9322,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/National_Association_for_the_Advancement_of_Colored_People
+New York City,0.3950617283950617,1,31,0.8334,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/New_York_City
+First Baptist Church,0.3333333333333333,1,26,0.8017,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Baptists
+Miami,0.32231404958677684,0,39,0.7932,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Miami
+Los Angeles,0.24793388429752067,1,29,0.765,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Los_Angeles
+Black people,0.2361111111111111,1,33,0.7646,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Black_people
+Stand Your Ground law,0.2361111111111111,0,34,0.8934,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Stand-your-ground_law
+Police Department,0.2231404958677686,0,27,0.7004,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Police
+Rachel Jeantel,0.19008264462809918,0,23,0.904,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/State_of_Florida_v._George_Zimmerman
+Jackson,0.18181818181818182,0,22,0.6319,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Jackson,_Mississippi
+St. Paul Minnesota,0.18,1,17,0.796,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Saint_Paul,_Minnesota
+Protesters,0.1487603305785124,1,17,0.6684,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Protest
+Oakland California,0.14583333333333334,0,21,0.8536,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Oakland,_California
+Alexander,0.1446280991735537,0,70,0.0698011,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Alexander_II_of_Russia
+July 15,0.13671875,0,35,0.111168,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/July_15
+Rev.,0.11224489795918367,1,21,0.6548,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/The_Reverend
+Seminole County,0.10666666666666667,0,24,0.8637,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Seminole_County,_Florida
+Chicago,0.09777777777777778,0,22,0.7937,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Chicago
+Times Square,0.09375,0,24,0.8631,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Times_Square
+Middle Collegiate Church,0.09183673469387756,0,18,0.756,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Collegiate_Reformed_Protestant_Dutch_Church
+Orlando,0.08996539792387544,0,26,0.7947,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Orlando,_Florida
+News,0.0859375,0,22,0.6951,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/News
+Mark O?Mara,0.08203125,0,21,0.8425,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Mark_O'Mara
+Washington D.C.,0.08163265306122448,1,15,1.27234,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Washington,_D.C.
+Gray,0.07939508506616257,0,42,0.0231634,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Gray_%28unit%29
+Facebook,0.078125,0,20,0.8257,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Facebook
+Manhattan,0.06640625,0,17,0.7883,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Manhattan
+Civil rights,0.0663265306122449,1,12,0.7692,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Civil_and_political_rights
+Associated Press,0.06228373702422145,0,18,0.861,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Associated_Press
+Don West,0.06222222222222222,0,14,0.8596,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Don_West_(sportscaster)
+Green,0.06172839506172839,1,19,0.0126855,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Cannabis_%28drug%29
+Emmett Till,0.061224489795918366,0,12,0.8999,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Emmett_Till
+Jury,0.05555555555555555,1,17,0.7101,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Jury
+Racism,0.0546875,0,14,0.7524,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Racism
+NPR,0.05442176870748299,0,24,1.1222,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/NPR
+Cars,0.04986149584487535,0,18,0.6483,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Automobile
+Carol Swain,0.04986149584487535,0,18,0.8141,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Carol_M._Swain
+San Francisco,0.04844290657439446,1,13,0.7875,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/San_Francisco
+Atlanta,0.04844290657439446,0,14,0.8049,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Atlanta
+Young,0.046875,0,12,0.0183562,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Young_Divas
+Miller,0.04498269896193772,0,13,0.014518,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Sienna_Miller
+Hoodie,0.04296875,0,11,0.7819,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Hoodie

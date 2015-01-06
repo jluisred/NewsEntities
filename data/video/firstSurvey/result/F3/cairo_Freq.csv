@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Mohamed Morsi,1.0,6,855,1.742,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Mohamed_Morsi
+Egypt,0.6496018202502845,4,555,0.8781,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Egypt
+Muslim Brotherhood,0.41638225255972694,0,366,2.13691,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Muslim_Brotherhood
+Cairo,0.3833902161547213,3,325,0.8581,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Cairo
+Islamist movement,0.2775881683731513,0,244,1.29841,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Islamism
+Egyptian President,0.23890784982935154,3,198,0.7857,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/President_of_Egypt
+Tahrir Square,0.15358361774744028,2,127,1.54267,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Tahrir_Square
+Egyptians,0.14562002275312855,0,128,0.7597,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Egyptians
+Egyptian Armed Forces,0.11149032992036405,0,98,0.9489,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Egyptian_Armed_Forces
+Twitter,0.10693970420932879,0,94,0.8409,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Twitter
+Hosni Mubarak,0.08987485779294653,0,79,1.67025,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Hosni_Mubarak
+Mohammed Badie,0.08646188850967008,0,76,0.9279,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Mohammed_Badie
+July 3,0.08532423208191127,0,75,0.0534802,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/July_3
+Jeremy Bowen,0.07963594994311718,1,66,0.9088,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Jeremy_Bowen
+BBC,0.07394766780432309,0,65,0.8009,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC
+Adly Mansour,0.07394766780432309,0,65,0.9334,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Adly_Mansour
+Republican Guard,0.06598407281001138,0,58,0.8575,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Army_of_the_Guardians_of_the_Islamic_Revolution
+Associated Press,0.06484641638225255,0,57,0.872,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Associated_Press
+United States,0.06370875995449374,0,56,0.7606,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_States
+Abdel-Fattah El-Sisi,0.055745164960182024,0,49,0.8952,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Abdel_Fattah_el-Sisi
+Mohamed ElBaradei,0.051194539249146756,0,45,1.12006,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Mohamed_ElBaradei
+Israel,0.048919226393629126,0,43,0.8463,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Israel
+Sinai Peninsula,0.048919226393629126,0,43,1.46139,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Sinai_Peninsula
+Middle East,0.04778156996587031,1,38,0.7872,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Middle_East
+Agence France-Presse,0.04664391353811149,0,41,1.03179,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Agence_France-Presse
+Nile River,0.04209328782707622,1,33,0.8406,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Nile
+Reuters,0.040955631399317405,0,36,0.8399,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Reuters
+Al Jazeera,0.03981797497155859,0,35,0.982402,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Al_Jazeera
+Military,0.03981797497155859,0,35,0.6707,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Military
+Gaza Strip,0.038680318543799774,0,34,2.15909,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Gaza_Strip
+US State Department,0.038680318543799774,0,34,0.8209,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Department_of_State
+Protesters,0.03754266211604096,1,29,0.723,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Protest
+Supreme Constitutional Court,0.03754266211604096,0,33,0.8155,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Supreme_Constitutional_Court_of_Egypt
+Christian,0.03754266211604096,0,33,0.7249,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Christian
+Barack Obama,0.03299203640500569,0,29,1.86586,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Barack_Obama
+Madinat Nasr,0.03185437997724687,2,20,0.8961,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Nasr_City
+Tunisia,0.030716723549488054,0,27,0.914,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Tunisian_Revolution
+Alexandria,0.02957906712172924,0,26,0.8253,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Alexandria
+TV,0.02844141069397042,0,25,0.0438075,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Television
+Facebook,0.02844141069397042,0,25,0.837,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Facebook
+Western powers,0.027303754266211604,0,24,0.7115,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Western_world
+Arab Spring,0.026166097838452786,0,23,0.9215,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Arab_Spring
+Yemen,0.026166097838452786,0,23,0.8866,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Yemen
+Interior Ministry,0.026166097838452786,0,23,0.6887,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Ministry_of_Interior_(Egypt)
+Adli,0.02502844141069397,0,22,0.8014,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Habib_el-Adly
+United Nations,0.02502844141069397,0,22,0.8312,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_Nations
+National Salvation Front,0.02502844141069397,0,22,0.9116,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/National_Salvation_Front_(Egypt)
+Palestinian,0.023890784982935155,1,17,0.832,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Palestinian_people
+African Union,0.023890784982935155,0,21,0.9289,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/African_Union
+Hamas,0.022753128555176336,0,20,1.08959,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Hamas

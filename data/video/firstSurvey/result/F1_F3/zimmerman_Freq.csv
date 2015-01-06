@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Martin,0.9631336405529954,3,197,0.0619664,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Lockheed_Martin
+Florida,0.5944700460829493,1,125,0.772,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Florida
+Zimmerman,0.4976958525345622,5,88,0.0689003,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Ryan_Zimmerman
+Alexander,0.2764976958525346,0,60,0.0698011,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Alexander_II_of_Russia
+Sanford Fla,0.21658986175115208,0,47,0.8904,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Sanford,_Florida
+African-American,0.20276497695852536,0,44,0.8856,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/African_American
+United States of America.,0.1889400921658986,5,21,1.25735,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_States
+Miami,0.15668202764976957,0,34,0.7932,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Miami
+New York City,0.14746543778801843,1,28,0.8334,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/New_York_City
+Los Angeles,0.12903225806451613,1,24,0.765,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Los_Angeles
+president Barack Obama,0.11981566820276497,1,22,1.02774,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Barack_Obama
+U.S. Justice Department,0.1152073732718894,1,21,0.8272,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Department_of_Justice
+NPR,0.10599078341013825,0,23,1.1222,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/NPR
+First Baptist Church,0.10138248847926268,1,18,0.8017,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Baptists
+Seminole County,0.10138248847926268,0,22,0.8637,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Seminole_County,_Florida
+Manhattan,0.09216589861751152,0,20,0.7883,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Manhattan
+Minneapolis,0.08755760368663594,1,15,0.7768,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Minneapolis
+San Francisco,0.07834101382488479,1,13,0.7875,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/San_Francisco
+Jackson,0.07834101382488479,0,17,0.6319,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Jackson,_Mississippi
+Orlando,0.07834101382488479,0,17,0.7947,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Orlando,_Florida
+Oakland California,0.07373271889400922,0,16,0.8536,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Oakland,_California
+Chicago,0.07373271889400922,0,16,0.7937,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Chicago
+W.,0.06912442396313365,0,15,0.0809265,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/George_W._Bush
+Al Sharpton,0.06451612903225806,1,10,0.9,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Al_Sharpton
+Washington,0.059907834101382486,1,9,0.704,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Washington,_D.C.
+CNN,0.059907834101382486,0,13,0.8406,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/CNN
+Philadelphia,0.059907834101382486,0,13,0.8049,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Philadelphia
+not guilty,0.055299539170506916,3,0,0.202944,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Acquittal
+Emmitt Till,0.055299539170506916,0,12,0.313002,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Emmett_Till
+Burbank,0.05069124423963134,0,11,0.7363,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Burbank,_California
+Carson,0.05069124423963134,0,11,0.113281,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Carson_City,_Nevada
+Mississippi,0.04608294930875576,0,10,0.7528,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Mississippi
+EPA,0.04608294930875576,0,10,0.6932,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Environmental_Protection_Agency
+White,0.04608294930875576,0,10,0.735,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/White_people
+Columbia University,0.04608294930875576,0,10,0.8386,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Columbia_University
+Atlanta,0.04608294930875576,0,10,0.8049,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Atlanta
+Don West,0.041474654377880185,0,9,0.8596,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Don_West_(sportscaster)
+Gary,0.041474654377880185,0,9,0.0547612,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Gary,_Indiana
+Republican Party,0.041474654377880185,0,9,0.7951,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Republican_Party_(United_States)
+Jim Walsh,0.041474654377880185,0,9,0.864,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/James_T._Walsh
+gun,0.03686635944700461,2,0,0.124205,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Gun
+Serino,0.03225806451612903,1,3,0.6672,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Serino
+interview,0.03225806451612903,1,3,0.0688032,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Interview
+Rucker,0.03225806451612903,0,7,0.00191366,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Rudy_Rucker
+Middle Collegiate Church,0.03225806451612903,0,7,0.756,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Collegiate_Reformed_Protestant_Dutch_Church
+CBS,0.03225806451612903,0,7,0.8419,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/CBS
+Fox News,0.03225806451612903,0,7,0.8257,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Fox_News_Channel
+SYG,0.03225806451612903,0,7,0.00557598,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Set_Your_Goals_%28band%29
+free man,0.027649769585253458,1,2,0.0427332,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Gordon_Freeman
+Krall,0.027649769585253458,0,6,0.00148232,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Diana_Krall

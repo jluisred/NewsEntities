@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Barack Obama,77.0,1,76,0.9116,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Barack_Obama
+Bolivia,34.0,1,33,0.8982,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Bolivia
+Nicaragua,27.0,1,26,0.8966,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Nicaragua
+Venezuela,15.0,1,59,0.8885,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Venezuela
+Russians,6.888888888888889,0,62,0.7306,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Russians
+Washington,5.0,0,45,0.7005,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Washington,_D.C.
+United States,1.242603550295858,3,207,0.7758,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_States
+Russia,0.6992,6,431,0.869,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Russia
+National Security Agency,0.6180555555555556,0,89,2.32738,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/National_Security_Agency
+Human Rights Watch,0.6122448979591837,1,29,1.60851,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Human_Rights_Watch
+Vladimir Putin,0.6094182825484764,3,217,0.9263,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Vladimir_Putin
+Edward Snowden,0.5918367346938775,2,259,2.25896,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Edward_Snowden
+Moscow,0.42560553633217996,2,121,0.82,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Moscow
+Latin America,0.3950617283950617,1,127,0.8197,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Latin_America
+White House,0.24793388429752067,0,30,0.8297,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/White_House
+US Department of State,0.12444444444444444,0,28,0.8359,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Department_of_State
+Iran,0.10222222222222223,2,21,0.8874,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Iran
+Jay Carney,0.10204081632653061,0,20,0.9091,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Jay_Carney
+Federal Migration Service,0.09467455621301775,1,15,0.8874,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Federal_Migration_Service_(Russia)
+Europe,0.06666666666666667,0,15,0.7631,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Europe
+CIA,0.0663265306122449,1,12,0.8477,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Central_Intelligence_Agency
+Syria,0.06228373702422145,1,17,0.8805,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Syria
+John Kerry,0.061224489795918366,0,27,0.9206,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/John_Kerry
+Ecuador,0.05859375,0,15,0.8936,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Ecuador
+China,0.0546875,0,14,0.8178,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/China
+Soviet Union,0.04844290657439446,0,14,0.857,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Soviet_Union
+Kremlin,0.046875,1,11,0.782,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Moscow_Kremlin
+Hong Kong,0.044444444444444446,0,10,0.835,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Hong_Kong
+Amnesty International,0.04296875,0,11,0.9077,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Amnesty_International
+North Korea,0.038781163434903045,0,14,0.9143,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/North_Korea
+Glenn Greenwald,0.036011080332409975,0,13,1.29388,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Glenn_Greenwald
+United Nations,0.0325,0,13,0.8082,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_Nations
+Evo Morales,0.031141868512110725,0,9,0.9031,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Evo_Morales
+KGB,0.024691358024691357,0,8,0.8857,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/KGB
+RT.com,0.02,0,8,0.8439,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/RT_(TV_network)
+Gogland,0.019390581717451522,0,7,0.8881,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Gogland
+Saint Petersburg,0.019390581717451522,0,7,0.8757,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Saint_Petersburg
+United States Senate,0.019390581717451522,0,7,0.847,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Senate
+Stalin,0.0175,0,7,0.7637,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Joseph_Stalin
+Wikileaks,0.0175,0,7,1.00946,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/WikiLeaks
+Chechen Republic,0.017013232514177693,0,9,1.23254,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Chechnya
+Vladimir Lukin,0.01662049861495845,0,6,0.9052,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Vladimir_Lukin
+Austria,0.015,0,6,0.835,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Austria
+Sochi,0.013605442176870748,0,6,0.8662,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Sochi
+Sergei Lavrov,0.013232514177693762,0,7,0.8963,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Sergey_Lavrov
+Booz Allen Hamilton,0.013232514177693762,0,7,0.97156,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Booz_Allen_Hamilton
+Ukraine,0.012396694214876033,0,6,0.8677,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Ukraine
+US Congress,0.012396694214876033,0,6,0.8181,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_States_Congress
+Germany,0.012396694214876033,0,6,0.7621,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Germany
+Comedy Central,0.011342155009451797,0,6,0.919,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Comedy_Central

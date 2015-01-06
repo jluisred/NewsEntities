@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Tokyo Electric Power Company,0.6731301939058172,5,238,1.91924,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Tokyo_Electric_Power_Company
+Japan,0.5714285714285714,1,111,0.8429,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Japan
+Fukushima Daiichi nuclear disaster,0.5175,3,204,0.9278,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Fukushima_Daiichi_nuclear_disaster
+ocean,0.5088757396449705,1,85,0.176193,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Ocean
+Fukushima,0.2809917355371901,0,34,0.421515,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Timeline_of_the_Fukushima_Daiichi_nuclear_disaster
+Pacific Ocean,0.25,0,25,0.8542,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Pacific_Ocean
+cores,0.1875,1,26,0.0280355,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/The_Corrs
+plant,0.1836734693877551,5,31,0.0310983,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Robert_Plant
+highly radioactive,0.13609467455621302,4,19,0.633487,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Radiation_effects_from_the_Fukushima_Daiichi_nuclear_disaster
+concern,0.07653061224489796,2,13,0.0590193,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Concern_Worldwide
+Ono,0.0703125,0,18,0.6405,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Yoko_Ono
+Obama Administration,0.06611570247933884,0,32,0.7575,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Barack_Obama
+Nuclear Regulatory Commission,0.058823529411764705,0,17,1.7036,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Nuclear_Regulatory_Commission
+waters,0.0546875,0,14,0.0440848,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Roger_Waters
+Tanaka,0.04498269896193772,0,13,0.0677608,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Kakuei_Tanaka
+BBC News,0.04152249134948097,2,10,0.8198,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC_News
+H.,0.03925619834710744,0,19,0.0106267,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Tool_%28band%29
+Liberal Democratic Party,0.027700831024930747,0,10,1.05795,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Liberal_Democratic_Party_(Japan)
+K.,0.026465028355387523,0,14,0.00397415,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Kauffman_Stadium
+Dai,0.024691358024691357,0,8,0.0293228,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Daimler_AG
+Shinzo Abe,0.0221606648199446,0,8,0.941,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Shinz%C5%8D_Abe
+United States,0.0221606648199446,0,8,0.765,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_States
+steam,0.02,2,6,0.283484,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Steam
+California,0.019390581717451522,0,7,0.766,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/California
+Iran,0.01859504132231405,0,9,0.8755,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Iran
+Canada,0.0175,0,7,0.779,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Canada
+Gitmo,0.017361111111111112,0,10,0.8335,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Guantanamo_Bay_detention_camp
+NHK,0.01662049861495845,0,6,0.8337,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/NHK
+Hawaii,0.01662049861495845,0,6,0.8298,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Hawaii
+no doubt,0.015873015873015872,0,7,0.6272,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/No_Doubt
+Miyazawa,0.015625,0,9,0.00547567,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Rie_Miyazawa
+Syria,0.013888888888888888,0,8,0.8633,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Syria
+Mitt Romney,0.013232514177693762,0,7,0.9007,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Mitt_Romney
+Tokyo University of Marine Science and Technology,0.0125,1,4,0.8801,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Tokyo_University_of_Marine_Science_and_Technology
+Russia Today,0.0125,0,5,0.8054,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/RT_(TV_network)
+University of Wisconsin,0.0125,0,5,0.6783,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/University_of_Wisconsin%E2%80%93Madison
+NASA,0.0125,0,5,0.8617,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/NASA
+nice,0.012396694214876033,0,6,0.0505319,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Nice
+Ibaraki Prefecture,0.011337868480725623,0,5,1.02767,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Ibaraki_Prefecture
+United Nations,0.011337868480725623,0,5,0.7962,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_Nations
+start,0.011337868480725623,0,5,6.34991E-4,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/IK_Start
+residents,0.011337868480725623,0,5,0.00967177,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/The_Residents
+Alaska,0.011337868480725623,0,5,0.8401,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Alaska
+WWF,0.010416666666666666,0,6,0.7559,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/World_Wide_Fund_for_Nature
+Hamajima,0.010416666666666666,0,6,0.8405,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Hamajima,_Mie
+NRA,0.010330578512396695,0,5,0.107752,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/National_Rifle_Association
+China,0.010330578512396695,0,5,0.8178,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/China
+reactor,0.00945179584120983,3,2,0.229079,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Nuclear_reactor
+Bill Keller,0.00945179584120983,0,5,0.8348,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Bill_Keller
+Europe,0.00945179584120983,0,5,0.7631,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Europe

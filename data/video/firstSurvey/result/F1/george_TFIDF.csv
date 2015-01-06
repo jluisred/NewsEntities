@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Alexander the Great,8.222222222222221,1,73,0.903,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Alexander_the_Great
+Duchess of Cambridge,7.888888888888889,2,69,1.29207,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Catherine,_Duchess_of_Cambridge
+Bucklebury,5.111111111111111,0,46,0.8742,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Bucklebury
+LONDON,3.32,0,83,0.7506,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/London
+George,2.0902777777777777,4,297,0.32387,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/George_V_of_the_United_Kingdom
+hospital,1.5918367346938775,0,78,0.0741989,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Hospital
+Queen Elizabeth II,1.52,1,151,0.837,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Elizabeth_II
+Lord Mountbatten,1.1111111111111112,2,38,1.23014,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Louis_Mountbatten,_1st_Earl_Mountbatten_of_Burma
+George VI,0.7755102040816326,2,36,0.8416,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/George_VI
+Prince William Duke of Cambridge,0.7716262975778547,2,221,1.69326,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Prince_William,_Duke_of_Cambridge
+Michael Middleton,0.7222222222222222,0,26,0.263438,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Family_of_Catherine,_Duchess_of_Cambridge
+Prince Charles,0.5648148148148148,2,181,0.858,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Charles,_Prince_of_Wales
+Queen Victoria,0.4567901234567901,3,34,0.8962,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Queen_Victoria
+Berkshire,0.390625,0,25,0.8148,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Berkshire
+Kensington Palace,0.3497164461247637,1,184,1.88036,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Kensington_Palace
+England,0.2839506172839506,0,23,0.7904,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Kingdom_of_England
+Duchess of Cambridge,0.2809917355371901,0,34,1.17052,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Catherine,_Duchess_of_Cambridge
+Balmoral Castle,0.18181818181818182,1,21,1.34075,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Balmoral_Castle
+Wing,0.1736111111111111,0,25,0.0515769,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Wings_%28band%29
+United Kingdom,0.15702479338842976,1,18,0.7671,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_Kingdom
+William,0.1111111111111111,0,25,0.0776302,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/William_IV_of_the_United_Kingdom
+Wales,0.10650887573964497,0,18,0.7193,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Wales
+Scotland,0.09183673469387756,0,18,0.7996,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Scotland
+baby,0.08950617283950617,1,28,0.0634374,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/The_Babys
+St Mary,0.07612456747404844,0,22,0.0527104,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Mary_%28mother_of_Jesus%29
+James,0.07555555555555556,1,16,0.0794269,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/James_%28band%29
+Nottingham,0.07142857142857142,0,14,0.7902,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Nottingham
+father,0.07111111111111111,2,14,0.142605,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Father
+choice,0.06640625,0,17,0.0637319,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Pink_%28singer%29
+euronews,0.0625,2,23,0.9093,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Euronews
+BBC,0.06228373702422145,0,18,0.7984,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC
+British,0.055401662049861494,0,20,0.7282,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/British_Empire
+Princess Diana,0.0546875,0,14,1.28553,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Diana,_Princess_of_Wales
+Royal,0.05333333333333334,1,11,0.241977,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Royal_family
+Louis,0.04844290657439446,0,14,0.6835,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Louis_IV,_Grand_Duke_of_Hesse
+world news,0.045,0,18,0.0251406,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC_World_News
+p.m.,0.04296875,0,11,0.0409706,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/P.M._Dawn
+Edward VIII,0.033950617283950615,0,11,0.8695,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Edward_VIII
+Australia,0.03,0,12,0.8079,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Australia
+Henry,0.027777777777777776,0,9,0.6814,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Henry_II_of_England
+David Cameron,0.0275,0,11,0.917,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/David_Cameron
+le,0.026465028355387523,0,14,0.0068831,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Lake_Elsinore,_California
+Anglesey,0.024691358024691357,0,8,0.8827,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Anglesey
+St. James? Palace,0.022675736961451247,0,10,0.8921,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/St_James's_Palace
+Anne,0.022569444444444444,0,13,0.109536,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Anne,_Princess_Royal
+Camilla Duchess of Cornwall,0.0221606648199446,0,8,1.27272,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Camilla,_Duchess_of_Cornwall
+white,0.021604938271604937,0,7,0.6655,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/White_people
+son,0.020793950850661626,0,11,0.00739383,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Son_River
+card,0.02040816326530612,0,9,0.0175407,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Orson_Scott_Card
+Lacey,0.02040816326530612,0,9,0.0338017,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Ronald_Lacey

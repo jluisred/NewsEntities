@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Tokyo Electric Power Company,1.0,5,352,1.91924,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Tokyo_Electric_Power_Company
+Fukushima Daiichi nuclear disaster,0.782258064516129,3,279,0.9278,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Fukushima_Daiichi_nuclear_disaster
+Japan,0.3521505376344086,1,127,0.8429,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Japan
+Pacific Ocean,0.27419354838709675,1,98,0.8542,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Pacific_Ocean
+plant,0.12903225806451613,5,28,0.158657,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Plant
+Radioactivity,0.11827956989247312,4,28,0.7904,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Radioactive_decay
+USA,0.11021505376344086,0,41,0.7054,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_States
+No. 1,0.09946236559139784,0,37,0.062761,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/1_%28number%29
+Japanese,0.09408602150537634,1,31,0.100238,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Japanese_people
+Nuclear Regulation Authority,0.0913978494623656,0,34,0.9094,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Nuclear_Regulation_Authority
+Barack Obama,0.0913978494623656,0,34,1.06313,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Barack_Obama
+M.,0.08602150537634409,0,32,0.00120228,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Monsieur
+July 27,0.08333333333333333,0,31,0.00392139,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/July_27
+H2O,0.06720430107526881,0,25,0.7994,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Water
+Nuclear Regulatory Commission,0.06451612903225806,0,24,1.66359,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Nuclear_Regulatory_Commission
+T.,0.06451612903225806,0,24,0.00670242,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/T
+Torture,0.06182795698924731,3,11,0.7596,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Torture
+Politics,0.06182795698924731,0,23,0.6887,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Politics
+Steam,0.05913978494623656,2,14,0.7142,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Steam
+Chernobyl disaster,0.05913978494623656,0,22,0.922806,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Chernobyl_disaster
+Earth,0.05913978494623656,0,22,0.7541,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Earth
+BBC News,0.053763440860215055,2,12,0.8198,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC_News
+Fukushima Daiichi Nuclear Power Plant,0.053763440860215055,0,20,0.9015,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Fukushima_Daiichi_Nuclear_Power_Plant
+Radiation,0.051075268817204304,0,19,0.7181,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Radiation
+Officials,0.04838709677419355,2,10,0.0731819,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Official
+H.,0.04838709677419355,0,18,0.0106267,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Tool_%28band%29
+Unit,0.0456989247311828,0,17,0.0168409,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Measurement
+True,0.043010752688172046,0,16,0.7224,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Truth
+Policy,0.04032258064516129,0,15,0.6364,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Policy
+Racism,0.04032258064516129,0,15,0.7633,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Racism
+Drones,0.04032258064516129,0,15,0.698,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Unmanned_aerial_vehicle
+Prime Minister,0.03763440860215054,0,14,0.7916,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Prime_Minister_of_Japan
+Terrorism,0.03763440860215054,0,14,0.7165,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Terrorism
+Tanaka,0.03763440860215054,0,14,0.0677608,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Kakuei_Tanaka
+Masao Yoshida,0.03763440860215054,0,14,0.8768,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Masao_Yoshida_(nuclear_engineer)
+K.,0.03763440860215054,0,14,0.00397415,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Kauffman_Stadium
+concern,0.03494623655913978,2,5,0.0590193,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Concern_Worldwide
+Number three,0.03494623655913978,2,5,0.00404835,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/3_%28number%29
+Tokyo University of Marine Science and Technology,0.03494623655913978,1,9,0.8801,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Tokyo_University_of_Marine_Science_and_Technology
+Liberal Democratic Party,0.03494623655913978,0,13,1.05795,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Liberal_Democratic_Party_(Japan)
+Iran,0.03494623655913978,0,13,0.8755,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Iran
+Disqus,0.03494623655913978,0,13,0.8516,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Disqus
+Bq,0.03494623655913978,0,13,0.829,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Becquerel
+workers,0.03225806451612903,1,8,0.0349929,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Laborer
+March 2011 earthquake,0.03225806451612903,0,12,0.824,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/2011_T%C5%8Dhoku_earthquake_and_tsunami
+NSA,0.03225806451612903,0,12,0.8015,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/National_Security_Agency
+Ichi,0.03225806451612903,0,12,0.0212549,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Ichiro_Suzuki
+Honda,0.03225806451612903,0,12,0.7732,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Honda
+Revolution,0.03225806451612903,0,12,0.6495,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Revolution
+Congress,0.02956989247311828,1,7,0.6882,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_States_Congress

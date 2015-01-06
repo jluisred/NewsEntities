@@ -1,0 +1,1 @@
+[{"label":"Morsi","startChar":0,"endChar":5,"uri":"http://dbpedia.org/resource/Mohamed_Morsi","nerdType":"http://nerd.eurecom.fr/ontology#Person","confidence":0.134139,"relevance":0.5},{"label":"NBC News","startChar":76,"endChar":84,"uri":"http://dbpedia.org/resource/NBC_News","nerdType":"http://nerd.eurecom.fr/ontology#Thing","confidence":0.117147,"relevance":0.5}]

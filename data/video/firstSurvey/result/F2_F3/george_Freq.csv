@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Prince William Duke of Cambridge,0.9727891156462585,2,278,1.69326,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Prince_William,_Duke_of_Cambridge
+Kensington Palace,0.5612244897959183,1,161,1.88036,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Kensington_Palace
+Duchess of Cambridge,0.5476190476190477,2,153,1.29207,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Catherine,_Duchess_of_Cambridge
+The Prince of Wales,0.5,2,139,1.09425,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Charles,_Prince_of_Wales
+King George V,0.43537414965986393,4,112,0.950506,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/George_V
+Elizabeth Alexandra Mary,0.37755102040816324,3,99,2.17699,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Elizabeth_II
+George VI,0.29591836734693877,2,79,0.8524,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/George_VI
+LONDON,0.23469387755102042,0,69,0.7506,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/London
+Alexander the Great,0.22789115646258504,1,63,0.903,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Alexander_the_Great
+His Royal Highness,0.17687074829931973,1,48,0.7745,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Royal_Highness
+Bucklebury,0.1564625850340136,0,46,0.8742,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Bucklebury
+Diana Princess of Wales,0.1564625850340136,0,46,2.08872,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Diana,_Princess_of_Wales
+Lord Mountbatten,0.15306122448979592,2,37,1.23014,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Louis_Mountbatten,_1st_Earl_Mountbatten_of_Burma
+Prince Harry,0.15306122448979592,0,45,1.05097,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Prince_Harry
+Queen Elizabeth II,0.14625850340136054,1,39,1.81634,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Elizabeth_II
+St. Mary?s Hospital Paddington,0.13945578231292516,0,41,0.8053,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/St_Mary's_Hospital,_London
+William Kate,0.11904761904761904,0,35,0.7712,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/William_&_Kate
+England,0.11564625850340136,0,34,0.7904,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Kingdom_of_England
+United Kingdom,0.10204081632653061,1,26,0.7671,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_Kingdom
+Pippa Middleton,0.09863945578231292,0,29,0.9092,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Pippa_Middleton
+Queen Victoria,0.09863945578231292,0,29,0.8962,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Queen_Victoria
+Edward VIII,0.09183673469387756,0,27,1.51563,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Edward_VIII
+Range Rover,0.0782312925170068,1,19,0.8603,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Range_Rover
+Balmoral Castle,0.0782312925170068,1,19,1.34075,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Balmoral_Castle
+Berkshire,0.0782312925170068,0,23,0.8148,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Berkshire
+The Duke of Edinburgh,0.07142857142857142,0,21,1.16786,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Prince_Philip,_Duke_of_Edinburgh
+Duchess of Cambridge,0.06802721088435375,0,20,1.17052,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Catherine,_Duchess_of_Cambridge
+father,0.06462585034013606,2,11,0.142605,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Father
+BBC,0.06462585034013606,0,19,0.7984,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC
+Christening,0.05782312925170068,0,17,0.7514,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Infant_baptism
+British,0.05782312925170068,0,17,0.7282,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/British_Empire
+Scotland,0.05442176870748299,0,16,0.7996,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Scotland
+Irish Republican Army,0.05442176870748299,0,16,0.8471,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Provisional_Irish_Republican_Army
+Twitter,0.05442176870748299,0,16,0.8397,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Twitter
+throne,0.04421768707482993,2,5,0.187312,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Throne
+Nottingham,0.04421768707482993,0,13,0.7902,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Nottingham
+St. James? Palace,0.04421768707482993,0,13,0.8921,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/St_James's_Palace
+Royal Air Force,0.03741496598639456,0,11,0.8964,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Royal_Air_Force
+Sunday Telegraph,0.03741496598639456,0,11,0.8501,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/The_Daily_Telegraph
+Windsor Castle,0.03741496598639456,0,11,1.71976,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Windsor_Castle
+World War II,0.034013605442176874,1,6,0.8605,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/World_War_II
+Bentley,0.034013605442176874,0,10,0.7026,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Bentley
+Daily Mail,0.034013605442176874,0,10,0.873,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Daily_Mail
+British royal family,0.034013605442176874,0,10,1.27866,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/British_Royal_Family
+Princess Margaret,0.030612244897959183,1,5,0.8301,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Princess_Margaret,_Countess_of_Snowdon
+Charles Mosley,0.030612244897959183,0,9,0.6742,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Charles_Mosley_(genealogist)
+Louis,0.030612244897959183,0,9,0.6835,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Louis_IV,_Grand_Duke_of_Hesse
+Sky News,0.030612244897959183,0,9,0.8751,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Sky_News
+speech defect,0.027210884353741496,1,4,0.157649,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Speech_disorder
+Baby,0.027210884353741496,1,4,0.6542,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Infant

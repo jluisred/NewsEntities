@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Tokyo Electric Power Company,1.0,5,346,1.91924,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Tokyo_Electric_Power_Company
+Fukushima Daiichi nuclear disaster,0.7786885245901639,3,273,0.9278,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Fukushima_Daiichi_nuclear_disaster
+Japan,0.319672131147541,1,113,0.8429,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Japan
+Pacific Ocean,0.18579234972677597,1,64,0.8542,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Pacific_Ocean
+plant,0.1092896174863388,5,20,0.158657,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Plant
+Radioactivity,0.10109289617486339,4,21,0.7904,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Radioactive_decay
+Nuclear Regulation Authority,0.09836065573770492,0,36,0.9094,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Nuclear_Regulation_Authority
+Barack Obama,0.07650273224043716,0,28,1.06313,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Barack_Obama
+Reactor,0.06830601092896176,3,13,0.7022,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Nuclear_reactor
+NRA,0.06284153005464481,0,23,0.7105,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/National_Rifle_Association
+Chernobyl disaster,0.060109289617486336,0,22,0.922806,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Chernobyl_disaster
+Steam,0.04918032786885246,2,10,0.7142,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Steam
+Inference,0.04371584699453552,2,8,0.6896,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Inference
+BBC News,0.04371584699453552,2,8,0.8198,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC_News
+Groundwater,0.040983606557377046,0,15,0.7914,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Groundwater
+Japanese government,0.03825136612021858,1,10,0.6091,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Government_of_Japan
+Terrorism,0.03825136612021858,0,14,0.7165,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Terrorism
+Earth,0.03825136612021858,0,14,0.7541,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Earth
+Beta radiation,0.03825136612021858,0,14,0.8129,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Beta_particle
+Drones,0.03551912568306011,0,13,0.698,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Unmanned_aerial_vehicle
+Politics,0.03551912568306011,0,13,0.6887,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Politics
+March 2011 earthquake,0.03278688524590164,0,12,0.824,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/2011_T%C5%8Dhoku_earthquake_and_tsunami
+Liberal Democratic Party,0.03278688524590164,0,12,1.05795,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Liberal_Democratic_Party_(Japan)
+Prime Minister,0.03278688524590164,0,12,0.7916,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Prime_Minister_of_Japan
+Bq,0.03278688524590164,0,12,0.829,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Becquerel
+Congress,0.030054644808743168,1,7,0.6882,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_States_Congress
+Number three,0.030054644808743168,2,3,0.00404835,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/3_%28number%29
+officials,0.030054644808743168,2,3,0.0653932,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Official
+Iran,0.030054644808743168,0,11,0.8755,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Iran
+Germany,0.030054644808743168,0,11,0.7552,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Germany
+Trayvon Martin,0.030054644808743168,0,11,0.8384,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Shooting_of_Trayvon_Martin
+Racism,0.030054644808743168,0,11,0.7633,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Racism
+Disqus,0.030054644808743168,0,11,0.8516,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Disqus
+Masao Yoshida,0.030054644808743168,0,11,0.8768,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Masao_Yoshida_(nuclear_engineer)
+nuclear watchdog,0.0273224043715847,1,6,0.107019,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Anti-nuclear_movement_in_the_United_States
+revelation,0.0273224043715847,1,6,0.0441486,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Book_of_Revelation
+Tokyo University of Marine Science and Technology,0.0273224043715847,1,6,0.8801,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Tokyo_University_of_Marine_Science_and_Technology
+NSA,0.0273224043715847,0,10,0.8015,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/National_Security_Agency
+Bradley Manning,0.0273224043715847,0,10,0.8705,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Chelsea_Manning
+Cesium,0.0273224043715847,0,10,1.03739,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Caesium
+Boron,0.02459016393442623,0,9,0.8093,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Boron
+True,0.02459016393442623,0,9,0.7224,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Truth
+Financial Times Ltd,0.02459016393442623,0,9,0.7959,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Financial_Times
+REUTERS,0.02185792349726776,0,8,0.8246,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Reuters
+Shinzo Abe,0.02185792349726776,0,8,0.941,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Shinz%C5%8D_Abe
+Gitmo,0.02185792349726776,0,8,0.8335,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Guantanamo_Bay_detention_camp
+China,0.02185792349726776,0,8,0.8178,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/China
+Capitalism,0.02185792349726776,0,8,0.8046,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Capitalism
+California,0.02185792349726776,0,8,0.766,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/California
+Regulatory,0.02185792349726776,0,8,0.716,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Regulation
