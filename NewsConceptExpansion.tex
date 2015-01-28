@@ -65,7 +65,7 @@ We have evaluated the approach by comparing our automatic generated context with
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
-The set of entities obtained from a traditional named entity extraction operation is normally insufficient and incomplete for expressing the context of a news event. Sometimes, some entities spotted over a particular document are not disambiguated because the textual clues surrounding the entity are not precise enough for the name entity extractor, while in other cases, they are simply not mentioned in the transcripts while being relevant for understanding the story. This is an inherent problem in information retrieval tasks: a single description about the same resource does not necessarily summarize the whole picture.
+The set of entities obtained from a traditional named entity extraction operation is insufficient and incomplete for expressing the context of a news event. Sometimes, some entities spotted over a particular document are not disambiguated because the textual clues surrounding the entity are not precise enough for the name entity extractor, while in other cases, they are simply not mentioned in the transcripts while being relevant for understanding the story. This is an inherent problem in information retrieval tasks: a single description about the same resource does not necessarily summarize the whole picture.
 
 The named entity expansion operation relies on the idea of retrieving and analyzing additional documents from the Web where the same event is also described. By increasing the size of set of documents to analyse, we increase the completeness of the context and the representativeness of the list of entities, reinforcing relevant entities and finding new ones that are potentially interesting inside the context of that news item.
 
@@ -80,38 +80,32 @@ The named entity expansion operation relies on the idea of retrieving and analyz
 Concerning the multimedia annotation the literature covers a wide range of different analysis techniques~\cite{ballan2011event}. One of the main approaches consists on running Named Entity Recognition (NER) over the textual information attached to particular video fragment. Those techniques are an essential component within the Information Extraction field that focus on: identifying atomic information units in texts, named entities; classifying entities into predefined categories (also called context types) and linking to real world objects using web identifiers (Named Entity Disambiguation). A growing number of APIs provide such a service, like AlchemyAPI\footnote{\fontsize{8pt}{1em}\selectfont \url{http://www.alchemyapi.com/}} or DBpedia Spotlight\footnote{\fontsize{8pt}{1em}\selectfont \url{http://spotlight.dbpedia.org/}}. If the textual information attached to a video contains temporal references (e.g. subtitles), it is possible to align the entities with the time when they appear in the video. In this line, Yunjia et al.~\cite{yunjia2013} have probed that named entity recognition techniques applied on video subtitles can produce good results for video classification. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%  News Concept Expansion Algorithm    %%%
+%%%  News Concept Expansion Algorithm                              %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Generating and Displaying Hot Spots in Web Videos}
+\section{News Concept Expansion Algorithm}
 \label{sec:ConceptExpansion}
 
-\subsection{Query Generation}
-The \emph{Five W's} is a popular concept of information gathering in journalistic reporting. It captures the main aspects of a story: who, when, what, where, and why~\cite{LiJia2007}. We try to represent the news item in terms of four of those five W's (who is involved in the event, where the event is taking place, what the event is about, and when it has happened) in order to generate a query that retrieves documents associated to the same event.
+Brief description about the different steps in the whole process: query formulation, document collection, filtering strategies.
 
-First, the original entities are mapped to the NERD Core ontology, which considers 10 main classes: Thing, Amount, Animal, Event, Function, Organization, Location, Person, Product and Time. From those ten different categories, we generalize to three classes: the Who from \url{nerd:Person} and \url{nerd:Organization}, the Where from \url{nerd:Location}, and the What from the rest of NERD types after discarding \url{nerd:Time} and \url{nerd:Amount}. The When or so-called temporal dimension does not need to be computed since it is considered to be provided by the video publisher.
+\subsection{Query Formulation}
 
-After generating the three sets of entities, the next step consist in ranking them in relevance according to a weighted sum of two different dimensions: their frequency in the transcripts and their former relevance scores coming from the named entity extractors. We have defined the function \emph{filterEntities(S)} for selecting the $n$ entities inside the set of entities $S$ whose relative relevance
+%OLD APPROACH
+%The \emph{Five W's} is a popular concept of information gathering in journalistic reporting. It captures the main aspects of a story: who, when, what, where, and why~\cite{LiJia2007}. We try to represent the news item in terms of four of those five W's (who is involved in the event, where the event is taking place, what the event is about, and when it has happened) in order to generate a query that retrieves documents associated to the same event.
+%First, the original entities are mapped to the NERD Core ontology, which considers 10 main classes: Thing, Amount, Animal, Event, Function, Organization, Location, Person, Product and Time. From those ten different categories, we generalize to three classes: the Who from \url{nerd:Person} and \url{nerd:Organization}, the Where from \url{nerd:Location}, and the What from the rest of NERD types after discarding \url{nerd:Time} and \url{nerd:Amount}. 
 
-\begin{equation}
-R_{rel}\left ( e_{i}, S \right ) = R\left ( e_{i} \right ) / Avg \left ( R\left ( e_{i} \right )  \right )
-\end{equation}
-
-falls into the upper quarter of the interval
+Newscast broadcasters offer a certain amount of metadata about the items they publish, which is normally available together with the audiovisual content itself. In our research, we have considered newscasts come with the following information: the title or header of the newscast, day of publication and transcript of the video (non necessary timed). In conclusion, for each newscast the following triple is needed:
 
 \begin{equation}
-\left [ max\left ( R_{rel}\left ( e_{i}, S \right )  \right ) -min\left (  R_{rel}\left ( e_{i}, S \right ) \right ) \right ]
+\text{Event} =\left [ \text{Title}, Time, \text{Transcript} \right ]
 \end{equation}
 
-The final query is a pair
-
-\begin{equation}
-\text{Query}_{Event} =\left [ \text{textQuery}, t \right ]
-\end{equation}
-
-where \textit{textQuery} is the result of concatenating the labels of the most relevant entities in the sets Who, What, Where in that particular order, and $t$ the time period dimension. This query generation is depicted in the upper part of Figure~\ref{fig:namedEntityExpansion}.
+Those different fields are taken from the video publisher and directly used as input for the rest of the expansion workflow without any pre-processing.
 
 \subsection{Document Retrieval}
-Once $\text{Query}_{Event}$ is built out of the original set of named entities, it will be ready to be injected into a document search engine where additional descriptions about the news event can be found. In this situation, the kind of query generated in the previous step and the search engine chosen should be closely tied in order to maximize the quality of the obtained results. The different behavior of search engines make some alternatives more suitable than others for certain kinds of events. The way the resulting documents change in the search engines for a particular kind of event is a research question that will not be studied in this paper.
+
+Once $\text{Query}_{Event}$ is built 
+
+out of the original set of named entities, it will be ready to be injected into a document search engine where additional descriptions about the news event can be found. In this situation, the kind of query generated in the previous step and the search engine chosen should be closely tied in order to maximize the quality of the obtained results. The different behavior of search engines make some alternatives more suitable than others for certain kinds of events. The way the resulting documents change in the search engines for a particular kind of event is a research question that will not be studied in this paper.
 
 In this paper, we rely on the Google Search REST API service\footnote{\fontsize{8pt}{1em}\selectfont  \url{http://ajax.googleapis.com/ajax/services/search/web?v=1.0}} by launching a query with the text \textit{textQuery}. Due to quota restrictions imposed by Google, the maximum number of retrieved document is set to 30. However, as shown in the evaluation described in the Section~\ref{sec:evaluation}, this is enough for significantly extending the initial set of entities directly spotted by NERD.
 
@@ -135,12 +129,20 @@ In order to calculate the frequency of a particular resource within the entire c
 Non ranked list of concepts at the end of this phase.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%  Ranking and Filtering Concepts from Expansion   %%%
+%%%  Filtering Concepts from Expansion   %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Ranking and Filtering Concepts from Expansion}
-\label{sec:Ranking}
+\section{Filtering Concepts from Expansion}
+\label{sec:Filtering}
 
 The unordered set of entities has to be ranked for (1) propose prominent concepts to the viewer (2) get rid of the long queue of entities and noise produced by during the expansion process.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  Ranking Concepts from Expansion   %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Ranking Concepts from Expansion}
+\label{sec:Ranking}
+
 
 \subsection{Frequency-based Ranking}
 
@@ -148,18 +150,12 @@ The unordered set of entities has to be ranked for (1) propose prominent concept
 
 \subsection{Ranking based on Popularity}
 
-\subsection{Ranking based DBpedia clues}
-(Presented in SNOW 2014)
-
 \subsection{Rules based re-ranking}
 Based in the conclusions from Lilia's report. In her study, Lilia has indicated how certain NERD types are preferred by users:
 - Most of the Organizations were interesting (figures in Excel file)
 - Persons 
 - Normally less interested in Places and other NERD categories.
 
-\subsection{Deciding on the Best Ranking Approach}
-\label{sec:decidingRanking}
-Introduce Lilia's dataset, 5 videos, expert involved. We are going to use this dataset for selecting wich is the most appropriate ranking algorithm
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%  4. EVALUATION  %%%
@@ -167,6 +163,13 @@ Introduce Lilia's dataset, 5 videos, expert involved. We are going to use this d
 
 \section{Evaluation}
 \label{sec:Evaluation}
+
+
+\subsection{Deciding on the Best Ranking Approach}
+\label{sec:decidingRanking}
+Introduce Lilia's dataset, 5 videos, expert involved. We are going to use this dataset for selecting wich is the most appropriate ranking algorithm
+
+
 
 \subsection{Dataset for evaluation}
 Building the ground truth. Survey on 15 videos from the BBC about international facts. Evaluated over people in different countries.
@@ -178,7 +181,7 @@ Building the ground truth. Survey on 15 videos from the BBC about international 
 \subsection{Effectiveness of the approach}
  
 Measurements in terms of Recall and Precision, at 7 (average number of results selected as relevant by the users)
- (No hay relaci�n directa entre el numero de entidades seleccionadas. Se coge por tanto la media.)
+ (No hay relacionn directa entre el numero de entidades seleccionadas. Se coge por tanto la media.)
  
 In the evaluation we will focus in the highly ranked relevant documents. Similar to Web search engines, we will apply an evaluation measure which will try to find as many relevant documents as possible, while still keeping the  premise that the top ranked documents are the most important. We will not perform measures in terms of efficiency. Even this kind of study is easier to quantify (most of the time it can be measured automatically with a timer instead of with costly relevance judgments) this falls outside the scope of this paper. 
 
