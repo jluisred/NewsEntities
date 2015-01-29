@@ -96,38 +96,39 @@ Brief description about the different steps in the whole process: query formulat
 Newscast broadcasters offer a certain amount of metadata about the items they publish, which is normally available together with the audiovisual content itself. In our research, we have considered newscasts come with the following information: the title or header of the newscast, day of publication and transcript of the video (non necessary timed). In conclusion, for each newscast the following triple is needed:
 
 \begin{equation}
-\text{Event} =\left [ \text{Title}, Time, \text{Transcript} \right ]
+\text{Event} =\left [ \text{Title}, \text{PublishingDate}, \text{Transcript} \right ]
 \end{equation}
 
 Those different fields are taken from the video publisher and directly used as input for the rest of the expansion workflow without any pre-processing.
 
 \subsection{Document Retrieval}
 
-The quality of this steps is basinal.
-Reach the limit of the property.
-Emulates what a normal guy does but going further in the number of documents we can process.
+The first step consist in retrieving documents that report on the same event discussed in the original video. This phase in the expansion process has an key role in the upcoming filtering and ranking steps, cause it sets the basic where the rest of the algorithms will leverage on. The quality and adequacy of the collected documents sets a theoretical limit on how good the better this process is done. The more appropiate the collection of related document is, the better the final results will be.
 
-The first step consist in building an adequate query to be will be injected into a document search engine where additional descriptions about the news event can be found. In our case, this query will have the following form:
+To some extent the retrieval phase emulates what a viewer missing some details about the news he is watching would do: going to the Web, make a search and get the most of the top ranked documents. Our programatic approach tries to compete with this human driven task by analyzing a much bigger set of related documents in a drastically smaller amount of time. From an engineering point of view, this step consist in building a query and injecting it into a document search engine where additional descriptions about the news event can be found. This query has the following form:
  
 \begin{equation}
 \text{Query}_{Event} =\left [ \text{Text}, Time_{Window} \right ]
 \end{equation}
 
-The different behavior of search engines make some alternatives more suitable than others for certain kinds of events. The way the resulting documents change in the search engines for a particular kind of event is a research question that will not be studied in this paper. In this regard, we have relied on the Google Custom Search Engine API service\footnote{\fontsize{8pt}{1em}\selectfont  \url{https://www.google.com/cse/all}} by launching a query with the parameters specified in $\text{Query}_{Event}$. 
+Where $\text{Text}=\text{Title}$ and $Time_{Window}$ is a temporal frame containing $\text{PublishingDate}$. The middle part of Figure~\ref{fig:namedEntityExpansion} shows this process. Those documents (colored in black in the Figure~\ref{fig:namedEntityExpansion}) will be further processed to get additional insights about the news item in the form of relevant named entities.
 
-Due to quota restrictions imposed by Google, the maximum number of retrieved document is set to 30. However, as shown in the evaluation described in the Section~\ref{sec:evaluation}, this is enough for significantly extending the initial set of .
+The different behavior of search engines make some alternatives more suitable than others for certain kinds of events. The way the resulting documents change in the search engines for a particular kind of event is a research question that will not be studied in this paper. In this regard, we have relied on the Google Custom Search Engine API service\footnote{\fontsize{8pt}{1em}\selectfont  \url{https://www.google.com/cse/all}} by launching a query with the parameters specified in $\text{Query}_{Event}$. Apart of the query itself, the CSE engine considers other parameters that need to be tuned up. First, due to quota restrictions the maximum number of retrieved document is set to 50. As shown in the evaluation described in the Section~\ref{sec:evaluation}, this is enough for significantly extending the initial set of documents. But addition, we have also considered 3 different dimensions that could potentially influence the effectiveness in retrieving related documents:
 
-Concerning the temporal dimension, we only keep the documents published in the time period $t+t_{e}$. We increase the original event period in $t_{e}$ because documents concerning a news event are not always published during the time of the action is taking place but some hours or days after. The value of $t_{e}$ depends on many factors such as the nature of the event itself (whether it is a brief appearance in a media, or part of a longer story with more repercussion) or the kind of documents the search engine is indexing (from very deep and elaborated documents that need time to be published, to short post quickly generated by users). Based on the simple assumption that that the longer is an event, and the longer it is likely to generate buzzes, we approximated  $t_{e} = t$ which means that we also consider document published during the course of an event.
+1) Web sites to be crawled. Google allows to specify a list of web domains and subdomains where documents can be retrieved from. This reduces the scope of the search task and, depending on the characteristics of the considered sources, influence the nature of the retrieved items: from big online newspapers to user generated content. At the same time, google allows to prioritize searching over those whitelists while still considering the  whole indexed Web. Based on this, in our study we considered five possible values for this parameter:
+a) AllGoogle: search over the whole set of Web pages indexed by Google.
+b) Newspaper whitelist. A set of 10 internationals English speaking newspapers chosen from \footnote{\fontsize{8pt}{1em}\selectfont  \url{ http://en.wikipedia.org/wiki/List_of_newspapers_in_the_world_by_circulation}}  
+c) Lilia's whitelist. A set of 3 international newspapers used in [Lilia] while building the ground truth used in Section~\ref{sec:evaluation}.
+d) Newspaper whiteList + Google. Prioritize content in Newspaper whitelist but still consider other sites.
+e) Lilia's whitelist + AllGoogle: Prioritize content in Lilia's whitelist but still consider other sites.
 
+2) Temporal dimension. This variable allows to keep only those documents which are temporally close from the day where the newscast was published. Assuming that the news item is fresh enough, this date of publication will also be close to the day the even depicted actually took place. Taking that date and extending the  $t+t_{e}$. The reason why we expand the original event period is because documents concerning a news event are not always published during the time of the action is taking place but some hours or days after or before. The value of $w$ depends on many factors such as the nature of the event itself (whether it is a brief appearance in a media, or part of a longer story with more repercussion) or the kind of documents the search engine is indexing (from very deep and elaborated documents that need time to be published, to short post quickly generated by users). In this study we have considered two possible values for this dimension: 2 weeks and one week temporal window.
 
-Dimensions:
-1) Considered Web sites: 5 values: [AllGoogle, WhiteList, LiliasList, WhiteList\_AllGoogle, LiliasList\_AllGoogle]
-2) Temporal dimension: 2 values: [2Weeks(default), 1Week]
-3) Schema.org types: 2 values: [NoFilter(Default), Person\&OrganizationFiltered]
+3) In addition, Google Custom Search Engine makes possible to filter result according to the Schema.org types: 2 values: . Based on the study. 
+[NoFilter(Default), Person\&OrganizationFiltered]
 
-That makes 5 * 2 * 2 = 20 different runs. So far, we had 6 runs collected and annotated. Results will be show in evaluation.
+That makes $5 * 2 * 2 = 20$ different runs. We haver run experiments in order to see which configuration optimizes the expansion algorithm.
 
-The middle part of Figure~\ref{fig:namedEntityExpansion} shows this process. The query is input in the search engine in order to retrieve other documents that report on the same event discussed in the original video. Those documents (colored in black in the Figure~\ref{fig:namedEntityExpansion}) will be further processed to get additional insights about the news item in the form of relevant named entities.
 
 \begin{figure}[h!]
 \centering
@@ -136,13 +137,6 @@ The middle part of Figure~\ref{fig:namedEntityExpansion} shows this process. The
 \label{fig:namedEntityExpansion}%\end{figure}
 \end{figure}
 
-\subsection{Entity Clustering}
-In this phase, the additional documents which have just been retrieved are now processed and analyzed in order to extend and re-rank the original set of entities and consequently get a better insight about the event. Since most of the resources retrieved are Web pages, HTML tags and other annotations are removed, keeping only the main textual information. This plain text is then analyzed by the NERD framework in order to extract more named entities.
-
-In order to calculate the frequency of a particular resource within the entire corpora, we group the different appearances of the same instance and check their cardinality. This is not a trivial task since the same entity can appear under different text labels, contain typos or have different disambiguation URL's pointing to the same resource. We performed a centroid-based clustering operation over the instances of the entities. We considered the centroid of a cluster as the entity with the most frequent disambiguation URL's that also have the most repeated labels. As distance metric for comparing pairs of entities, we applied strict string similarity over the URL's, and in case of mismatch, the Jaro-Winkler string distance~\cite{winkler2006overview} over the labels. The output of this phase is a list of clusters containing different instances of the same entity.
-
-\subsection{Results}
-Non ranked list of concepts at the end of this phase.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%  Document Annotation                                                     %%%
@@ -164,26 +158,55 @@ Measures
 Combination of different ranking strategies
 
 
+As you probably saw in the first round of results, there were many non-pure Named Entities which were not considered on Lilia’s survey and therefore don't appear in the GT. Those concepts were dropping the scores to a shameful 0.035 average NDCG for the TFIDF strategy, the most affected one.
+
+Yesterday I worked with Giuseppe on a plan to filter out those entities. We foresaw three different filtering approaches for getting rid of those undesired NEs:
+- F1 (Filter by type). Keeping only nerd:Person, nerd:Location, and nerd:Organization entities.
+- F2 (Filter by confidence). Drop entities with confidence score under e.g. first quarter of the distribution
+- F3 (Filter instances ) Proper names are normally uppercased, keep only those.
+
+I executed different runs by applying those filters over the original annotations (and their corresponding combinations, named: [F1 - F2 - F3 - F1_F2 - F1_F3 - F2_F3 - F1_F2_F3] ). You can find in the repository:
+
+New Annotations: https://github.com/jluisred/NewsConceptExpansion/tree/master/data/video/firstSurvey/annotationsSecondPhase
+Results: https://github.com/jluisred/NewsConceptExpansion/tree/master/data/video/firstSurvey/result 
+Updated scores: https://github.com/jluisred/NewsConceptExpansion/tree/master/data/video/firstSurvey/evaluation 
+
+
+Just created an excel which summarizes the new results in terms of NDCG. Improvements in precision at 10,  recall at 10 and average precision are even more evident.  https://github.com/jluisred/NewsConceptExpansion/blob/master/data/video/firstSurvey/evaluation/Filters_NDCG.csv . Some quick outcomes: 
+
+1) The problem with non strict Named Entities in TFIDF strategy is clearly alleviated for all filters/Combinations. TF strategy has generally improved as well, but in a lower scale. 
+2) The TF strategy performs better than the current implementation of TFIDF in ALL cases.
+3) Best Filter for TF strategy is F3 (0.523665971)
+4) Best Filter for TFIDF strategy is the combination F1_F3 
+5) I combined the results for both strategies via a) simple multiplication and b) their average value, see rows 4th and 5th. In both cases, the combination F1_F3 seems to perform the best.
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%  Ranking Concepts from Expansion   %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Ranking Concepts from Expansion}
 \label{sec:Ranking}
 
+\subsubsection{Entity Clustering}
+In this phase, the additional documents which have just been retrieved are now processed and analyzed in order to extend and re-rank the original set of entities and consequently get a better insight about the event. Since most of the resources retrieved are Web pages, HTML tags and other annotations are removed, keeping only the main textual information. This plain text is then analyzed by the NERD framework in order to extract more named entities.
+
+In order to calculate the frequency of a particular resource within the entire corpora, we group the different appearances of the same instance and check their cardinality. This is not a trivial task since the same entity can appear under different text labels, contain typos or have different disambiguation URL's pointing to the same resource. We performed a centroid-based clustering operation over the instances of the entities. We considered the centroid of a cluster as the entity with the most frequent disambiguation URL's that also have the most repeated labels. As distance metric for comparing pairs of entities, we applied strict string similarity over the URL's, and in case of mismatch, the Jaro-Winkler string distance~\cite{winkler2006overview} over the labels. The output of this phase is a list of clusters containing different instances of the same entity.
+
 The unordered but filtered set of entities has to be ranked for (1) propose prominent concepts to the viewer (2) get rid of the long queue of entities and noise produced by during the expansion process.
 
-\subsection{Frequency-based Ranking}
+\subsubsection{Frequency-based Ranking}
 
-\subsection{Pure TF-IDF  Ranking}
+\subsubsection{Pure TF-IDF  Ranking}
 
-\subsection{Normal distribution}
+\subsubsection{Normal distribution}
 
-\subsection{Ranking based on Popularity}
+\subsubsection{Ranking based on Popularity}
 Laura Poitras
 Booz Allen
 
 
-\subsection{Rules based re-ranking}
+\subsubsection{Rules based re-ranking}
 Based in the conclusions from Lilia's report. In her study, Lilia has indicated how certain NERD types are preferred by users:
 - Most of the Organizations were interesting (figures in Excel file)
 - Persons 
