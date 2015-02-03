@@ -51,7 +51,7 @@ CWI, Amsterdam, The Netherlands, \\
 
 \begin{abstract}
 
-We live in a complex world, were the amount of information needed for understanding recent facts is getting bigger and bigger. Relying on subtitles to extract named entities is a common method for annotating an complementing what a video is talking about. However previous studies on this area [Lilia] have revealed that, particularly in the context of international news, this approach has multiple limitations and what is being explicitly said in a particular news document is insufficient for reconstructing the whole context of the event being told. 
+We live in a increasingly complex world, were the amount of background information needed for understanding recent facts is getting bigger and bigger. Relying on subtitles to extract named entities is a common method for annotating an complementing what a video is talking about. However previous studies on this area [Lilia] have revealed that, particularly in the context of international news, this approach has multiple limitations and what is being explicitly said in a particular news document is insufficient for reconstructing the whole context of the event being told. 
 
 In this paper we probe that by leveraging in Semantic Web techniques and the power of non-structured documents we can automatically generate news annotations which are in line with the ones that viewers in general and experts in the domain in particular expect to find. The result of this approach is list of concepts ranked by relevance, which can be used to be displayed on a device o derive further enrichments. We have evaluated the approach by comparing our automatic generated annotations with the ones expected by the viewers over a set of BBC news items.
 
@@ -63,6 +63,9 @@ In this paper we probe that by leveraging in Semantic Web techniques and the pow
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
+
+%TODO: Raphael, Michiel, to recheck and further polish research problem + hypothesis. 
+
 The set of entities obtained from a traditional named entity extraction operation is insufficient and incomplete for expressing the context of a news event. Sometimes, some entities spotted over a particular document are not disambiguated because the textual clues surrounding the entity are not precise enough for the name entity extractor, while in other cases, they are simply not mentioned in the transcripts while being relevant for understanding the story. This is an inherent problem in information retrieval tasks: a single description about the same resource does not necessarily summarize the whole picture.
 
 The named entity expansion operation relies on the idea of retrieving and analyzing additional documents from the Web where the same event is also described. By increasing the size of set of documents to analyse, we increase the completeness of the context and the representativeness of the list of entities, reinforcing relevant entities and finding new ones that are potentially interesting inside the context of that news item.
@@ -170,6 +173,7 @@ That makes $5 * 2 * 2 = 20$ different runs that we will study in the Section~\re
 
 Since most of the resources retrieved are Web pages, HTML tags and other annotations are removed, keeping only the main textual information. This plain text is then analyzed by the NERD framework in order to extract more named entities.
 
+%TODO: Giuseppe, write down annotation approach by NERD.
 - NERD ML 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -237,14 +241,11 @@ Introduction
 \subsection{Setting up the Experiment}
 \label{sec:settingUp}
 
-Building the ground truth. Survey on 15 videos from the BBC about international facts. Evaluated over people in different countries.
+%TODO: Lilia, write down summary about how the ground truth was created. (More details below)
 
-* Explain the form: show automatically generated concepts + empty fields for suggesting possible missing entities.
-
-* Show the results of the survey.
-
-* Normalize GT
-** How external items are measured.
+* Explain the steps: subtitles + manual search + manual  entity annotation....:
+* Explain insights obtained from the survey. \% of entities coming from subtitles, form other sources, etc
+* Score generation, normalize GT scores
 
 \subsection{Measures}
  
@@ -252,6 +253,7 @@ Measurements in terms of Recall and Precision, at 7 (average number of results s
 However those measures do not distinguish between differences in the rankings at positions 1 to p, which may be considered important for some tasks. For example, the two rankings in Figure 8.2 will be the same when measured using precision at 10. 
  
 This is why  the evaluation we will focus in the highly ranked relevant documents. Similar to Web search engines, we will apply an evaluation measure which will try to find as many relevant documents as possible, while still keeping the  premise that the top ranked documents are the most important. We will not perform measures in terms of efficiency. Even this kind of study is easier to quantify (most of the time it can be measured automatically with a timer instead of with costly relevance judgments) this falls outside the scope of this paper. 
+** How external items are measured.
 
 Those are the key efficiency measurements we would like to perform, 
 
@@ -309,6 +311,7 @@ We presented an approach for context-aware annotating news events, designed to p
 The evaluation indicates that we can successfully expand the initial set of recognized entities with more relevant concepts not detected by pure named entity recognition approaches and produce a more accurate ranking of important concepts that brings forward entities which user are more interested about.
 
 Future: tailor ranking to particular types of news: sport, politics, regional, international, opinion, etc.
+Survey on 15 videos from the BBC about international facts. Evaluated over people in different countries.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%  Acknowledgments  %%%
