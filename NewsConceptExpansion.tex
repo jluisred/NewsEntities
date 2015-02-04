@@ -1,6 +1,6 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%  Augmenting TV Newscasts via Entity Expansion  %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  Exploring the Semantic Context of News Events  %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass{llncs}
 
@@ -18,15 +18,18 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[font=small,labelfont=bf]{caption}
-\setcounter{MaxMatrixCols}{20}
 \usepackage{pbox}
 \usepackage{amsfonts}
 
+\setcounter{MaxMatrixCols}{20}
 
 % listing styles
 \lstset{numbers=left, numberstyle=\tiny,basicstyle=\ttfamily\scriptsize, tabsize=2, keywordstyle=\underbar, stringstyle=\small, backgroundcolor=\color[gray]{0.94}, framexleftmargin=2pt}
 \lstdefinestyle{rdfa}{numberblanklines=true, morekeywords={}}
 
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  Begin Document  %%%
+%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 \frontmatter          % for the preliminaries
@@ -42,7 +45,6 @@ CWI, Amsterdam, The Netherlands, \\
 \email{\{M.Hildebrand, L.Perez\}@cwi.nl}
 }
 
-
 \maketitle              % typeset the title of the contribution
 
 %%%%%%%%%%%%%%%%%%
@@ -50,12 +52,13 @@ CWI, Amsterdam, The Netherlands, \\
 %%%%%%%%%%%%%%%%%%
 
 \begin{abstract}
+With the emergence of both citizen-based and social media, traditional medias have to fundamentally re-think their production and distribution workflow processes. In addition, traditional text-based products are losing market share for other media products, in particular video. At the same time, users have access to multiple news portals, which provide online access to different sources and services for commenting and debating on the news, and use social media to instantaneously spread news information. This results in large amounts of unreliable and repeated information, leaving the user exploring on their own to try to build their own version of a news event from large amounts of potentially related information, or simply to find the truth in the middle of an ocean of rumors or hoaxes.
 
-We live in a increasingly complex world, were the amount of background information needed for understanding recent facts is getting bigger and bigger. Relying on subtitles to extract named entities is a common method for annotating an complementing what a video is talking about. However previous studies on this area [Lilia] have revealed that, particularly in the context of international news, this approach has multiple limitations and what is being explicitly said in a particular news document is insufficient for reconstructing the whole context of the event being told. 
+In the context of news broadcasting (newscasts), a recent trend consists in developing second screen applications that enable the user to dive further and improve his understanding of some particular news items. The making of such applications requires semantic annotation of the original newscast as well as semantic enrichment for including background knowledge. Relying on video subtitles for providing time-based annotations of video content is a common method. However, it is insufficient to fully grasp the context of the news event being reported, simply because daily news reporting emphasizes on the last facts rather than on the narrative and causes of the event.
 
-In this paper we probe that by leveraging in Semantic Web techniques and the analysis of non-structured documents we can automatically generate news annotations which are in line with what viewers in general and experts in the domain in particular expect to find. The result of this approach is list of concepts ranked by relevance, which can be used to be displayed on a device o derive further content enrichments. We have evaluated the approach by comparing our automatic generated annotations with the ones expected by the viewers over a set of pre-selected BBC news items.
+In this paper, we propose a method that enables to search for and to analyze related documents in order to generate semantic annotations that are closer to what viewers in general, and experts in particular, expect to accurately reflect what a newscast is about. This approach generates a ranked list of entities that can be further used to populate a second screen application or to generate new enrichments. We evaluate this method with respect to a ground truth annotations made by experts for a set of BBC newscasts.
 
-\keywords{Semantic Video Annotation, Media Fragments, Summarization}
+\keywords{Semantic Video Annotation, Entity Expansion, Second Screen Application, Newscasts}
 \end{abstract}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -63,14 +66,13 @@ In this paper we probe that by leveraging in Semantic Web techniques and the ana
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
-
-%TODO: Raphael, Michiel, to recheck and further polish research problem + hypothesis. 
-
+\label{sec:introduction}
+%TODO: Raphael, Michiel, to recheck and further polish research problem + hypothesis.
 The set of entities obtained from a traditional named entity extraction operation is insufficient and incomplete for expressing the context of a news event. Sometimes, some entities spotted over a particular document are not disambiguated because the textual clues surrounding the entity are not precise enough for the name entity extractor, while in other cases, they are simply not mentioned in the transcripts while being relevant for understanding the story. This is an inherent problem in information retrieval tasks: a single description about the same resource does not necessarily summarize the whole picture.
 
-The named entity expansion operation relies on the idea of retrieving and analyzing additional documents from the Web where the same event is also described. By increasing the size of set of documents to analyse, we increase the completeness of the context and the representativeness of the list of entities, reinforcing relevant entities and finding new ones that are potentially interesting inside the context of that news item.
+The named entity expansion operation relies on the idea of retrieving and analyzing additional documents from the Web where the same event is also described. By increasing the size of set of documents to analyze, we increase the completeness of the context and the representativeness of the list of entities, reinforcing relevant entities and finding new ones that are potentially interesting inside the context of that news item.
 
-* Demo in ESWC, 
+* Demo in ESWC,
 \url{http://2014.eswc-conferences.org/sites/default/files/eswc2014pd_submission_78.pdf}
 
 * Paper in SNOW. Former entity expansion algorithm, refining based on DBPedia clues.
@@ -83,7 +85,7 @@ The named entity expansion operation relies on the idea of retrieving and analyz
 \url{http://dl.acm.org/citation.cfm?id=2145595}
 \url{http://tomayac.com/papers/adding_meaning_to_social_network_microposts.pdf}
 
-* Entity Expansion 
+* Entity Expansion
 \url{http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5681606}
 \url{http://www.cs.cmu.edu/~./wcohen/postscript/icdm-2007.pdf}
 \url{http://www.cs.cmu.edu/~./wcohen/postscript/icdm-2008-iseal.pdf}
@@ -101,21 +103,20 @@ Uses wikipedia documents and categories. Our approach uses documents which are r
 
 % State of the Art on Semantic annotation
 * State of the Art on Semantic annotation.
-Concerning the multimedia annotation the literature covers a wide range of different analysis techniques~\cite{ballan2011event}. One of the main approaches consists on running Named Entity Recognition (NER) over the textual information attached to particular video fragment. Those techniques are an essential component within the Information Extraction field that focus on: identifying atomic information units in texts, named entities; classifying entities into predefined categories (also called context types) and linking to real world objects using web identifiers (Named Entity Disambiguation). A growing number of APIs provide such a service, like AlchemyAPI\footnote{\fontsize{8pt}{1em}\selectfont \url{http://www.alchemyapi.com/}} or DBpedia Spotlight\footnote{\fontsize{8pt}{1em}\selectfont \url{http://spotlight.dbpedia.org/}}. If the textual information attached to a video contains temporal references (e.g. subtitles), it is possible to align the entities with the time when they appear in the video. In this line, Yunjia et al.~\cite{yunjia2013} have probed that named entity recognition techniques applied on video subtitles can produce good results for video classification. 
+Concerning the multimedia annotation the literature covers a wide range of different analysis techniques~\cite{ballan2011event}. One of the main approaches consists on running Named Entity Recognition (NER) over the textual information attached to particular video fragment. Those techniques are an essential component within the Information Extraction field that focus on: identifying atomic information units in texts, named entities; classifying entities into predefined categories (also called context types) and linking to real world objects using web identifiers (Named Entity Disambiguation). A growing number of APIs provide such a service, like AlchemyAPI\footnote{\fontsize{8pt}{1em}\selectfont \url{http://www.alchemyapi.com/}} or DBpedia Spotlight\footnote{\fontsize{8pt}{1em}\selectfont \url{http://spotlight.dbpedia.org/}}. If the textual information attached to a video contains temporal references (e.g. subtitles), it is possible to align the entities with the time when they appear in the video. In this line, Yunjia et al.~\cite{yunjia2013} have probed that named entity recognition techniques applied on video subtitles can produce good results for video classification.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%  News Concept Expansion Algorithm                              %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  2. News Concept Expansion Algorithm  %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{News Concept Expansion Algorithm}
 \label{sec:ConceptExpansion}
-
 Brief description about the different steps in the whole process: query formulation, document collection, filtering strategies.
 
 \subsection{Newscast Metadata}
-
 %OLD APPROACH
 %The \emph{Five W's} is a popular concept of information gathering in journalistic reporting. It captures the main aspects of a story: who, when, what, where, and why~\cite{LiJia2007}. We try to represent the news item in terms of four of those five W's (who is involved in the event, where the event is taking place, what the event is about, and when it has happened) in order to generate a query that retrieves documents associated to the same event.
-%First, the original entities are mapped to the NERD Core ontology, which considers 10 main classes: Thing, Amount, Animal, Event, Function, Organization, Location, Person, Product and Time. From those ten different categories, we generalize to three classes: the Who from \url{nerd:Person} and \url{nerd:Organization}, the Where from \url{nerd:Location}, and the What from the rest of NERD types after discarding \url{nerd:Time} and \url{nerd:Amount}. 
+%First, the original entities are mapped to the NERD Core ontology, which considers 10 main classes: Thing, Amount, Animal, Event, Function, Organization, Location, Person, Product and Time. From those ten different categories, we generalize to three classes: the Who from \url{nerd:Person} and \url{nerd:Organization}, the Where from \url{nerd:Location}, and the What from the rest of NERD types after discarding \url{nerd:Time} and \url{nerd:Amount}.
 
 Newscast broadcasters offer a certain amount of metadata about the items they publish, which is normally available together with the audiovisual content itself. In our research, we have considered newscasts come with the following information: the title or header of the newscast, day of publication and transcript of the video (non necessary timed). In conclusion, for each newscast the following triple is needed:
 
@@ -126,11 +127,10 @@ Newscast broadcasters offer a certain amount of metadata about the items they pu
 Those different fields are taken from the video publisher and directly used as input for the rest of the expansion workflow without any pre-processing.
 
 \subsection{Document Retrieval}
+The first step consist in retrieving documents that report on the same event discussed in the original video. This phase in the expansion process has an key role in the upcoming filtering and ranking steps, cause it sets the basic where the rest of the algorithms will leverage on. The quality and adequacy of the collected documents sets a theoretical limit on how good the better this process is done. The more appropriate the collection of related document is, the better the final results will be.
 
-The first step consist in retrieving documents that report on the same event discussed in the original video. This phase in the expansion process has an key role in the upcoming filtering and ranking steps, cause it sets the basic where the rest of the algorithms will leverage on. The quality and adequacy of the collected documents sets a theoretical limit on how good the better this process is done. The more appropiate the collection of related document is, the better the final results will be.
+To some extent the retrieval phase emulates what a viewer missing some details about the news he is watching would do: going to the Web, make a search and get the most of the top ranked documents. Our programmatic approach tries to compete with this human driven task by analyzing a much bigger set of related documents in a drastically smaller amount of time. From an engineering point of view, this step consist in building a query and injecting it into a document search engine where additional descriptions about the news event can be found. This query has the following form:
 
-To some extent the retrieval phase emulates what a viewer missing some details about the news he is watching would do: going to the Web, make a search and get the most of the top ranked documents. Our programatic approach tries to compete with this human driven task by analyzing a much bigger set of related documents in a drastically smaller amount of time. From an engineering point of view, this step consist in building a query and injecting it into a document search engine where additional descriptions about the news event can be found. This query has the following form:
- 
 \begin{equation}
 \text{Query}_{Event} =\left [ \text{Text}, Time_{Window} \right ]
 \end{equation}
@@ -140,22 +140,20 @@ Where $\text{Text}=\text{Title}$ and $Time_{Window}$ is a temporal frame contain
 The different behavior of search engines make some alternatives more suitable than others for certain kinds of events. The way the resulting documents change in the search engines for a particular kind of event is a research question that will not be studied in this paper. In this regard, we have relied on the Google Custom Search Engine API service\footnote{\fontsize{8pt}{1em}\selectfont  \url{https://www.google.com/cse/all}} by launching a query with the parameters specified in $\text{Query}_{Event}$. Apart of the query itself, the CSE engine considers other parameters that need to be tuned up. First, due to quota restrictions the maximum number of retrieved document is set to 50. As shown in the evaluation described in the Section~\ref{sec:evaluation}, this is enough for significantly extending the initial set of documents. But addition, we have also considered 3 different dimensions that could potentially influence the effectiveness in retrieving related documents:
 
 \begin{enumerate}
-\item Web sites to be crawled. Google allows to specify a list of web domains and subdomains where documents can be retrieved from. This reduces the scope of the search task and, depending on the characteristics of the considered sources, influence the nature of the retrieved items: from big online newspapers to user generated content. At the same time, google allows to prioritize searching over those whitelists while still considering the  whole indexed Web. Based on this, in our study we considered five possible values for this parameter:
+ \item Web sites to be crawled. Google allows to specify a list of web domains and subdomains where documents can be retrieved from. This reduces the scope of the search task and, depending on the characteristics of the considered sources, influence the nature of the retrieved items: from big online newspapers to user generated content. At the same time, Google allows to prioritize searching over those whitelists while still considering the  whole indexed Web. Based on this, in our study we considered five possible values for this parameter:
 a) AllGoogle: search over the whole set of Web pages indexed by Google.
  \begin{itemize}
- \item Newspaper whitelist. A set of 10 internationals English speaking newspapers chosen from \footnote{\fontsize{8pt}{1em}\selectfont  \url{ http://en.wikipedia.org/wiki/List_of_newspapers_in_the_world_by_circulation}}  
- \item Lilia's whitelist. A set of 3 international newspapers used in [Lilia] while building the ground truth used in Section~\ref{sec:evaluation}.
- \item Newspaper whiteList + Google. Prioritize content in Newspaper whitelist but still consider other sites.
- \item Lilia's whitelist + AllGoogle: Prioritize content in Lilia's whitelist but still consider other sites.
-\end{itemize}
-\item Temporal dimension. This variable allows to filter those documents which are not temporarily close from the day where the newscast was published. Assuming that the news item is fresh enough, this date of publication will also be fairly close to the day the event  took place. Taking $\text{PublishingDate}$ as a reference and increasing the window in a certain amount of days $d$,  we end up having $Time_{Window}=\left [ \text{PublishingDate}-d, \text{PublishingDate}+d \right ]$ The reason why we expand the original event period is because documents concerning a news event are not always published during the time of the action is taking place but some hours or days after or before. The final $Time_{Window}$ could vary according to many factors such as the nature of the event itself (whether it is a brief appearance in a media, or part of a longer story with more repercussion) or the kind of documents the search engine is indexing (from very deep and elaborated documents that need time to be published, to short post quickly generated by users). In this study we have considered two possible values for it: 2 weeks and one week temporal windows.
-
-\item In addition, Google Custom Search Engine makes possible to filter result according to the Schema.org types: 2 values:. Based on the study. 
+  \item Newspaper whitelist. A set of 10 internationals English speaking newspapers chosen from \footnote{\fontsize{8pt}{1em}\selectfont  \url{http://en.wikipedia.org/wiki/List_of_newspapers_in_the_world_by_circulation}}
+  \item Lilia's whitelist. A set of 3 international newspapers used in [Lilia] while building the ground truth used in Section~\ref{sec:evaluation}.
+  \item Newspaper whiteList + Google. Prioritize content in Newspaper whitelist but still consider other sites.
+  \item Lilia's whitelist + AllGoogle: Prioritize content in Lilia's whitelist but still consider other sites.
+ \end{itemize}
+ \item Temporal dimension. This variable allows to filter those documents which are not temporarily close from the day where the newscast was published. Assuming that the news item is fresh enough, this date of publication will also be fairly close to the day the event  took place. Taking $\text{PublishingDate}$ as a reference and increasing the window in a certain amount of days $d$,  we end up having $Time_{Window}=\left [ \text{PublishingDate}-d, \text{PublishingDate}+d \right ]$ The reason why we expand the original event period is because documents concerning a news event are not always published during the time of the action is taking place but some hours or days after or before. The final $Time_{Window}$ could vary according to many factors such as the nature of the event itself (whether it is a brief appearance in a media, or part of a longer story with more repercussion) or the kind of documents the search engine is indexing (from very deep and elaborated documents that need time to be published, to short post quickly generated by users). In this study we have considered two possible values for it: 2 weeks and one week temporal windows.
+ \item In addition, Google Custom Search Engine makes possible to filter result according to the Schema.org types: 2 values:. Based on the study.
 [NoFilter(Default), Person\&OrganizationFiltered]
 \end{enumerate}
 
 That makes $5 * 2 * 2 = 20$ different runs that we will study in the Section~\ref{sec:evaluation} in order to discover which configuration optimizes the expansion algorithm.
-
 
 \begin{figure}[h!]
 \centering
@@ -164,24 +162,23 @@ That makes $5 * 2 * 2 = 20$ different runs that we will study in the Section~\re
 \label{fig:namedEntityExpansion}%\end{figure}
 \end{figure}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  3. Document Annotation  %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%  Document Annotation                                                     %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Annotating Related Document via Named Entity Extraction}
 \label{sec:NEAnnotation}
-
 Since most of the resources retrieved are Web pages, HTML tags and other annotations are removed, keeping only the main textual information. This plain text is then analyzed by the NERD framework in order to extract more named entities.
 
 %TODO: Giuseppe, write down annotation approach by NERD.
-- NERD ML 
+- NERD ML
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%  Filtering Concepts from Expansion   %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  4. Filtering Concepts from Expansion  %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Filtering Concepts from Expansion}
 \label{sec:Filtering}
-
 The document collection phase brings a fair number documents where relevant information about the event can be found. However this is a double-edged sword: broader number of annotations allow to build a wider view of the described event, but also bring a lot of noise. A significant part of that noise comes from certain annotations detected by the NERD-ML framework, in particular to general concepts that are not Named Entities in the strict sense of the definition. From a viewer point of view, previous studies [Lilia] suggest that names of Persons, Organizations and Locations are mainly the best items to be shown. The rest of less-specific and wider enclosed concepts are more vague to be displayed on a television user interface and potentially less relevant for complementing the seed content.
 
 After some first trials it became evident that those many non-pure Named Entities which were not well considered by viewers and expert during the ground truth creation [Lilia] were dramatically dropping the scores for most of the considered ranking strategies. We have foreseen three different filtering approaches for getting rid of those undesired concept annotations:
@@ -192,14 +189,10 @@ After some first trials it became evident that those many non-pure Named Entitie
 \item Filter instances (F3). Intuitively, people seems to be more attracted by proper names. Those names are normally uppercased. This filter keeps only concepts matching this rule.
 \end{enumerate}
 
-We executed different runs by applying those filters over the original annotations and their corresponding combinations, manly: (F1 - F2 - F3 - F1\_F2 - F1\_F3 - F2\_F3 - F1\_F2\_F3 ), resulting in significant improvement in the final scores as shown in Section~\ref{sec:FilteringExperiments}, in terms of different measures like Precision, recall, average precision, and NDCG. 
+We executed different runs by applying those filters over the original annotations and their corresponding combinations, manly: (F1 - F2 - F3 - F1\_F2 - F1\_F3 - F2\_F3 - F1\_F2\_F3 ), resulting in significant improvement in the final scores as shown in Section~\ref{sec:FilteringExperiments}, in terms of different measures like Precision, recall, average precision, and NDCG.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%  Ranking Concepts from Expansion   %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Ranking Concepts from Expansion}
 \label{sec:Ranking}
-
 The different related documents collected and annotated in previous steps of the expansion algorithm contain the pieces of the puzzle that will allow to re-construct the big picture of the event. Unfortunately, those pieces come wrapped together with other less important parts which are not closely related with the event in particular and need to be put aside. By ranking the concepts, we make easier to (1) identify important entities from those which are, (2) group them in the top positions in order, (3) easy get rid of those in the final.
 
 The unordered but filtered set of entities has to be ranked for propose prominent concepts to the viewer get rid of the long queue of entities and noise produced by during the expansion process.
@@ -207,7 +200,6 @@ The unordered but filtered set of entities has to be ranked for propose prominen
 \subsubsection{Clustering Entitites}
 
 In order to calculate the frequency of a particular resource within the entire corpora, we group the different appearances of the same instance and check their cardinality. This is not a trivial task since the same entity can appear under different text labels, contain typos or have different disambiguation URL's pointing to the same resource. We performed a centroid-based clustering operation over the instances of the entities. We considered the centroid of a cluster as the entity with the most frequent disambiguation URL's that also have the most repeated labels. As distance metric for comparing pairs of entities, we applied strict string similarity over the URL's, and in case of mismatch, the Jaro-Winkler string distance~\cite{winkler2006overview} over the labels. The output of this phase is a list of clusters containing different instances of the same entity.
-
 
 \subsubsection{Frequency-based Ranking}
 
@@ -219,23 +211,20 @@ In order to calculate the frequency of a particular resource within the entire c
 Laura Poitras
 Booz Allen
 
-
 \subsubsection{Rules based re-ranking}
 Based in the conclusions from Lilia's report. In her study, Lilia has indicated how certain NERD types are preferred by users:
 - Most of the Organizations were interesting (figures in Excel file)
-- Persons 
+- Persons
 - Normally less interested in Places and other NERD categories.
-
 
 \subsection{Pareto}
 
 %%%%%%%%%%%%%%%%%%%%%%%
-%%%  4. EVALUATION  %%%
+%%%  5. Evaluation  %%%
 %%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Evaluation}
 \label{sec:Evaluation}
-
 Introduction
 
 \subsection{Setting up the Experiment}
@@ -248,14 +237,13 @@ Introduction
 * Score generation, normalize GT scores
 
 \subsection{Measures}
- 
 Measurements in terms of Recall and Precision, at 7 (average number of results selected as relevant by the users)
-However those measures do not distinguish between differences in the rankings at positions 1 to p, which may be considered important for some tasks. For example, the two rankings in Figure 8.2 will be the same when measured using precision at 10. 
- 
-This is why  the evaluation we will focus in the highly ranked relevant documents. Similar to Web search engines, we will apply an evaluation measure which will try to find as many relevant documents as possible, while still keeping the  premise that the top ranked documents are the most important. We will not perform measures in terms of efficiency. Even this kind of study is easier to quantify (most of the time it can be measured automatically with a timer instead of with costly relevance judgments) this falls outside the scope of this paper. 
+However those measures do not distinguish between differences in the rankings at positions 1 to p, which may be considered important for some tasks. For example, the two rankings in Figure 8.2 will be the same when measured using precision at 10.
+
+This is why  the evaluation we will focus in the highly ranked relevant documents. Similar to Web search engines, we will apply an evaluation measure which will try to find as many relevant documents as possible, while still keeping the  premise that the top ranked documents are the most important. We will not perform measures in terms of efficiency. Even this kind of study is easier to quantify (most of the time it can be measured automatically with a timer instead of with costly relevance judgments) this falls outside the scope of this paper.
 ** How external items are measured.
 
-Those are the key efficiency measurements we would like to perform, 
+Those are the key efficiency measurements we would like to perform,
 
 ** Mean average precision at 10  - single number summary, popular measure, pooled
 relevance judgments.
@@ -283,35 +271,28 @@ We will use the same same ranking algorithm on five different queries. We aim of
 
 TABLE showing content. Measures
 
-1) The problem with non strict Named Entities being promoted in TFIDF strategy is clearly alleviated for all filters and combinations. TF strategy has generally improved as well, but in a lower scale. 
+1) The problem with non strict Named Entities being promoted in TFIDF strategy is clearly alleviated for all filters and combinations. TF strategy has generally improved as well, but in a lower scale.
 2) The TF strategy performs better than the current implementation of TFIDF in ALL cases.
 3) Best Filter for TF strategy is F3 (0.523665971)
-4) Best Filter for TFIDF strategy is the combination F1\_F3 
+4) Best Filter for TFIDF strategy is the combination F1\_F3
 5) I combined the results for both strategies via a) simple multiplication and b) their average value, see rows 4th and 5th. In both cases, the combination F1\_F3 seems to perform the best.
-
-
 
 \subsection{Deciding on the Best Ranking Approach}
 \label{sec:decidingRanking}
 
 Introduce Lilia's dataset, 5 videos, expert involved. We are going to use this dataset for selecting wich is the most appropriate ranking algorithm
 
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%
-%%%  4. Conclusions  %%%
+%%%  6. Conclusion  %%%
 %%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Conclusions}
-\label{sec:conclusions}
-
+\section{Conclusion}
+\label{sec:conclusion}
 We presented an approach for context-aware annotating news events, designed to precisely harvest program descriptions starting from named entities recognized in TV video transcripts. Because the entities initially spotted are typically insufficient for covering the broader range of concepts that best describe a particular news clip, we expanded this set by analyzing additional textual documents about the same event.
 
 The evaluation indicates that we can successfully expand the initial set of recognized entities with more relevant concepts not detected by pure named entity recognition approaches and produce a more accurate ranking of important concepts that brings forward entities which user are more interested about.
 
-Future: tailor ranking to particular types of news: sport, politics, regional, international, opinion, etc.
-Survey on 15 videos from the BBC about international facts. Evaluated over people in different countries.
+Future: tailor ranking to particular types of news: sport, politics, regional, international, opinion, etc. Survey on 15 videos from the BBC about international facts. Evaluated over people in different countries.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%  Acknowledgments  %%%
