@@ -54,9 +54,10 @@ CWI, Amsterdam, The Netherlands, \\
 \begin{abstract}
 With the emergence of both citizen-based and social media, traditional information channels have to fundamentally re-think their production and distribution workflow processes. In addition, traditional text-based products are losing market share against other audiovisual solutions, in particular video. In this situation, users have access to multiple news portals, which provide online access to different sources and services for commenting and debating on the news, and use social media to instantaneously spread news information. This results in large amounts of unreliable and repeated information, leaving the user exploring on their own to try to build their version of a news event from large amounts of potentially related information and trying to find the truth in the middle of an ocean of rumors or hoaxes.
 
-In the context of news broadcasting (newscasts), a recent trend consists on developing second screen applications that enable the user to dive further and improve his understanding of some particular news items. The making of such applications requires semantic annotation of the original newscast as well as semantic enrichment for including background knowledge. Relying on video subtitles for providing time-based annotations of video content is a common method. However, it is insufficient to fully grasp the context of the news event being reported, simply because daily news reporting emphasizes on the last facts rather than on the narrative and causes of the event.
+In the context of news broadcasting (newscasts), a recent trend consists on developing second screen applications that enable the user to dive further and improve his understanding of some particular news items. The making of such applications requires the semantic annotation of the original newscast as well as semantic enrichment for including background knowledge. Relying on video subtitles for providing time-based annotations of video content is a common method. However, it is insufficient to fully grasp the context of the news event being reported, simply because daily news reporting emphasizes on the last facts rather than on the narrative and causes of the event.
 
-In this paper, we propose a method that enables to search for and to analyze related documents in order to generate semantic annotations that are closer to what viewers in general, and experts in particular, expect to accurately reflect what a newscast is about. This approach generates a ranked list of entities that can be further used to populate a second screen application or to generate new enrichments. We evaluate this method with respect to a ground truth annotations made by experts for a set of BBC newscasts.
+In this paper, we propose a method that enables to search for and to analyze related documents in order to generate semantic annotations that are closer to what viewers in general and experts in particular expect to find while consuming newscasts. This approach generates annotations in the form of a ranked list of entities. We evaluate this method with respect to a gold standard made by experts for a set of BBC newscasts. Results of the experiments show the robustness in semantically annotating international newscast holding an Average Normalized Discounted Cumulative Gain of 66.4\%.
+
 
 \keywords{Semantic Video Annotation, Entity Expansion, Second Screen Application, Newscasts}
 \end{abstract}
@@ -91,9 +92,26 @@ BASELINE --> -OUR APPROACH -> LILIA's GROUND Truth
 \url{http://tomayac.com/papers/adding_meaning_to_social_network_microposts.pdf}
 
 * Entity Expansion
+Named Entity Set Expansion is the task from a set given a small number of named entities in same type finds a more complete Named Entity set.
+Google Sets has been used for a number of purposes in the research community, including deriving features for named- entity recognition [1], and evaluation of question answering systems [2]; 
+Set expansion using the web is also closely related to the problem of unsupervised relation learning from the
+1 http://labs.google.com/sets
+web [3, 4], and set-expansion-like techniques have been used to derive features for concept-learning [5], to construct “pseudo-users” for collaborative filtering [6], and to compute similarity between attribute values in autonomous databases [7].
+
+
 \url{http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5681606}
+used google.
+based on how to build the query itself. semantic and grammar rules. Semistructured text like tables. PageRank
+
 \url{http://www.cs.cmu.edu/~./wcohen/postscript/icdm-2007.pdf}
+ worked by automatically finding semi-structured web pages that contain “lists” of items and the aggregating these “lists”. Problem is those semistructured are not always available.
 \url{http://www.cs.cmu.edu/~./wcohen/postscript/icdm-2008-iseal.pdf}
+hich improves SEAL’s performance by handling unlimited number of supervised seeds. In each iteration, it expands a couple of randomly selected seeds while accumulating statistics from one iteration to another.
+
+The KnowItAll system [EC05] contains a List Extractor (LE) component that is functionally similar to Google Sets. The authors described a number of possible variants of the LE component, but it is not clear which one improves
+
+Several researchers propose a set expansion method using free text rather than semi-structured Web documents; for instance, Talukdar [TB06] presents a method for automatically selecting trigger words to mark the beginning of a pattern, which is then used for bootstrapping from free text.
+
 
 * Entity Ranking from Arjen
 \url{http://link.springer.com/chapter/10.1007/978-3-540-85902-4_27}
