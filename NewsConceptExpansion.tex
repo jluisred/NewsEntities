@@ -59,7 +59,7 @@ In the context of news broadcasting (newscasts), a recent trend consists on deve
 In this paper, we propose a method that enables to search for and to analyze related documents in order to generate semantic annotations that are closer to what viewers in general and experts in particular expect to find while consuming newscasts. This approach generates annotations in the form of a ranked list of entities. We evaluate this method with respect to a gold standard made by experts for a set of BBC newscasts. Results of the experiments show the robustness in semantically annotating newscast holding an Average Normalized Discounted Cumulative Gain of 66.4\%.
 
 
-\keywords{Semantic Video Annotation, Entity Expansion, Second Screen Application, Newscasts}
+\keywords{Semantic Video Annotation, Entity Expansion, Newscasts, Second Screen Application}
 \end{abstract}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -135,8 +135,16 @@ Method
 * State of the Art on Semantic annotation.
 Concerning the multimedia annotation the literature covers a wide range of different analysis techniques~\cite{ballan2011event}. One of the main approaches consists on running Named Entity Recognition (NER) over the textual information attached to particular video fragment. Those techniques are an essential component within the Information Extraction field that focus on: identifying atomic information units in texts, named entities; classifying entities into predefined categories (also called context types) and linking to real world objects using web identifiers (Named Entity Disambiguation). A growing number of APIs provide such a service, like AlchemyAPI\footnote{\fontsize{8pt}{1em}\selectfont \url{http://www.alchemyapi.com/}} or DBpedia Spotlight\footnote{\fontsize{8pt}{1em}\selectfont \url{http://spotlight.dbpedia.org/}}. If the textual information attached to a video contains temporal references (e.g. subtitles), it is possible to align the entities with the time when they appear in the video. In this line, Yunjia et al.~\cite{yunjia2013} have probed that named entity recognition techniques applied on video subtitles can produce good results for video classification.
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%  2. News Concept Expansion Algorithm  %%%
+%%%  2. Related Work  %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Related Work}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  3. News Concept Expansion Algorithm  %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{News Concept Expansion Algorithm}
@@ -192,22 +200,16 @@ That makes $5 * 2 * 2 = 20$ different runs that we will study in the Section~\re
 \label{fig:namedEntityExpansion}%\end{figure}
 \end{figure}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%  3. Document Annotation  %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Annotating Related Document via Named Entity Extraction}
+\subsection{Annotating Related Document via Named Entity Extraction}
 \label{sec:NEAnnotation}
 Since most of the resources retrieved are Web pages, HTML tags and other annotations are removed, keeping only the main textual information. This plain text is then analyzed by the NERD framework in order to extract more named entities.
 
 %TODO: Giuseppe, write down annotation approach by NERD.
 - NERD ML
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%  4. Filtering Concepts from Expansion  %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Filtering Concepts from Expansion}
+\subsection{Filtering Concepts from Expansion}
 \label{sec:Filtering}
 The document collection phase brings a fair number documents where relevant information about the event can be found. However this is a double-edged sword: broader number of annotations allow to build a wider view of the described event, but also bring a lot of noise. A significant part of that noise comes from certain annotations detected by the NERD-ML framework, in particular to general concepts that are not Named Entities in the strict sense of the definition. From a viewer point of view, previous studies [Lilia] suggest that names of Persons, Organizations and Locations are mainly the best items to be shown. The rest of less-specific and wider enclosed concepts are more vague to be displayed on a television user interface and potentially less relevant for complementing the seed content.
 
@@ -249,13 +251,13 @@ In her study, Lilia has indicated how certain NERD types are preferred by users:
 - Persons
 - Normally less interested in Places and other NERD categories.
 
-\subsection{Pareto}
+\subsubsection{Pareto}
 
 %%%%%%%%%%%%%%%%%%%%%%%
-%%%  5. Evaluation  %%%
+%%%  4. Experimental Settings and Evaluation %%%
 %%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Evaluation}
+\section{Experimental Settings and Evaluation}
 \label{sec:Evaluation}
 Introduction
 
@@ -315,7 +317,7 @@ TABLE showing content. Measures
 Introduce Lilia's dataset, 5 videos, expert involved. We are going to use this dataset for selecting wich is the most appropriate ranking algorithm
 
 %%%%%%%%%%%%%%%%%%%%%%%
-%%%  6. Conclusion  %%%
+%%%  5. Conclusion  %%%
 %%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Conclusion}
