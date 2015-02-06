@@ -54,17 +54,8 @@ CWI, Amsterdam, The Netherlands, \\
 %%%%%%%%%%%%%%%%%%
 
 \begin{abstract}
-With the emergence of both citizen-based and social media, traditional information television channels have to 
-%fundamentally 
-re-think their production and distribution workflow processes. In addition, traditional text-based products are losing market share against other audiovisual solutions, in particular video. In this situation, users have access to multiple news portals, which provide online access to different sources and services for commenting and debating on the news, and use social media to instantaneously spread news information. 
-%This results in large amounts of unreliable and repeated information, leaving the user exploring on their own to try to build their version of a news event from large amounts of potentially related information and trying to find the truth in the middle of an ocean of rumors or hoaxes.
-\\\todo{GR:unlinked to the above, it needs to be reworked}
-In the context of news broadcasting (newscasts), a recent trend consists on developing second screen applications that enable the user to dive further and improve his understanding of some particular news items. The making of such applications requires the semantic annotation of the original newscast as well as semantic enrichment for including background knowledge. Relying on video subtitles for providing time-based annotations of video content is a common method. However, it is insufficient to fully grasp the context of the news event being reported, simply because daily news reporting emphasizes on the last facts rather than on the narrative and causes of the event. In this paper, we propose a method that enables to search for and analyze related documents in order to generate semantic annotations that are closer to what viewers 
-%in general 
-and experts 
-%in particular 
-expect to find while consuming newscasts. This approach generates annotations in the form of a ranked list of entities. We evaluate this method with respect to a gold standard made by experts for a set of BBC newscasts. Results of the experiments show the robustness in semantically annotating newscast holding an Average Normalized Discounted Cumulative Gain of 66.4\%.
 
+A recent trend in the context of news broadcasting (newscasts) consists on developing second screen applications that enable the user to further dive and improve his understanding of some particular news item, specially the complex word-scale controversial ones. The making of such applications requires the semantic annotation of the original newscast as well as semantic enrichment for including background knowledge. Relying on video subtitles for providing time-based annotations of video content is a common method. However, it is insufficient to fully grasp the context of the news event being reported, simply because daily news reporting emphasizes on the last facts rather than on the narrative and causes of the event. In this paper, we propose a method that enables to search for and analyze related documents in order to generate semantic annotations that are closer to what viewers and experts in the domain expect to find while consuming newscasts. This approach generates annotations in the form of a ranked list of entities. We evaluate this method with respect to a gold standard made by experts for a set of BBC newscasts. Results of the experiments show the robustness in semantically annotating newscast holding an Average Normalized Discounted Cumulative Gain of 66.4\%.
 
 \keywords{Semantic Video Annotation, Entity Expansion, Newscasts, Second Screen Application}
 \end{abstract}
@@ -76,14 +67,39 @@ expect to find while consuming newscasts. This approach generates annotations in
 \section{Introduction}
 \label{sec:introduction}
 %TODO: Raphael, Michiel, to recheck and further polish research problem + hypothesis.
-The set of entities obtained from a traditional named entity extraction operation is insufficient and incomplete for expressing the context of a news event. Sometimes, some entities spotted over a particular document are not disambiguated because the textual clues surrounding the entity are not precise enough for the name entity extractor, while in other cases, they are simply not mentioned in the transcripts while being relevant for understanding the story. This is an inherent problem in information retrieval tasks: a single description about the same resource does not necessarily summarize the whole picture.
+
+With the emergence of both citizen-based and social media, traditional information television channels have to re-think their production and distribution workflow processes. 
+
+requires a huge effort by t
+
+In addition, traditional text-based products are losing market share against other audiovisual solutions, in particular video. In this situation, users have access to multiple news portals, which provide online access to different sources and services for commenting and debating on the news, and use social media to instantaneously spread news information. This results in large amounts of unreliable and repeated information, leaving the user exploring on their own to try to build their version of a news event from large amounts of potentially related information and trying to find the truth in the middle of an ocean of rumors or hoaxes.
+
+The set of entities obtained from a traditional named entity extraction operation is insufficient and incomplete for expressing the context of a news event. Sometimes entities spotted over a particular document are not disambiguated because the textual clues surrounding the entity are not precise enough for the name entity extractor.  while in other cases, they are simply not mentioned in the transcripts while being relevant for understanding the story. [LILIA]. This is also an inherent problem in information retrieval tasks: a single description about the same resource does not necessarily summarize the whole picture [REF]
 
 The named entity expansion operation relies on the idea of retrieving and analyzing additional documents from the Web where the same event is also described. By increasing the size of set of documents to analyze, we increase the completeness of the context and the representativeness of the list of entities, reinforcing relevant entities and finding new ones that are potentially interesting inside the context of that news item.
 
-Hypotesis
-- subtitles aren't enough, so we pick additional documents (put refs)
+Name of the approach: news Semantic snapshot
+Displaying second screen. others: Summarizing
 		
+Method
+- how to get more documents (CSE config)
+- how to analyze documents (entities)
+- how to generate final set of annotations from subtitles + documents ()
+
 BASELINE --> -OUR APPROACH -> LILIA's GROUND Truth
+
+Different sections
+
+% State of the Art on Semantic annotation
+* State of the Art on Semantic annotation.
+Concerning the multimedia annotation the literature covers a wide range of different analysis techniques~\cite{ballan2011event}. One of the main approaches consists on running Named Entity Recognition (NER) over the textual information attached to particular video fragment. Those techniques are an essential component within the Information Extraction field that focus on: identifying atomic information units in texts, named entities; classifying entities into predefined categories (also called context types) and linking to real world objects using web identifiers (Named Entity Disambiguation). A growing number of APIs provide such a service, like AlchemyAPI\footnote{\fontsize{8pt}{1em}\selectfont \url{http://www.alchemyapi.com/}} or DBpedia Spotlight\footnote{\fontsize{8pt}{1em}\selectfont \url{http://spotlight.dbpedia.org/}}. 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  2. Related Work  %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Related Work}
 
 * Demo in ESWC,
 \url{http://2014.eswc-conferences.org/sites/default/files/eswc2014pd_submission_78.pdf}
@@ -125,27 +141,10 @@ Several researchers propose a set expansion method using free text rather than s
 Uses wikipedia documents and categories. Our approach uses documents which are retrieved on the fly and more appropriate for the journalistic world.
 
 * Entities in ranking classification
+If the textual information attached to a video contains temporal references (e.g. subtitles), it is possible to align the entities with the time when they appear in the video. In this line, Yunjia et al.~\cite{yunjia2013} have probed that named entity recognition techniques applied on video subtitles can produce good results for video classification.
 \url{http://www.eurecom.fr/~rizzo/publications/Li_Rizzo-LIME13.pdf}
 
-* Comments on Lilia's paper (maybe include some figures here?)
-
 * State of the art in News applications and supporting tools for journalist.
-
-
-Method
-- how to get more documents (CSE config)
-- how to analyze documents (entities)
-- how to generate final set of annotations from subtitles + documents ()
-
-
-% State of the Art on Semantic annotation
-* State of the Art on Semantic annotation.
-Concerning the multimedia annotation the literature covers a wide range of different analysis techniques~\cite{ballan2011event}. One of the main approaches consists on running Named Entity Recognition (NER) over the textual information attached to particular video fragment. Those techniques are an essential component within the Information Extraction field that focus on: identifying atomic information units in texts, named entities; classifying entities into predefined categories (also called context types) and linking to real world objects using web identifiers (Named Entity Disambiguation). A growing number of APIs provide such a service, like AlchemyAPI\footnote{\fontsize{8pt}{1em}\selectfont \url{http://www.alchemyapi.com/}} or DBpedia Spotlight\footnote{\fontsize{8pt}{1em}\selectfont \url{http://spotlight.dbpedia.org/}}. If the textual information attached to a video contains temporal references (e.g. subtitles), it is possible to align the entities with the time when they appear in the video. In this line, Yunjia et al.~\cite{yunjia2013} have probed that named entity recognition techniques applied on video subtitles can produce good results for video classification.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%  2. Related Work  %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Related Work}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%  3. News Concept Expansion Approach  %%%
