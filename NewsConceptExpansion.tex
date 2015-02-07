@@ -68,38 +68,25 @@ A recent trend in the context of news broadcasting (newscasts) consists on devel
 \label{sec:introduction}
 %TODO: Raphael, Michiel, to recheck and further polish research problem + hypothesis.
 
-With the emergence of both citizen-based and social media, traditional information television channels have to re-think their production and distribution workflow processes. 
-
-requires a huge effort by t
+With the emergence of both citizen-based and social media, traditional information television channels have to re-think their production and distribution workflow processes. We live in a globalized world, a vast playing field where events happening are the result of complex interactions between many diverse agents along time. Consumers require a huge effort to interpret those news mainly because of two issues: a) the "need of background" problem: they probably need to be aware of other facts happened in a different temporal or geographical dimension, like one week ago or in a completely different region. And b), the "need of completeness" problem: a single representation of an event is not enough to capture the whole picture, because it is normally incomplete, can be biased, or partially wrong. 
 
 In addition, traditional text-based products are losing market share against other audiovisual solutions, in particular video. In this situation, users have access to multiple news portals, which provide online access to different sources and services for commenting and debating on the news, and use social media to instantaneously spread news information. This results in large amounts of unreliable and repeated information, leaving the user exploring on their own to try to build their version of a news event from large amounts of potentially related information and trying to find the truth in the middle of an ocean of rumors or hoaxes.
 
-The set of entities obtained from a traditional named entity extraction operation is insufficient and incomplete for expressing the context of a news event. Sometimes entities spotted over a particular document are not disambiguated because the textual clues surrounding the entity are not precise enough for the name entity extractor.  while in other cases, they are simply not mentioned in the transcripts while being relevant for understanding the story. [LILIA]. This is also an inherent problem in information retrieval tasks: a single description about the same resource does not necessarily summarize the whole picture [REF]
+The set of entities obtained from a traditional named entity extraction operation is insufficient and incomplete for expressing the context of a news event  [REF]. Sometimes entities spotted over a particular document are not disambiguated because the textual clues surrounding the entity are not precise enough for the name entity extractor.  while in other cases, they are simply not mentioned in the transcripts while being relevant for understanding the story. [LILIA]. This is also an inherent problem in information retrieval tasks: a single description about the same resource does not necessarily summarize the whole picture.
 
-The named entity expansion operation relies on the idea of retrieving and analyzing additional documents from the Web where the same event is also described. By increasing the size of set of documents to analyze, we increase the completeness of the context and the representativeness of the list of entities, reinforcing relevant entities and finding new ones that are potentially interesting inside the context of that news item.
+The named entity expansion operation relies on the idea of retrieving and analyzing additional documents from the Web where the same event is also described. By increasing the size of set of documents to analyze, we increase the completeness of the context and the representativeness of the list of entities, reinforcing relevant entities and finding new ones that are potentially interesting inside the context of that news item. The final result is a ranked list of entities called NewsCast Semantic Snapshot (NSS) which expands the initial set of recognized entities with more relevant concepts that help to capture the whole context of the depicted event. The NSS can be later use to feed second screen applications assisting the viewer who watches the news, summarizing and generating quality snippets, or launch further  enrichment processes who bring related content the users could be also interested in watch. 
 
-Name of the approach: news Semantic snapshot
-Displaying second screen. others: Summarizing
-		
-Method
-- how to get more documents (CSE config)
-- how to analyze documents (entities)
-- how to generate final set of annotations from subtitles + documents ()
-
-BASELINE --> -OUR APPROACH -> LILIA's GROUND Truth
-
-Different sections
+The paper is organized as follows: Section~\ref{sec:RelatedWork} presents related work, Section~\ref{sec:ConceptExpansion} illustrates the whole method of Entity Extraction, focusing in the Collection of related documents, annotation of documents and entity filtering. Section~\ref{sec:Ranking} describes in depth the different ranking algorithms used for ordering the list of candidates entities generated in previous steps. Section~\ref{sec:Evaluation} explains the details of the ground truth, the measures considered in the evaluation, and the performance of out approach for different collection, filtering and ranking configurations, in order to see how better we are compared to the baseline and how close to the gold standard we can get. Finally Section~\ref{sec:Evaluation} summarizes the outcomes of the paper and describes our future work.
 
 % State of the Art on Semantic annotation
 * State of the Art on Semantic annotation.
 Concerning the multimedia annotation the literature covers a wide range of different analysis techniques~\cite{ballan2011event}. One of the main approaches consists on running Named Entity Recognition (NER) over the textual information attached to particular video fragment. Those techniques are an essential component within the Information Extraction field that focus on: identifying atomic information units in texts, named entities; classifying entities into predefined categories (also called context types) and linking to real world objects using web identifiers (Named Entity Disambiguation). A growing number of APIs provide such a service, like AlchemyAPI\footnote{\fontsize{8pt}{1em}\selectfont \url{http://www.alchemyapi.com/}} or DBpedia Spotlight\footnote{\fontsize{8pt}{1em}\selectfont \url{http://spotlight.dbpedia.org/}}. 
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%  2. Related Work  %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Related Work}
+\label{sec:RelatedWork}
 
 * Demo in ESWC,
 \url{http://2014.eswc-conferences.org/sites/default/files/eswc2014pd_submission_78.pdf}
@@ -190,7 +177,9 @@ Where $\text{Text}=\text{Title}$ and $Time_{Window}$ is a temporal frame contain
 The different related documents collected and annotated in previous steps of the expansion algorithm contain the pieces of the puzzle that will allow to re-construct the big picture of the event. Unfortunately, those pieces come wrapped together with other less important parts which are not closely related with the event in particular and need to be put aside. By ranking the concepts, we make easier to (1) identify important entities from those which are, (2) group them in the top positions in order, (3) easy get rid of those in the final.
 The unordered but filtered set of entities has to be ranked for propose prominent concepts to the viewer get rid of the long queue of entities and noise produced by during the expansion process.
 
-\section{Entity Ranking (aka Newscast fingerprint)}
+\section{Entity Ranking}
+\label{sec:Ranking}
+
 \todo{GR:introduce the entity ranking and explain why doing it so}
 
 \subsection{Clustering Entitites}
@@ -205,6 +194,11 @@ In order to calculate the frequency of a particular resource within the entire c
 \subsection{Ranking based on Popularity}
 Laura Poitras
 Booz Allen
+
+
+%Random Walks
+%PageRank
+% Use prior knowledge graph
 
 \subsection{Rules based re-ranking}
 Based in the conclusions from Lilia's report. 
