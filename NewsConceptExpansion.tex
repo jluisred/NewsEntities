@@ -79,6 +79,8 @@ In addition, traditional text-based products are losing market share against oth
 
 The set of entities obtained from a traditional named entity extraction operation is insufficient and incomplete for expressing the context of a news event  [REF]. Sometimes entities spotted over a particular document are not disambiguated because the textual clues surrounding the entity are not precise enough for the name entity extractor.  while in other cases, they are simply not mentioned in the transcripts while being relevant for understanding the story. [LILIA]. This is also an inherent problem in information retrieval tasks: a single description about the same resource does not necessarily summarize the whole picture.
 
+[FIGURES: recall in every source: sub, ocr, etc]
+
 The named entity expansion operation relies on the idea of retrieving and analyzing additional documents from the Web where the same event is also described. By increasing the size of set of documents to analyze, we increase the completeness of the context and the representativeness of the list of entities, reinforcing relevant entities and finding new ones that are potentially interesting inside the context of that news item. The final result is a ranked list of entities called NewsCast Semantic Snapshot (NSS) which expands the initial set of recognized entities with more relevant concepts that help to capture the whole context of the depicted event. The NSS can be later use to feed second screen applications assisting the viewer who watches the news, summarizing and generating quality snippets, or launch further  enrichment processes who bring related content the users could be also interested in watch. 
 
 The paper is organized as follows: Section~\ref{sec:RelatedWork} presents related work, Section~\ref{sec:ConceptExpansion} illustrates the whole method of Entity Extraction, focusing in the Collection of related documents, annotation of documents and entity filtering. Section~\ref{sec:Ranking} describes in depth the different ranking algorithms used for ordering the list of candidates entities generated in previous steps. Section~\ref{sec:Evaluation} explains the details of the ground truth, the measures considered in the evaluation, and the performance of out approach for different collection, filtering and ranking configurations, in order to see how better we are compared to the baseline and how close to the gold standard we can get. Finally Section~\ref{sec:Evaluation} summarizes the outcomes of the paper and describes our future work.
@@ -93,58 +95,29 @@ Concerning the multimedia annotation the literature covers a wide range of diffe
 \section{Related Work}
 \label{sec:RelatedWork}
 
-* Demo in ESWC,
-\url{http://2014.eswc-conferences.org/sites/default/files/eswc2014pd_submission_78.pdf}
+%Studies on second screen applications and tools for supporting journalists. (WHY)
+Television content in general and newscast in particular need the assistance of innovative applications which help the viewers and experts to get the most of them. One implementation design that has been deeply studied in the last years, mainly due to the increasing availability of tablets and tactile device is the "second screen application" paradigm. This kind of experiences open new possibilities for users watching television by complementing what is being displayed on the screen and offering a more active interaction with the content. In\cite{Courtois2012} the authors tracked 260 tablet users, concluding that even there is only a modest uptake and interest in using secondary screens to digitally share opinions, (other devices such as smartphones are preferred), the use of second screen interaction with television content is something the viewer qualitatively appreciate. We have also experimented the benefits of second screen applications via some prototypes like\cite{Redondo2014} which has revealed the great potential for browsing the so called "context" of the newscasts. The same concept\footnote{\fontsize{8pt}{1em}\selectfont \url{https://vimeo.com/119107849}} has been presented to the forum Iberoamerican Biennial of Design (BID)\footnote{\fontsize{8pt}{1em}\selectfont \url{http://www.bid-dimad.org/}} with great reviews from the experts and scoring between the final 5 from a total of 200 candidates. On the other hand profesional journalists also require assistance in their daily activity. Specialized researches like\cite{gynnild2014} highlight the importance of multifaceted development of algorithms, data, and social science methods in reporting and storytelling, under the term of computational exploration in journalism (CEJ). CEJ demands tools supporting the journalistic co-creation of quantitative news projects that transcend geographical, disciplinary, and linguistic boundaries.
 
-* Paper in SNOW. Former entity expansion algorithm, refining based on DBPedia clues.
-\url{http://www.eurecom.fr/~troncy/Publications/Redondo_Troncy-snow14.pdf}
-
-* Entities in journalism (NEWs project)
-\url{http://www.sciencedirect.com/science/article/pii/S0957417412003284}
-
-* Entities for describing events or breaking news in Twitter and similar:
-\url{http://dl.acm.org/citation.cfm?id=2145595}
-\url{http://tomayac.com/papers/adding_meaning_to_social_network_microposts.pdf}
-
-* Entity Expansion
-Named Entity Set Expansion is the task from a set given a small number of named entities in same type finds a more complete Named Entity set.
-Google Sets has been used for a number of purposes in the research community, including deriving features for named- entity recognition [1], and evaluation of question answering systems [2]; 
-Set expansion using the web is also closely related to the problem of unsupervised relation learning from the
-1 http://labs.google.com/sets
-web [3, 4], and set-expansion-like techniques have been used to derive features for concept-learning [5], to construct ï¿½pseudo-usersï¿½ for collaborative filtering [6], and to compute similarity between attribute values in autonomous databases [7].
+%Entities in making sense (Semantic snapshot)  (WHAT)
+All those news applications and tools need to be fed with the appropriate data to effectively assist viewers and professionals, and this information is normally broader than the one explicitly offered by the content itself. The hypothesis presented in this research paper states that this required knowledge can be represented in the form of a list of s named entities called News Semantic Snapshot (SSN) which intends to describe the context of a newscast. This idea of using semantic annotations and named entities in particular is not new. In the context of the journalism activities, projects like NEWs have studied how to disambiguate named entity in the news domain by continuously learning while processing news streams\cite{Fern‡ndez2012}. In the domain of Social Networks, entities are also used for identifying and modeling events and detecting breaking news. In \cite{Steiner2013} the authors emphasize the importance of spotting news entities in short user generated post in order to obtain a better understanding about what they are talking about. Entities have been also proven to be useful in producing good results in video classification when the textual information attached to a video contains temporal references (e.g. subtitles) Yunjia et al.~\cite{yunjia2013}. 
 
 
-\url{http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5681606}
-used google.
-based on how to build the query itself. semantic and grammar rules. Semistructured text like tables. PageRank
+%How to create this semantic snapshot (Expansion idea) (HOW)
+In order to build a comprehensive NSS the knowledge expressed in the newscast has to be extended with more information. Our approach performs a so called Entity Expansion process, which allows to collect on the fly additional documents in the Web describing the same event. In the literature there are already some approaches relying in similar expansion techniques, even the final objetive is not spotting other event-related entities: instead, they pursue to pass from small number of named entities with the same type or category to a more complete named entity set. One of then is Google Sets \url{http://googlesystem.blogspot.fr/2012/11/google-sets-still-available.html}, an online service which is not longer available since 2014. Set expansion using the web is also closely related to the problem of unsupervised relation learning from the web\cite{Cafarella2005}, and set-expansion-like techniques have been used to derive features for concept-learning\cite{Cohen2000}, to construct Òpseudo-usersÓ for collaborative filtering\cite{Cohen99}, and to compute similarity between attribute values in autonomous databases\cite{Wolf2007}.
 
-\url{http://www.cs.cmu.edu/~./wcohen/postscript/icdm-2007.pdf}
- worked by automatically finding semi-structured web pages that contain ï¿½listsï¿½ of items and the aggregating these ï¿½listsï¿½. Problem is those semistructured are not always available.
-\url{http://www.cs.cmu.edu/~./wcohen/postscript/icdm-2008-iseal.pdf}
-hich improves SEALï¿½s performance by handling unlimited number of supervised seeds. In each iteration, it expands a couple of randomly selected seeds while accumulating statistics from one iteration to another.
+In 2007, RC.Wang and W.Cohen have been proposed their Set Expander for Any Language (SEAL) approach \cite{Wang2007}. SEAL works by automatically finding semi-structured web pages that contain lists of items and the aggregating these list in a way that the most promising items are ranked higher. SEAL is a language-independent system has shown good performance against previously published results like the already mentioned Google Sets. By using particular seeds and the top one hundred documents returned by Google, SEAL achieved 93\% in average precision in dataset from various languages. The same authors published an improved version of the algorithm one year later\cite{Wang2008} which increases the performance by handling unlimited number of supervised seeds. In each iteration, it expands a couple of randomly selected seeds while accumulating statistics from one iteration to another. Our approach does not rely in such kind of iterative mechanism, and focus more in maximize the quality of the search query for obtaining the most appropriate set of related documents to be analyzed.
+ 
+Another approach in extending set of entities is \cite{Mai-Vu2010}, which combines the power of semantic relations between language terms like synonymy and hyponymy and grammar rules in order to find additional entities in the Web sharing the same category that the ones provides as input. Relying in Google they analyze documents for parsing semistructured text elements like tables and rank the final candidates using different ranking algorithms like PageRank. Several researchers propose a set expansion method using free text rather than semi-structured Web documents; for instance authors in \cite{Talukdar2006} presented a method for automatically selecting trigger words to mark the beginning of a pattern, which is then used for bootstrapping from free text. But still this approach looks for category related entities while in our case the driving force is more the event being shown in the news item.
 
-The KnowItAll system [EC05] contains a List Extractor (LE) component that is functionally similar to Google Sets. The authors described a number of possible variants of the LE component, but it is not clear which one improves
-
-Several researchers propose a set expansion method using free text rather than semi-structured Web documents; for instance, Talukdar [TB06] presents a method for automatically selecting trigger words to mark the beginning of a pattern, which is then used for bootstrapping from free text.
-
-
-* Entity Ranking from Arjen
-\url{http://link.springer.com/chapter/10.1007/978-3-540-85902-4_27}
-Uses wikipedia documents and categories. Our approach uses documents which are retrieved on the fly and more appropriate for the journalistic world.
-
-* Entities in ranking classification
-If the textual information attached to a video contains temporal references (e.g. subtitles), it is possible to align the entities with the time when they appear in the video. In this line, Yunjia et al.~\cite{yunjia2013} have probed that named entity recognition techniques applied on video subtitles can produce good results for video classification.
-\url{http://www.eurecom.fr/~rizzo/publications/Li_Rizzo-LIME13.pdf}
-
-* State of the art in News applications and supporting tools for journalist.
+Finally, an first implementation of the entity expansion algorithm was presented in\cite{RedondoGarcia2014}, including much less sophisticated document collection strategy, and considering only one ranking algorithm based on pure frequency. Even there is a first attempt in using DBpedia as a way to ensure the coherence of the final list of entities, there were no further efforts in use popularity measures or more elaborated rules for improve the accuracy of the results.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%  3. News Concept Expansion Approach  %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{News Concept Expansion Approach}
 \label{sec:ConceptExpansion}
-\todo{GR:say in a few words the final expected outcome: newscast fingerprint?}
-The approach is composed of the following stages \todo{GR: be consistent in naming}: query formulation, document collection, entity extraction, filtering strategies, entity ranking.
+
+In this section we present our algorithm to automatically generate News Semantic Snapshots out of a particular newscast. The approach is composed of the following stages: query formulation, document collection, entity extraction, filtering strategies, entity ranking.
 
 \todo{GR: the Fig shows something different than what is described in this section}
 \begin{figure}[h!]
@@ -156,7 +129,7 @@ The approach is composed of the following stages \todo{GR: be consistent in nami
 
 \hg{GR:better to write these variables with a math formalization, i.e. lowecare, 1 letter each}
 
-{\bf Newscase Metadata} %OLD APPROACH
+{\bf Newscast Metadata} %OLD APPROACH
 %The \emph{Five W's} is a popular concept of information gathering in journalistic reporting. It captures the main aspects of a story: who, when, what, where, and why~\cite{LiJia2007}. We try to represent the news item in terms of four of those five W's (who is involved in the event, where the event is taking place, what the event is about, and when it has happened) in order to generate a query that retrieves documents associated to the same event.
 %First, the original entities are mapped to the NERD Core ontology, which considers 10 main classes: Thing, Amount, Animal, Event, Function, Organization, Location, Person, Product and Time. From those ten different categories, we generalize to three classes: the Who from \url{nerd:Person} and \url{nerd:Organization}, the Where from \url{nerd:Location}, and the What from the rest of NERD types after discarding \url{nerd:Time} and \url{nerd:Amount}.
 Newscast broadcasters offer a certain amount of metadata about the items they publish, which is normally available together with the audiovisual content itself. In our research, we have considered newscasts come with the following information: the title or header of the newscast, day of publication and transcript of the video (non necessary timed). In conclusion, for each newscast the following triple is needed:
@@ -176,7 +149,7 @@ To some extents the retrieval phase emulates what a viewer, who misses some deta
 
 Where $\text{Text}=\text{Title}$ and $Time_{Window}$ is a temporal frame containing $\text{PublishingDate}$. The middle part of Fig.~\ref{fig:namedEntityExpansion} shows this process. Those documents (colored in black in Fig.~\ref{fig:namedEntityExpansion}) will be further processed to get additional insights about the news item in the form of relevant named entities. The different behavior of search engines make some alternatives more suitable than others for certain kinds of events. The way the resulting documents change in the search engines for a particular kind of event is a research question that will not be studied in this paper. 
 
-{\bf Semantic Annotations} Aiming at reduding the cardinality of the textual content from the bag $D$ of retrieved documents $\{d_1, ..., d_n\}$, we perform an entity recognition analysis. The outcome of the operation is a vector of entities $E_{d_i}$ for each document $d_i$. We then consider the bag of all entities $E$ retrieved from all the analyzed documents $\{d_1, ..., d_n\}$. 
+{\bf Semantic Annotations} Aiming at reducing the cardinality of the textual content from the bag $D$ of retrieved documents $\{d_1, ..., d_n\}$, we perform an entity recognition analysis. The outcome of the operation is a vector of entities $E_{d_i}$ for each document $d_i$. We then consider the bag of all entities $E$ retrieved from all the analyzed documents $\{d_1, ..., d_n\}$. 
 
 {\bf Ranking Concepts from Expansion}
 The different related documents collected and annotated in previous steps of the expansion algorithm contain the pieces of the puzzle that will allow to re-construct the big picture of the event. Unfortunately, those pieces come wrapped together with other less important parts which are not closely related with the event in particular and need to be put aside. By ranking the concepts, we make easier to (1) identify important entities from those which are, (2) group them in the top positions in order, (3) easy get rid of those in the final.
@@ -291,9 +264,6 @@ In order to calculate the interestingness scores from the usersâ€™ responses, we
 
 \label{sec:settingUp}
 
-%TODO: Lilia, write down summary about how the ground truth was created. (More details below)
-
-
 \subsubsection{Document retrieval}
 In this regard, we have relied on the Google Custom Search Engine API service\footnote{\fontsize{8pt}{1em}\selectfont  \url{https://www.google.com/cse/all}} by launching a query with the parameters specified in $\text{Query}_{Event}$. Apart of the query itself, the CSE engine considers other parameters that need to be tuned up. First, due to quota restrictions the maximum number of retrieved document is set to 50. As shown in the evaluation described in the Section~\ref{sec:evaluation}, this is enough for significantly extending the initial set of documents. But addition, we have also considered 3 different dimensions that could potentially influence the effectiveness in retrieving related documents:
 \begin{enumerate}
@@ -350,6 +320,8 @@ relevance judgments.
 ** Average precision at rank 10 - emphasizes top ranked documents, easy to understand, relevance judgments limited to top 10.
 
 We will use the same same ranking algorithm on five different queries. We aim of an averaging technique is to summarize the effectiveness of a specific ranking algorithm across a collection of queries. Different queries will then have different numbers of relevant documents, as is the case in this example. Figure about recall-precision for the top ten rank positions.
+SELECTING PRECISION AT N
+
 
 \begin{figure}[h!]
 \centering
