@@ -119,10 +119,9 @@ Finally, an first implementation of the entity expansion algorithm was presented
 
 In this section we present our algorithm to automatically generate News Semantic Snapshots out of a particular newscast. The approach is composed of the following stages: query formulation, document collection, entity extraction, filtering strategies, entity ranking.
 
-\todo{GR: the Fig shows something different than what is described in this section}
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.5\textwidth]{figure/ExpansionDiagram}
+\includegraphics[width=1\textwidth]{figure/ExpansionDiagram}
 \caption{Schema of Named Entity Expansion Algorithm.}
 \label{fig:namedEntityExpansion}%\end{figure}
 \end{figure}
@@ -149,51 +148,98 @@ To some extents the retrieval phase emulates what a viewer, who misses some deta
 
 Where $\text{Text}=\text{Title}$ and $Time_{Window}$ is a temporal frame containing $\text{PublishingDate}$. The middle part of Fig.~\ref{fig:namedEntityExpansion} shows this process. Those documents (colored in black in Fig.~\ref{fig:namedEntityExpansion}) will be further processed to get additional insights about the news item in the form of relevant named entities. The different behavior of search engines make some alternatives more suitable than others for certain kinds of events. The way the resulting documents change in the search engines for a particular kind of event is a research question that will not be studied in this paper. 
 
-{\bf Semantic Annotations} Aiming at reducing the cardinality of the textual content from the bag $D$ of retrieved documents $\{d_1, ..., d_n\}$, we perform an entity recognition analysis. The outcome of the operation is a vector of entities $E_{d_i}$ for each document $d_i$. We then consider the bag of all entities $E$ retrieved from all the analyzed documents $\{d_1, ..., d_n\}$. 
+{\bf Semantic Annotations} Since most of the resources retrieved are Web pages, HTML tags and other annotations are removed, keeping only the main textual information. Aiming at reducing the cardinality of the textual content from the bag $D$ of retrieved documents $\{d_1, ..., d_n\}$, we perform an entity recognition analysis. The outcome of the operation is a vector of entities $E_{d_i}$ for each document $d_i$. We then consider the bag of all entities $E$ retrieved from all the analyzed documents $\{d_1, ..., d_n\}$. 
+
+{\bf Entity Filtering} The document collection phase brings a fair number documents where relevant information about the event can be found. However this is a double-edged sword: broader number of annotations allow to build a wider view of the described event, but also bring a lot of noise. A significant part of that noise comes from certain annotations detected by the NERD-ML framework, in particular to general concepts that are not Named Entities in the strict sense of the definition. From a viewer point of view and the lesson learnt during the construction of the Ground Truth, the names of Persons, Organizations and Locations are mainly the best items to be shown. The rest of less-specific and wider enclosed concepts are more vague to be displayed on a television user interface and potentially less relevant for complementing the seed content. In order to get rid of those non relevant annotations, we have created some filters $f\left (  E_{d_i}\right )\rightarrow  E'_{d_i}$ where $\left |E'_{d_i}  \right | < \left |E_{d_i}  \right |$ by relying in different strategies which are further described in section 
 
 {\bf Ranking Concepts from Expansion}
-The different related documents collected and annotated in previous steps of the expansion algorithm contain the pieces of the puzzle that will allow to re-construct the big picture of the event. Unfortunately, those pieces come wrapped together with other less important parts which are not closely related with the event in particular and need to be put aside. By ranking the concepts, we make easier to (1) identify important entities from those which are, (2) group them in the top positions in order, (3) easy get rid of those in the final.
-The unordered but filtered set of entities has to be ranked for propose prominent concepts to the viewer get rid of the long queue of entities and noise produced by during the expansion process.
+The different related documents collected and annotated in previous steps of the expansion algorithm contain the pieces of the puzzle that will allow to re-construct the big picture of the event. Unfortunately, those pieces come wrapped together with other less important parts which are not closely related with the event in particular and need to be put aside. By ranking the concepts, we make easier to (1) identify important entities from those which are, (2) group them in the top positions in order, (3) easy get rid of those which are not relevant to the considered event.
+The output is that one.
 
 \section{Entity Ranking}
 \label{sec:Ranking}
 
+The Entity ranking is the most crucial step in the entity expansion algorithm. The unordered but filtered set of entities has to be ranked for propose prominent concepts to the viewer get rid of the long queue of entities and noise produced by during the expansion process. the selection is much more complicated. 
+prioritize entities which bring something interesting from the consumer point of view. 
+
 \todo{GR:introduce the entity ranking and explain why doing it so}
 
-\subsection{Clustering Entitites}
+\subsection{Clustering Entities}
 In order to calculate the frequency of a particular resource within the entire corpora, we group the different appearances of the same instance and check their cardinality. This is not a trivial task since the same entity can appear under different text labels, contain typos or have different disambiguation URL's pointing to the same resource. We performed a centroid-based clustering operation over the instances of the entities. We considered the centroid of a cluster as the entity with the most frequent disambiguation URL's that also have the most repeated labels. As distance metric for comparing pairs of entities, we applied strict string similarity over the URL's, and in case of mismatch, the Jaro-Winkler string distance~\cite{winkler2006overview} over the labels. The output of this phase is a list of clusters containing different instances of the same entity.
 
 \subsection{Frequency-based Ranking}
 
+Counting entities.
+
+
 \subsection{Pure TF-IDF Ranking}
+
+the TF-IDF
+We have considered two ways of aggregating
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.9\textwidth]{figure/RankingStrategies}
+\caption{Schema of Named Entity Expansion Algorithm.}
+\label{fig:namedEntityExpansion}%\end{figure}
+\end{figure}
 
 \subsection{Normal distribution}
 
-\subsection{Ranking based on Popularity}
+Why a normal distribution
+The behavior of the users:
+
+\subsection{Ortogonal Dimensions}
+
+Introduction
+
+\subsubsection{Ranking based on Popularity}
+
+Google Trends mechanism
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\textwidth]{figure/PopularityMeasure}
+\caption{Schema of Named Entity Expansion Algorithm.}
+\label{fig:namedEntityExpansion}%\end{figure}
+\end{figure}
+
+Follows a Normal distribution.
+
+Filtering according 2sigma.
+
+Mixing with  previous popularity
+
+Examples
 Laura Poitras
 Booz Allen
 
 
-%Random Walks
-%PageRank
+% Random Walks
+% PageRank
 % Use prior knowledge graph
 
-\subsection{Rules based re-ranking}
+\subsubsection{Expert Rules}
 Based in the conclusions from Lilia's report. 
 
 In her study, Lilia has indicated how certain NERD types are preferred by users:
 - Most of the Organizations were interesting (figures in Excel file)
 - Persons
 - Normally less interested in Places and other NERD categories.
+- Selected by at least 2 sources.
+
+
+Coeficient.
 
 %\subsection{Pareto}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%  4. Experimental Settings and Evaluation %%%
+%%%  5. Experimental Settings and Evaluation %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Experimental Settings and Evaluation}
 \label{sec:Evaluation}
 \todo{GR:main outcome in a few words, and then list the different points}
+We were able to reproduce the 0.66 of Cumulative Gain by configuring the solution. Create a ground truth. In addition, we demonstrate that we are able to go further 
 
 \subsection{Ground Truth}
 \subsection{Preprocessing of the video and preparation of the candidate set}
@@ -226,7 +272,7 @@ We used Google custom search to look for articles related to the video in three 
 \subsubsection{Refining the candidate set}
 We refined the candidate set  comprised of all found entities by eliminating all duplicated named entities and standardizing names. For example, when we had “Barack Obama” as an entity and “Obama” as another entity we eliminated the shorter one and left the complete name. 
 	
-A total of 99 entities were obtained from all videos. For a distribution of entities among types and videos please see Table \ref{table:entitydistribution}.
+A total of 99 entities were obtained from all videos. For a distribution of entities among types and videos  see Table \ref{table:entitydistribution}.
 
 \begin{table}[h]
 \begin{tabular}{| p{6cm} | l| l| l| l|}
@@ -259,46 +305,8 @@ During the interview participants were asked to choose at least 3 out of 5 video
 \subsection{Results of the online survey}
 The number of respondents per video were: “Snowden” 49, “Morsi” 34, “Fukushima” 42, “Zimmerman” 27, and “Royal baby” 15.
 
-In order to calculate the interestingness scores from the users’ responses, we gave every answer a numerical value: Yes = 1, Maybe = 0 and No = -1.  We then obtained an average score for each entity.  We consider that the participants responded positively, or found interesting all entities with an average score of 0 or more and discarded the rest of the entities as “not interesting”.
+In order to calculate the interestingness scores from the users’ responses, we gave every answer a numerical value: Yes = 1, Maybe = 0 and No = -1.  We then obtained an average score for each entity according to the number of users who answered the survey per video.  We consider that the participants responded positively, or found interesting all entities with an average score of 0 or more and discarded the rest of the entities as “not interesting”.
 
-
-\label{sec:settingUp}
-
-\subsubsection{Document retrieval}
-In this regard, we have relied on the Google Custom Search Engine API service\footnote{\fontsize{8pt}{1em}\selectfont  \url{https://www.google.com/cse/all}} by launching a query with the parameters specified in $\text{Query}_{Event}$. Apart of the query itself, the CSE engine considers other parameters that need to be tuned up. First, due to quota restrictions the maximum number of retrieved document is set to 50. As shown in the evaluation described in the Section~\ref{sec:evaluation}, this is enough for significantly extending the initial set of documents. But addition, we have also considered 3 different dimensions that could potentially influence the effectiveness in retrieving related documents:
-\begin{enumerate}
- \item Web sites to be crawled. Google allows to specify a list of web domains and subdomains where documents can be retrieved from. This reduces the scope of the search task and, depending on the characteristics of the considered sources, influence the nature of the retrieved items: from big online newspapers to user generated content. At the same time, Google allows to prioritize searching over those whitelists while still considering the  whole indexed Web. Based on this, in our study we considered five possible values for this parameter:
-a) AllGoogle: search over the whole set of Web pages indexed by Google.
- \begin{itemize}
-  \item Newspaper whitelist. A set of 10 internationals English speaking newspapers chosen from \footnote{\fontsize{8pt}{1em}\selectfont  \url{http://en.wikipedia.org/wiki/List_of_newspapers_in_the_world_by_circulation}}
-  \item Lilia's whitelist. A set of 3 international newspapers used in [Lilia] while building the ground truth used in Section~\ref{sec:evaluation}.
-  \item Newspaper whiteList + Google. Prioritize content in Newspaper whitelist but still consider other sites.
-  \item Lilia's whitelist + AllGoogle: Prioritize content in Lilia's whitelist but still consider other sites.
- \end{itemize}
- \item Temporal dimension. This variable allows to filter those documents which are not temporarily close from the day where the newscast was published. Assuming that the news item is fresh enough, this date of publication will also be fairly close to the day the event  took place. Taking $\text{PublishingDate}$ as a reference and increasing the window in a certain amount of days $d$,  we end up having $Time_{Window}=\left [ \text{PublishingDate}-d, \text{PublishingDate}+d \right ]$ The reason why we expand the original event period is because documents concerning a news event are not always published during the time of the action is taking place but some hours or days after or before. The final $Time_{Window}$ could vary according to many factors such as the nature of the event itself (whether it is a brief appearance in a media, or part of a longer story with more repercussion) or the kind of documents the search engine is indexing (from very deep and elaborated documents that need time to be published, to short post quickly generated by users). In this study we have considered two possible values for it: 2 weeks and one week temporal windows.
- \item In addition, Google Custom Search Engine makes possible to filter result according to the Schema.org types: 2 values:. Based on the study.
-[NoFilter(Default), Person\&OrganizationFiltered]
-\end{enumerate}
-That makes $5 * 2 * 2 = 20$ different runs that we will study in the Section~\ref{sec:evaluation} in order to discover which configuration optimizes the expansion algorithm.
-
-
-* Explain insights obtained from the survey. \% of entities coming from subtitles, form other sources, etc
-* Score generation, normalize GT scores
-
-\subsubsection{Entity Extraction}
-Since most of the resources retrieved are Web pages, HTML tags and other annotations are removed, keeping only the main textual information. This plain text is then analyzed by the NERD framework in order to extract more named entities.
-
-The document collection phase brings a fair number documents where relevant information about the event can be found. However this is a double-edged sword: broader number of annotations allow to build a wider view of the described event, but also bring a lot of noise. A significant part of that noise comes from certain annotations detected by the NERD-ML framework, in particular to general concepts that are not Named Entities in the strict sense of the definition. From a viewer point of view, previous studies [Lilia] suggest that names of Persons, Organizations and Locations are mainly the best items to be shown. The rest of less-specific and wider enclosed concepts are more vague to be displayed on a television user interface and potentially less relevant for complementing the seed content.
-
-After some first trials it became evident that those many non-pure Named Entities which were not well considered by viewers and expert during the ground truth creation [Lilia] were dramatically dropping the scores for most of the considered ranking strategies. We have foreseen three different filtering approaches for getting rid of those undesired concept annotations:
-
-\begin{enumerate}
-\item Filter by type (F1). Filter annotations according to their NERD type. In our case, only \textbf{nerd:Person}, \textbf{nerd:Location}, and \textbf{nerd:Organization} entities.
-\item Filter by confidence (F2). Second strategy consist on getting ride of entities with confidence score under first quarter of the distribution.
-\item Filter instances (F3). Intuitively, people seems to be more attracted by proper names. Those names are normally uppercased. This filter keeps only concepts matching this rule.
-\end{enumerate}
-
-We executed different runs by applying those filters over the original annotations and their corresponding combinations, manly: (F1 - F2 - F3 - F1\_F2 - F1\_F3 - F2\_F3 - F1\_F2\_F3 ), resulting in significant improvement in the final scores as shown in Section~\ref{sec:FilteringExperiments}, in terms of different measures like Precision, recall, average precision, and NDCG.
 
 \subsection{Measures}
 Measurements in terms of Recall and Precision, at 7 (average number of results selected as relevant by the users)
@@ -320,6 +328,9 @@ relevance judgments.
 ** Average precision at rank 10 - emphasizes top ranked documents, easy to understand, relevance judgments limited to top 10.
 
 We will use the same same ranking algorithm on five different queries. We aim of an averaging technique is to summarize the effectiveness of a specific ranking algorithm across a collection of queries. Different queries will then have different numbers of relevant documents, as is the case in this example. Figure about recall-precision for the top ten rank positions.
+
+Average between 5 queries.
+
 SELECTING PRECISION AT N
 
 
@@ -330,10 +341,52 @@ SELECTING PRECISION AT N
 \label{fig:namedCumulativeGain}%\end{figure}
 \end{figure}
 
+\subsection{Experimental Settings}
+\label{sec:experimentalSettings}
+
+\subsubsection{Document retrieval}
+In this regard, we have relied on the Google Custom Search Engine API service\footnote{\fontsize{8pt}{1em}\selectfont  \url{https://www.google.com/cse/all}} by launching a query with the parameters specified in $\text{Query}_{Event}$. Apart of the query itself, the CSE engine considers other parameters that need to be tuned up. First, due to quota restrictions the maximum number of retrieved document is set to 50. As shown in the evaluation described in the Section~\ref{sec:evaluation}, this is enough for significantly extending the initial set of documents. But addition, we have also considered 3 different dimensions that could potentially influence the effectiveness in retrieving related documents:
+\begin{enumerate}
+ \item Web sites to be crawled. Google allows to specify a list of web domains and subdomains where documents can be retrieved from. This reduces the scope of the search task and, depending on the characteristics of the considered sources, influence the nature of the retrieved items: from big online newspapers to user generated content. At the same time, Google allows to prioritize searching over those whitelists while still considering the  whole indexed Web. Based on this, in our study we considered five possible values for this parameter:
+a) AllGoogle: search over the whole set of Web pages indexed by Google.
+ \begin{itemize}
+  \item Newspaper whitelist. A set of 10 internationals English speaking newspapers chosen from \footnote{\fontsize{8pt}{1em}\selectfont  \url{http://en.wikipedia.org/wiki/List_of_newspapers_in_the_world_by_circulation}}
+  \item Lilia's whitelist. A set of 3 international newspapers used in [Lilia] while building the ground truth used in Section~\ref{sec:evaluation}.
+  \item Newspaper whiteList + Google. Prioritize content in Newspaper whitelist but still consider other sites.
+  \item Lilia's whitelist + AllGoogle: Prioritize content in Lilia's whitelist but still consider other sites.
+ \end{itemize}
+ \item Temporal dimension. This variable allows to filter those documents which are not temporarily close from the day where the newscast was published. Assuming that the news item is fresh enough, this date of publication will also be fairly close to the day the event  took place. Taking $\text{PublishingDate}$ as a reference and increasing the window in a certain amount of days $d$,  we end up having $Time_{Window}=\left [ \text{PublishingDate}-d, \text{PublishingDate}+d \right ]$ The reason why we expand the original event period is because documents concerning a news event are not always published during the time of the action is taking place but some hours or days after or before. The final $Time_{Window}$ could vary according to many factors such as the nature of the event itself (whether it is a brief appearance in a media, or part of a longer story with more repercussion) or the kind of documents the search engine is indexing (from very deep and elaborated documents that need time to be published, to short post quickly generated by users). In this study we have considered two possible values for it: 2 weeks and one week temporal windows.
+ \item In addition, Google Custom Search Engine makes possible to filter result according to the Schema.org types: 2 values:. Based on the study.
+[NoFilter(Default), Person\&OrganizationFiltered]
+\end{enumerate}
+
+TABLE OF RESULTS
+That makes $5 * 2 * 2 = 20$ different runs 
+
+that we will study in the Section~\ref{sec:evaluation} in order to discover which configuration optimizes the expansion algorithm.
+
+* Explain insights obtained from the survey. \% of entities coming from subtitles, form other sources, etc
+
+\subsubsection{Entity Filtering}
+\label{sec:settingsFiltering}
+
+After some first trials it became evident that those many non-pure Named Entities which were not well considered by viewers and expert during the ground truth creation [Lilia] were dramatically dropping the scores for most of the considered ranking strategies. We have foreseen three different filtering approaches for getting rid of those undesired concept annotations:
+
+\begin{enumerate}
+\item Filter by type (F1). Filter annotations according to their NERD type. In our case, only \textbf{nerd:Person}, \textbf{nerd:Location}, and \textbf{nerd:Organization} entities.
+\item Filter by confidence (F2). Second strategy consist on getting ride of entities with confidence score under first quarter of the distribution.
+\item Filter instances (F3). Intuitively, people seems to be more attracted by proper names. Those names are normally uppercased. This filter keeps only concepts matching this rule.
+\end{enumerate}
+
+We executed different runs by applying those filters over the original annotations and their corresponding combinations, manly: (F1 - F2 - F3 - F1\_F2 - F1\_F3 - F2\_F3 - F1\_F2\_F3 ), resulting in significant improvement in the final scores as shown in Section~\ref{sec:FilteringExperiments}, in terms of different measures like Precision, recall, average precision, and NDCG.
+
+\subsubsection{Entity Ranking}
+\label{sec:settingsRanking}
+
+All strategies considered, with and without Expert rules, with / without popularity.
+
 \subsection{Results}
-\subsubsection{Deciding on the Best Collection Strategy}
-\subsubsection{Deciding on the Best Filtering algorithm}
-\label{sec:FilteringExperiments}
+
 
 TABLE showing content. Measures
 
@@ -343,10 +396,6 @@ TABLE showing content. Measures
 4) Best Filter for TFIDF strategy is the combination F1\_F3
 5) I combined the results for both strategies via a) simple multiplication and b) their average value, see rows 4th and 5th. In both cases, the combination F1\_F3 seems to perform the best.
 
-\subsubsection{Deciding on the Best Ranking Approach}
-\label{sec:decidingRanking}
-
-Introduce Lilia's dataset, 5 videos, expert involved. We are going to use this dataset for selecting wich is the most appropriate ranking algorithm
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%  5. Conclusion  %%%
