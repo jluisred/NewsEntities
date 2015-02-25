@@ -235,15 +235,16 @@ In a next step we approximate the area inside the regions by calculating the ave
 The last operation consists on merging the ranking produced by the pure strategies with the outcome from the popularity peaks detection algorithm. By studying the distribution of entities from to a particular newscast over their corresponding popularity scores, we have observed that it follows a Gaussian curve. With the aim of being selective enough and keep only those findings backed by strong evidence, we have filtered the entities with peak popularity value higher than $\mu+2*\sigma$ which approximately corresponds to a 2.5\%. Those entities will have their originally scores combined with the former ranking values via the the following equation: $R_{score}\left ( e \right )^{*} =  R_{score}\left ( e \right ) +Pop_{peak}(e)^{2} $.
 
 \subsubsection{Expert Rules}
-Based in the conclusions from Lilia's report. 
+During the construction of the Ground Truth described in Section~\ref{sec:GroundTruth}, we have detected certain casuistic that can be materialized in rules that correct the scoring output produced by former ranking strategies. In particular, we have considered three rules to be applied over the three entity types considered in the ground truth, which have been deduced by comparing the average score per entity type in the gold standard $\overline{GT}_{typeScore}$ (see subsection~\label{sec:LessonsLearned})with the average score all over the entities.
 
-In her study, Lilia has indicated how certain NERD types are preferred by users:
-- Most of the Organizations were interesting (figures in Excel file)
-- Persons 
-- Normally less interested in Places and other NERD categories.
-- Selected by at least 2 sources.
+- Organizations have the higher average score compared to the average, so they are eminently interesting for users.
+- Persons have a fair average compare to the mean, so they should be somehow promoted as well.
+- $GT_{Location}}$ is quite low compared to the average so scores of entities from this type should be penalized.
 
-Corrects the previously obtained scores by multiplying each entity of the type by a factor 
+In order to apply those rules over the previously generated rank, we multiply each entity by a factor that depends on the type of the entity according to the following equation: $R_{score}\left ( e \right )^{*} =  R_{score}\left ( e \right ) * (\overline{GT}_{typeScore} - \overline{GT}_{score})$.
+
+A last rule also considered but independent of entity types is derived from one convention followed during the ground truth creation: each entity has to appear at least in two different sources in order to become a candidate. So all entities whose document frequency $F_{doc}(e)$ is lower than 2 are automatically discarded.
+
 
 %\subsection{Pareto}
 
@@ -256,6 +257,7 @@ Corrects the previously obtained scores by multiplying each entity of the type b
 \todo{GR:main outcome in a few words, and then list the different points}
 
 \subsection{Ground Truth}
+\label{sec:GroundTruth}
 \subsection{Preprocessing of the video and preparation of the candidate set}
 
 We selected 5 short videos from the BBC One Minute World News website\footnote{\url{http://www.bbc.com/news/video_and_audio/}}. Each video lasted from 1 to 3 minutes. The selection covered a wide range of subjects specifically: politics, armed conflicts, environmental events, legal disputes, and social news. The intention behind this topic choice was to fit international audiences, since we planned to perform a user study with international participants. 
@@ -314,6 +316,8 @@ Fifty international subjects participated in this online study. They responded a
 During the interview participants were asked to choose at least 3 out of 5 videos according to their preferences. Then they were shown each one of the videos. After each video, they were asked to rate whether they would be interested in receiving more information about the named entities in the context of the news video and on a second screen or similar application. All the named entities from the candidate set related to the last seen video were shown in a list with ratio buttons arranged in a similar way to a three-point Likert-scale. The possible answers were ``Yes'' ``Maybe'' and ``No''. 
 
 \subsection{Lessons learned from the online survey}
+\label{sec:LessonsLearned}
+
 The number of respondents per video were: ``Snowden'' 49, ``Morsi'' 34, ``Fukushima'' 42, ``Zimmerman'' 27, and ``Royal baby'' 15.
 
 In order to calculate the interestingness scores from the users’ responses, we gave every answer a numerical value: ``Yes'' = 1, ``Maybe'' = 0 and ``No'' = -1.  We then obtained an average score for each entity using the number of participants that rated an entity and the score that each participant gave to that particular entity.  This average was used to obtain a ranking of all the entities in the candidate set according to user preferences. 
