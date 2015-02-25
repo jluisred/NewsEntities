@@ -199,7 +199,7 @@ This second strategy is based in the distribution of each entity between the col
 
 \subsection{TF-IDF based Ranking}
 
-In this last The term TF-IDF stands for frequencyÐinverse document frequency, a numerical measure that intends to reflect how important a certain word is to a document in a collection or corpus. It is often used in information retrieval and text mining tasks. The resulting value increases proportionally to the number of times a word appears in the document, but is reduced by the frequency of the word in the corpus. This way it penalizes those words appearing more frequently in general. In the context of our problem, the corpora is composed by the set of related document extracted $d \in D$, and instead of considering the document at a bag of words, we work with the bag of named entities $E_{d_i}$. The formula is then as follows:
+In this last The term TF-IDF stands for frequencyï¿½inverse document frequency, a numerical measure that intends to reflect how important a certain word is to a document in a collection or corpus. It is often used in information retrieval and text mining tasks. The resulting value increases proportionally to the number of times a word appears in the document, but is reduced by the frequency of the word in the corpus. This way it penalizes those words appearing more frequently in general. In the context of our problem, the corpora is composed by the set of related document extracted $d \in D$, and instead of considering the document at a bag of words, we work with the bag of named entities $E_{d_i}$. The formula is then as follows:
 
 \begin{equation}
 \begin{matrix}
@@ -239,7 +239,7 @@ During the construction of the Ground Truth described in Section~\ref{sec:Ground
 
 - Organizations have the higher average score compared to the average, so they are eminently interesting for users.
 - Persons have a fair average compare to the mean, so they should be somehow promoted as well.
-- $GT_{Location}}$ is quite low compared to the average so scores of entities from this type should be penalized.
+- $GT_{Location}$ is quite low compared to the average so scores of entities from this type should be penalized.
 
 In order to apply those rules over the previously generated rank, we multiply each entity by a factor that depends on the type of the entity according to the following equation: $R_{score}\left ( e \right )^{*} =  R_{score}\left ( e \right ) * (\overline{GT}_{typeScore} - \overline{GT}_{score})$.
 
