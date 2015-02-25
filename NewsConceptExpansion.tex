@@ -191,12 +191,13 @@ Following a similar principle of the $S_F$, if an entity appears in a big number
 \label{fig:rankingStrategies}%\end{figure}
 \end{figure}
 
+\hg{move to the experimental settings and Evaluation}
 \subsection{TFIDF-based Function}
 We measure the importance an entity in a document over a corpus of documents $D$ (reducing the absolute frequency of the entity) using the TF-IDF. This measure penalizes those entities appearing more frequently in general. The function is then as follows:
 
 \begin{equation}
 \begin{matrix}
-tf(e_i,d_j) = 0.5 + \frac{0.5\times f_{a}(e_i,D)}{max\left \{ f_{a}(e_i',D) : e_i' \in d_j\right \}},   idf(e_i,d_j) = log\frac{\left | D \right |}{\left \{ d_j\in D  :  e_i\in d \right \}}
+tf(e_i,d_j) = 0.5 + \frac{0.5\times f_{a}(e_i,D)}{max\left \{ f_{a}(e_i',D) : e_i' \in d_j\right \}},   idf(e_i,d_j) = log\frac{\left | D \right |}{\left \{ d_j\in D  :  e_i\in d_j \right \}}
 \end{matrix}
 \end{equation}
 
@@ -206,11 +207,8 @@ For this reason we have extended this measure to capture the whole context of th
 % PageRank
 % Use prior knowledge graph
 
-\subsection{Weighting Functions}
-%Apart from the different pure strategies that can be used for ranking the entities, there are other dimensions that can be orthogonally applied over the previously generated scores for improving the adequacy of the final NSS. 
-In this work we have considered two weighting functions: (1) entity popularity and (2) rules expressing experts's knowledge.
 
-\subsubsection{Entity Popularity}
+\subsection{Popularity Function}
 \todo{GR: separate the formalization part from the experimental settings, such as using GT, etc etc}
 %Even the three ranking algorithms follow different considerations and principles, they end up exploiting the most precise an representative frequency values that the entity expansion process can provide compared to any other analysis over more reduced and probably partial newscast descriptions. 
 We propose a weighting function based on a mechanism that detects variations in entity popularity values over a time window (commonly named as popularity peaks) around the date of the studied event. The functions proposed above exploit the frequency of the entities in documents as factor to measure its importance. However the frequency based approaches fail to explain the phenomenon of certain found entities which are barely mentioned in related document but suddenly become interesting for viewers. These changes are sometimes unpredictable so the only solution is to rely on external sources that can provide indications about the entity popularity. We then relied on Google Trends\footnote{\url{https://www.google.es/trends}}, which estimates how many times a search-term has been used in a given time-window.
@@ -230,8 +228,8 @@ By studying the distribution of entities from to a particular newscast over thei
 \todo{GR:it needs to be adapted accordingly. We have now 3 S. Which on? And, isn't P something we should multiple}
 With the aim of being selective enough and keep only those findings backed by strong evidence, we have filtered the entities with peak popularity value higher than $\mu+2*\sigma$ which approximately corresponds to a 2.5\%. Those entities will have their originally scores combined with the former ranking values via the the following equation: $S_{P}\left ( e \right )^{*} =  R_{score}\left ( e \right ) +Pop_{peak}(e)^{2} $.
 
-\subsubsection{Expert Rules}
-\todo{GR: dunno if it's propoer having this here, before the entire explaination}
+\subsubsection{Expert Rules Function}
+\todo{GR: dunno if it's propoer having this here, before the entire explaination. Most of the section should be moved later in the settings - supervised thing}
 During the construction of the Ground Truth described in Section~\ref{sec:GroundTruth}, we have detected certain casuistic that can be materialized in rules that correct the scoring output produced by former ranking strategies. In particular, we have considered three rules to be applied over the three entity types considered in the ground truth, which have been deduced by comparing the average score per entity type in the gold standard $\overline{GT}_{typeScore}$ (see subsection~\label{sec:LessonsLearned})with the average score all over the entities.
 
 - Organizations have the higher average score compared to the average, so they are eminently interesting for users.
