@@ -150,7 +150,7 @@ The retrieval stage has the intent to collect event-related documents from the o
 
 {\bf Semantic Annotation} In this stage we perform a named entity recognition analysis with the objective of reducing the cardinality of the textual content from the set $D$ of documents $\{d_1, ..., d_n, d_{n+1}\}$ where $d_{i=1,..,n}$ defines the $i_{th}$ retrieved document, while $d_{n+1}$ refers to the original newscast transcript. Since most of the documents retrieved are Web pages, HTML tags and other annotations are removed, keeping only the main textual information. The feature space is then reduced and each document $d_i$ is represented by a bag of entities $E_{d_i}={e_{1_{d_i}}, ..., e_{n_{d_i}}}$, where each entity is defined as a triplet $(surface\_form, type, link)$. We perform a union of the obtained bags of named entities resulting in the bag of entities $E$ of the initial query $q$. 
 
-{\bf Semantic Annotation Filtering and Clustering} The Document Retrieval stage expands the content niche of the newscast. At this stage we apply coarse-grained filtering of the annotations $E$ obtained from the previous stage, applying a $f\left ( E_{d_i}\right )\rightarrow  E'_{d_i}$ where $\left |E'_{d_i}  \right | < \left |E_{d_i}  \right |$. The filtering stategy grounds on the findings we obtained in the creation of the gold standard. In fact, when watching a newscast viewers better capture Person-type entities, as well as Organization-type and Location-type entities. The rest of less-specific and wider enclosed entities are more vague to be displayed on a television user interface and potentially less relevant for complementing the seed content. 
+{\bf Annotation Filtering and Clustering} The Document Retrieval stage expands the content niche of the newscast. At this stage we apply coarse-grained filtering of the annotations $E$ obtained from the previous stage, applying a $f\left ( E_{d_i}\right )\rightarrow  E'_{d_i}$ where $\left |E'_{d_i}  \right | < \left |E_{d_i}  \right |$. The filtering stategy grounds on the findings we obtained in the creation of the gold standard. In fact, when watching a newscast viewers better capture Person-type entities, as well as Organization-type and Location-type entities. The rest of less-specific and wider enclosed entities are more vague to be displayed on a television user interface and potentially less relevant for complementing the seed content. 
 Named entities are then clustered applying a centroid-based clustering operation. As cluster centroid we consider the entity with the most frequent disambiguation $link$ that also have the most repeated $surface\_form$. As distance metric for comparing the instances, we applied strict string similarity over the $link$, and in case of mismatch, the Jaro-Winkler string distance~\cite{winkler2006overview} over the $surface\_form$. The output of this phase is a list of clusters containing different instances of the same entity.
 
 {\bf Semantic Annotation Ranking}
@@ -236,7 +236,8 @@ A last rule also considered but independent of entity types is derived from one 
 \section{Gold Standard for Evaluating Newscast Semantic Snapshot}
 \label{sec:GoldStandard}
 We are interested in evaluating ranking strategies for generating semantic snapshots of newscasts, where each snapshot is charactherized by a set of named entities. We narrowed down the selection of named entity types to Person, Organisation, and Location, since they can be directly translated in \textit{who}, \textit{what}, \textit{when}, a subset of the 5Ws well-known questions in the journalisms. To the best of our knowledge there is no evaluation dataset suited to this context. The title of the newscasts and the breakdown figures per entity type are shown in Table~\ref{table:entitydistribution}. The dataset is freely available\footnote{\url{\todo{ADD LINK to the DATASET}}}.
-\vspace{-1.5em}
+
+%\vspace{-1.5em}
 \begin{table}
 \begin{tabular}{| p{6cm} | l| l| l| l|}
   \hline
@@ -259,7 +260,7 @@ We are interested in evaluating ranking strategies for generating semantic snaps
 \label{table:entitydistribution}
 \end{table}
 
-\vspace{-2em}
+%\vspace{-2em}
 \subsection{Newscast Selection}
 We randomly selected 5 newscasts from the BBC One Minute World News website\footnote{\url{http://www.bbc.com/news/video_and_audio/}}. Each newscast lasted from 1 to 3 minutes. The selection covered a wide range of subjects specifically: politics, armed conflicts, environmental events, legal disputes, and social news. 
 %The intention behind this topic choice was to fit international audiences, since we planned to perform a user study with international participants. 
@@ -288,39 +289,30 @@ During the interview participants were asked to choose at least 3 out of 5 video
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Experimental Settings and Evaluation}
 \label{sec:Evaluation}
+
+In this section we measure the effectiveness of our approach for building the NSS of a newscast against the ground truth shown before. In first place, we justify the mesures considered to carry out the study. Afterwards, we have specified the experimental settings used in the different runs. Finally las subsection shows a table with the top runs, a comparison with two considered baselines, and a discussion which parameters in the algorithm configuration have contributed the most in increasing the performance.
+
 \todo{GR:main outcome in a few words, and then list the different points}
 
 \subsection{Measures}
-Measurements in terms of Recall and Precision, at 7 (average number of results selected as relevant by the users)
-However those measures do not distinguish between differences in the rankings at positions 1 to p, which may be considered important for some tasks. For example, the two rankings in Figure 8.2 will be the same when measured using precision at 10.
 
-This is why  the evaluation we will focus in the highly ranked relevant documents. Similar to Web search engines, we will apply an evaluation measure which will try to find as many relevant documents as possible, while still keeping the  premise that the top ranked documents are the most important. We will not perform measures in terms of efficiency. Even this kind of study is easier to quantify (most of the time it can be measured automatically with a timer instead of with costly relevance judgments) this falls outside the scope of this paper.
-** How external items are measured.
+Inspired in similar studies in Web search engines, we have based our evaluation procedure in measures which try to find as many relevant documents as possible, while  keeping the premise that the top ranked documents are the most important. In order to summarize the effectiveness of a the different algorithm across the entire collection of queries considered in the Ground Truth, we have considered different averaging measurements that are listed below:
 
-Those are the key efficiency measurements we would like to perform,
+ \begin{itemize}
+\item Mean precision/recall at rank N. It is the probably the most used measure in this information retrieval task. It is easy to understand and emphasizes the top ranked documents. However it does not distinguish between differences in the rankings at positions 1 to p, which may be considered important for some tasks. For example, the two rankings in Figgure~\ref{fig:precisionRecall} will be the same when measured using precision at 10.
+\item Mean average precision at N. Also called $MAP$, it takes in consideration the order of the relevant items in the top N positions and is an appropriate measure for
+evaluating the task of finding as many relevant documents as possible, while still reflecting the intuition that the top ranked documents are the most important.
+\item Average $NDCG$ at $N$. Normalized discounted cumulative gain has become a popular measure for evaluating Web search and related applications\cite{croft2010}. It is based in the assumption that there are different level of relevance for the documents obtained in results. According to this, the lower the ranked position of a relevant document the less useful it is for the user, since it is less likely to be examined. 
+ \end{itemize}
 
-** Mean average precision at 10  - single number summary, popular measure, pooled
-relevance judgments.
-
-** Average NDCG - single number summary for each rank level, emphasizes top ranked documents, relevance judgments only needed to a speciffc rank depth
-(in our example 10).
-
-** Recall-precision graph - conveys more information than a single number measure, pooled relevance judgments.
-
-** Average precision at rank 10 - emphasizes top ranked documents, easy to understand, relevance judgments limited to top 10.
-
-We will use the same same ranking algorithm on five different queries. We aim of an averaging technique is to summarize the effectiveness of a specific ranking algorithm across a collection of queries. Different queries will then have different numbers of relevant documents, as is the case in this example. Figure about recall-precision for the top ten rank positions.
-
-Average between 5 queries.
-
-SELECTING PRECISION AT N
+As the relevant documents in our Ground Truth are scored in relevance for the user, we have mainly focused on the last mesure since it can provide a more exhaustive judgement about the adequacy of the generated SNN. Concerning the evaluation point N, we have performed an empirical study over the whole set of queries and main ranking functions observing that from  $N=0$ NDCG decreasingly improves until it reaches a stable behavior from $N=10$ on. Finally, we will not perform measures in terms of efficiency. Even this kind of studies are easier to quantify, this falls outside the scope of this paper.
 
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.9\textwidth]{figure/cumulativeGain}
-\caption{Evaluation measures in document retrieval.}
-\label{fig:namedCumulativeGain}%\end{figure}
+\includegraphics[width=0.8\textwidth]{figure/precisionRecall}
+\caption{Inability of $P/R$ for considering the order of the relevant documents: rankings A and B share the same Precision and Recall at 10 .}
+\label{fig:precisionRecall}%\end{figure}
 \end{figure}
 
 \subsection{Experimental Settings}
@@ -342,11 +334,9 @@ a) AllGoogle: search over the whole set of Web pages indexed by Google.
 [NoFilter(Default), Person\&OrganizationFiltered]
 \end{enumerate}
 
-TABLE OF RESULTS
 That makes $5 * 2 * 2 = 20$ different runs 
 
 that we will study in the Section~\ref{sec:evaluation} in order to discover which configuration optimizes the expansion algorithm.
-
 * Explain insights obtained from the survey. \% of entities coming from subtitles, form other sources, etc
 
 \subsubsection{Entity Filtering}
@@ -367,18 +357,60 @@ We executed different runs by applying those filters over the original annotatio
 
 All strategies considered, with and without Expert rules, with / without popularity.
 
+Expert Rules:
+
+With the objective of finding out users preferences regarding the three analysed entity types: ``person '', ``organisation'' and ``location'', we calculated an average rating for each one of the entity types. The results in descending order were: organisation = -0,05, person = -0,24  and location = -0,52. These results clearly show a preference from users for the entities of the type organisation and person over those of the type location.
+
 \subsection{Results}
 
+That makes $5 * 2 * 2 = 20$ different runs 
 
-TABLE showing content. Measures
+Baselines.
+
+\begin{table}[h]
+\begin{tabular}{llllllllllll}
+\hline
+\multicolumn{1}{|c|}{\multirow{2}{*}{Run}} & \multicolumn{3}{c|}{Collection} & \multicolumn{1}{c|}{\multirow{2}{*}{Filtering}} & \multicolumn{3}{c|}{Functions} & \multicolumn{4}{c|}{Result} \\ \cline{2-4} \cline{6-12} 
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{Sources} & \multicolumn{1}{c|}{$T_{Window}$} & \multicolumn{1}{c|}{Schema.org} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{Freq} & \multicolumn{1}{c|}{Pop} & \multicolumn{1}{c|}{Exp} & \multicolumn{1}{c|}{$MNDCG_{10}$} & \multicolumn{1}{c|}{$MAP_{10}$} & \multicolumn{1}{l|}{$MP_{10}$} & \multicolumn{1}{l|}{$MR_{10}$} \\ \hline
+Ex0 & Google & 2W&   & F1+F3 & Freq &   & \checkmark & 0.666 & 0.71 & 0.7 & 0.37 \\
+Ex1 & Google & 2W&   & F3 & Freq &   & \checkmark & 0.661 & 0.72 & 0.68 & 0.36 \\
+Ex2 & Google & 2W&   & F3 & Freq & \checkmark & \checkmark & 0.658 & 0.64 & 0.6 & 0.32 \\
+Ex3 & Google & 2W&   & F3 & Freq &   &   & 0.641 & 0.72 & 0.74 & 0.39 \\
+Ex4 & L1+Google & 2W&   & F3 & Freq &   & \checkmark & 0.636 & 0.71 & 0.72 & 0.37 \\
+Ex5 & L2+Google & 2W&   & F3 & Freq &   & \checkmark & 0.636 & 0.72 & 0.7 & 0.36 \\
+Ex6 & Google & 2W&   & F1+F3 & Freq &   &   & 0.626 & 0.73 & 0.7 & 0.38 \\
+Ex7 & L2+Google & 2W&   & F3 & Freq &   &   & 0.626 & 0.72 & 0.72 & 0.37 \\
+Ex8 & Google & 2W&   & F1+F3 & Freq & \checkmark & \checkmark & 0.626 & 0.64 & 0.56 & 0.28 \\
+Ex9 & L2+Google & 2W&   & F1+F3 & Freq &   & \checkmark & 0.624 & 0.71 & 0.7 & 0.37 \\
+Ex10 & Google & 2W&   & F1 & Freq &   & \checkmark & 0.624 & 0.69 & 0.62 & 0.32 \\
+Ex11 & L1+Google & 2W&   & F3 & Freq &   &   & 0.623 & 0.7 & 0.72 & 0.37 \\
+Ex12 & L2+Google & 2W&   & F3 & Freq &   & \checkmark & 0.623 & 0.68 & 0.66 & 0.35 \\
+Ex13 & L2+Google & 2W&   & F3 & Freq & \checkmark & \checkmark & 0.623 & 0.61 & 0.56 & 0.3 \\
+Ex14 & L2+Google & 2W&   & F3 & Freq &   &   & 0.62 & 0.69 & 0.74 & 0.4 \\
+Ex15 & L1+Google & 2W& Schema & F1+F3 & Freq &   & \checkmark & 0.617 & 0.69 & 0.66 & 0.34 \\
+Ex16 & L2+Google & 2W&   & F1 & Freq &   & \checkmark & 0.616 & 0.68 & 0.62 & 0.32 \\
+Ex17 & Google & 2W& Schema & F1+F3 & Freq &   & \checkmark & 0.615 & 0.7 & 0.64 & 0.32 \\
+Ex18 & L1 & 2W& Schema & F3 & Freq & \checkmark & \checkmark & 0.614 & 0.65 & 0.6 & 0.32 \\
+Ex19 & L1+Google & 2W&   & F1+F3 & Freq &   &   & 0.613 & 0.72 & 0.72 & 0.38 \\
+Ex20 & L1+Google & 2W&   & F1+F3 & Freq &   & \checkmark & 0.613 & 0.7 & 0.66 & 0.35 \\
+... & ...  & ... & ...  & ...  & ...  & ... & ...  & ...  & ...  & ...  & ...  \\
+Ex78 & Google & 2W& Schema & F1+F3 & Gaussian &   & \checkmark & 0.552 & 0.66 & 0.66 & 0.34 \\
+Ex80 & L2+Google & 2W& Schema & F1+F3 & Gaussian &   & \checkmark & 0.55 & 0.69 & 0.7 & 0.36 \\
+Ex82 & L1 & 2W& Schema & F3 & Gaussian &   & \checkmark & 0.549 & 0.68 & 0.64 & 0.33 \\
+... & ...  & ... & ...  & ...  & ...  & ... & ...  & ...  & ...  & ...  & ...  \\
+BS2 & Google & 2W&   &   & Freq &   &   & 0.473 & 0.53 & 0.42 & 0.22 \\
+... & ...  & ... & ...  & ...  & ...  & ... & ...  & ...  & ...  & ...  & ...  \\
+BS1 & Google & 2W&   &   & TFIDF &   &   & 0.063 & 0.08 & 0.06 & 0.03 \\
+\end{tabular}
+\end{table}
+
+Clear results:
 
 1) The problem with non strict Named Entities being promoted in TFIDF strategy is clearly alleviated for all filters and combinations. TF strategy has generally improved as well, but in a lower scale.
 2) The TF strategy performs better than the current implementation of TFIDF in ALL cases.
 3) Best Filter for TF strategy is F3 (0.523665971)
 4) Best Filter for TFIDF strategy is the combination F1\_F3
-5) I combined the results for both strategies via a) simple multiplication and b) their average value, see rows 4th and 5th. In both cases, the combination F1\_F3 seems to perform the best.
-
-
+5) I combined the results for both strategies via a) simple multiplication and b) their average value, see rows 4th and 5th. In both cases, the combination F1\_F3 seems to perform the best.m
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%  5. Conclusion  %%%
 %%%%%%%%%%%%%%%%%%%%%%%
