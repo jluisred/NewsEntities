@@ -181,18 +181,6 @@ Following a similar principle of the $S_F$, if an entity appears in a big number
 \label{fig:rankingStrategies}%\end{figure}
 \end{figure}
 
-\hg{move to the experimental settings and Evaluation}
-\subsection{TFIDF-based Function}
-We measure the importance an entity in a document over a corpus of documents $D$ (reducing the absolute frequency of the entity) using the TF-IDF. This measure penalizes those entities appearing more frequently in general. The function is then as follows:
-
-\begin{equation}
-\begin{matrix}
-tf(e_i,d_j) = 0.5 + \frac{0.5\times f_{a}(e_i,D)}{max\left \{ f_{a}(e_i',D) : e_i' \in d_j\right \}},   idf(e_i,d_j) = log\frac{\left | D \right |}{\left \{ d_j\in D  :  e_i\in d_j \right \}}
-\end{matrix}
-\end{equation}
-
-However in our case the ranking algorithm has to be able to expose the importance of an entity inside the whole corpus $D$, while by definition TF-IDF refers only to the importance of an entity inside a particular document. 
-For this reason we have extended this measure to capture the whole context of the newscast by aggregating the different $tf(e_i,d_j) \times idf(e_i,d_j)$ into a single function $tfidf^{*}(e_i,D)$ via the function $S_{TFIDF}= \frac{ \sum_{j=1}^{n} \sum_{i=1}^{n} tf(e_i,d_j) \times idf(e_i,d_j)} {|D|}$.
 % Random Walks
 % PageRank
 % Use prior knowledge graph
@@ -339,8 +327,12 @@ That makes $5 * 2 * 2 = 20$ different runs
 that we will study in the Section~\ref{sec:evaluation} in order to discover which configuration optimizes the expansion algorithm.
 * Explain insights obtained from the survey. \% of entities coming from subtitles, form other sources, etc
 
-\subsubsection{Entity Filtering}
-\label{sec:settingsFiltering}
+\subsubsection{Semantic Annotation}
+\label{sec:settingsFilteringClustering}
+Particularities of NERD-ML reported here?
+
+\subsubsection{Annotation Filtering and Clustering}
+\label{sec:settingsFilteringClustering}
 
 After some first trials it became evident that those many non-pure Named Entities which were not well considered by viewers and expert during the ground truth creation [Lilia] were dramatically dropping the scores for most of the considered ranking strategies. We have foreseen three different filtering approaches for getting rid of those undesired concept annotations:
 
@@ -352,8 +344,8 @@ After some first trials it became evident that those many non-pure Named Entitie
 
 We executed different runs by applying those filters over the original annotations and their corresponding combinations, manly: (F1 - F2 - F3 - F1\_F2 - F1\_F3 - F2\_F3 - F1\_F2\_F3 ), resulting in significant improvement in the final scores as shown in Section~\ref{sec:FilteringExperiments}, in terms of different measures like Precision, recall, average precision, and NDCG.
 
-\subsubsection{Entity Ranking}
-\label{sec:settingsRanking}
+\subsubsection{Semantic Annotation Ranking}
+\label{sec:settingsAnnotationRanking}
 
 All strategies considered, with and without Expert rules, with / without popularity.
 
@@ -366,6 +358,19 @@ With the objective of finding out users preferences regarding the three analysed
 That makes $5 * 2 * 2 = 20$ different runs 
 
 Baselines.
+
+\subsubsection{TFIDF-based Function}
+We measure the importance an entity in a document over a corpus of documents $D$ (reducing the absolute frequency of the entity) using the TF-IDF. This measure penalizes those entities appearing more frequently in general. The function is then as follows:
+
+\begin{equation}
+\begin{matrix}
+tf(e_i,d_j) = 0.5 + \frac{0.5\times f_{a}(e_i,D)}{max\left \{ f_{a}(e_i',D) : e_i' \in d_j\right \}},   idf(e_i,d_j) = log\frac{\left | D \right |}{\left \{ d_j\in D  :  e_i\in d_j \right \}}
+\end{matrix}
+\end{equation}
+
+However in our case the ranking algorithm has to be able to expose the importance of an entity inside the whole corpus $D$, while by definition TF-IDF refers only to the importance of an entity inside a particular document. 
+For this reason we have extended this measure to capture the whole context of the newscast by aggregating the different $tf(e_i,d_j) \times idf(e_i,d_j)$ into a single function $tfidf^{*}(e_i,D)$ via the function $S_{TFIDF}= \frac{ \sum_{j=1}^{n} \sum_{i=1}^{n} tf(e_i,d_j) \times idf(e_i,d_j)} {|D|}$.
+
 
 \begin{table}[h]
 \begin{tabular}{llllllllllll}
