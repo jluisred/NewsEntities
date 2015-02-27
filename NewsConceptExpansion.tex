@@ -209,9 +209,7 @@ The knowledge of experts in the domain, like journalists or newscast editors can
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Gold Standard for Evaluating Newscast Semantic Snapshot}
 \label{sec:GoldStandard}
-We are interested in evaluating ranking strategies for generating semantic snapshots of newscasts, where each snapshot is characterized by a set of named entities. We narrowed down the selection of named entity types to Person, Organization, and Location, since they can be directly translated in \textit{who}, \textit{what}, \textit{when}, a subset of the 5Ws well-known questions in the journalisms. To the best of our knowledge there is no evaluation dataset suited to this context. The title of the newscasts and the breakdown figures per entity type are shown in Table~\ref{table:entitydistribution}. The dataset is freely available\footnote{\url{https://github.com/jluisred/NewsConceptExpansion/wiki/Golden-Standard-Creation}}.
-
-%\vspace{-1.5em}
+We are interested in evaluating ranking strategies for generating semantic snapshots of newscasts, where each snapshot is characterized by a set of named entities. We narrowed down the selection of named entity types to Person, Organization, and Location, since they can be directly translated in \textit{who}, \textit{what}, \textit{when}, a subset of the fundamental questions in journalism known as the 5Ws. To the best of our knowledge there is no evaluation dataset suited to this context. The title of the newscasts and the breakdown figures per entity type are shown in Table~\ref{table:entitydistribution}. The dataset is freely available\footnote{\url{https://github.com/jluisred/NewsConceptExpansion/wiki/Golden-Standard-Creation}}.
 \begin{table}
 \begin{tabular}{| p{6cm} | l| l| l| l|}
   \hline
@@ -234,7 +232,6 @@ We are interested in evaluating ranking strategies for generating semantic snaps
 \label{table:entitydistribution}
 \end{table}
 
-%\vspace{-2em}
 \subsection{Newscast Selection}
 We randomly selected 5 newscasts from the BBC One Minute World News website\footnote{\url{http://www.bbc.com/news/video_and_audio/}}. Each newscast lasted from 1 to 3 minutes. The selection covered a wide range of subjects specifically: politics, armed conflicts, environmental events, legal disputes, and social news. 
 %The intention behind this topic choice was to fit international audiences, since we planned to perform a user study with international participants. 
@@ -242,18 +239,18 @@ Subtitles of the videos were not available; therefore, a member of the team manu
 %After obtaining the transcriptions, the following steps were performed in order to obtain a set of unbiased candidate entities. 
 
 \subsection{Newscast Semantic Annotation}
-The annotation process involved two annotators and one expert of the domain. The output of this stage is a list of entity candidates. The two annotators were asked to detect for each newscast entities from: 
+The annotation process involved two annotators: an expert of the domain and a journalist. The output of this stage is a list of entity candidates. The annotators worked in parallel.
+\\The expert of the domain was asked to detect for each newscast entities from: 
 \begin{description}
 \item[subtitle]: the newscast subtitle;
 \item[image]: every time a recognizable person, organization or location was portrayed in the newscast, the entity was added to the list;
 \item[image captions]: the named entities appearing in such tags, such as nametag overlays, were added to the candidate set;
-\item[external documents]: the two annotators were allowed to use Google Custom Search to look for articles related to the video. The query followed the pattern: title of the newscast, date. The sources were considered: The Guardian, New York Times, and Al Jazeera online (English). The results were filtered of one week time, where the median is represented by the day when event took place.
+\item[external documents]: the annotator was allowed to use Google Custom Search to look for articles related to the video. The query followed the pattern: title of the newscast, date. The sources were considered: The Guardian, New York Times, and Al Jazeera online (English). The results were filtered of one week time, where the median is represented by the day when event took place.
 \end{description}
-
-A journalist, with more than 6 years of experience as a writer and editor for important American newspapers and websites, acted as the expert of the domain. He was asked to watch the newscasts and to identify for each the entities either mentioned or not that better serve the objective of showing interesting additional information a final reader. The expert did not have access to the candidate set built by the two annotators, and he was completely free to suggest any named entity he wanted. 
+A journalist, with more than 6 years of experience as a writer and editor for important American newspapers and websites, acted as the expert of the domain. He was asked to watch the newscasts and to identify for each the entities either mentioned or not that better serve the objective of showing interesting additional information a final reader. He was completely free to suggest any named entity he wanted. 
 
 \subsection{Quality control and Ranking}
-A quality control refined the set of entities coming from the previous stage, eliminating all named entity duplicates and standardising names. 
+A quality control, performed by another expert of the domain, refined the set of entities coming from the previous stage, eliminating all named entity duplicates and standardising names. 
 %For example, when we had ``Barack Obama'' as an entity and ``Obama'' as another entity we eliminated the shorter one and left the complete name. A total of 99 entities were obtained from all videos. 
 We then conducted a crowdsourcing survey with the objective to gather information about the degree of interestingness of the entities for each newscast. Based on \cite{vonBrzeski:2007:LCU:1321440.1321537} we define interestingness whether an entity is interesting, useful or compelling enough to tear the user away from the main thread of the document. Fifty international subjects participated in this online study. They responded an online call distributed via email and social networks. Their age range was between 25 and 54 years with an average age of 30.3 (standard deviation 7.3 years). 18 participants were female and 32 were male. Most of the participants were highly educated and 48 of them had either a university bachelor degree or a postgraduate degree. The main requisite for participation was that they were interested in the news and followed the news regularly, preferably through means that include newscasts.
 During the interview participants were asked to choose at least 3 out of 5 videos according to their preferences. Then they were shown each one of the newscasts. Then they were asked to rate whether they would be interested in receiving more information about the named entities in the context of the news video and on a second screen or similar application. All the named entities from the candidate set related to the last seen video were shown in a list with ratio buttons arranged in a similar way to a three-point Likert-scale. The possible answers were ``Yes'' ``Maybe'' and ``No''. 
@@ -412,12 +409,13 @@ In Table~\ref{table:results} we present the top 20 runs for our approach in gene
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%
-%%%  5. Conclusion  %%%
+%%%  7. Conclusion  %%%
 %%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Conclusion}
 \label{sec:Conclusion}
-In this paper we have presented an approach for automatically generating Newscast Semantic Snapshots. The followed approach is able to enlarge the niche of initial newscast content, retrieving and analyzing event-related documents from the Web. The bag of retrieved documents, together with the newscast transcript, is processed with the objective of extracting named entities referring to name of people, organizations, and locations. By increasing the size of the document set to analyze, we increase the completeness of the context and the representativeness of the list of entities, reinforcing relevant entities and finding new ones that are potentially interesting inside the context of that news item. The named entities are then ranked according to the entity appearance in the sampled collection of documents, popularity of the entity on the Web, and experts' rules. We benchmarked the entire workflow against a gold standard, which is also proposed in this paper. The evaluation has showed the strenght of this approach, holding an $MNDCG_{10}$ score of 0.666 against.
+In this paper we have presented an approach for automatically generating Newscast Semantic Snapshots. By following a entity expansion process that retrieves additional event-related documents from the Web, we have been able to enlarge the niche of initial newscast content. The bag of retrieved documents, together with the newscast transcript, is analyzed with the objective of extracting named entities referring to people, organizations, and locations. By increasing the size of the document set, we have increased the completeness of the context and the representativeness of the list of entities, reinforcing relevant entities and finding new ones that are potentially interesting inside the context of that news item. The named entities have been then ranked according to the entity appearance in the sampled collection of documents, popularity of the entity on the Web, and experts' rules. We benchmarked the entire workflow against a gold standard, which is also proposed in this paper. The evaluation has showed the strength of this approach, holding an $MNDCG_{10}$ score of 0.666, outperforming the two studied baselines.
+
 %that we can successfully expand the initial set of recognized entities with more relevant concepts not detected by pure named entity recognition approaches and produce a more accurate ranking of important concepts that brings forward entities which user are more interested about.
 
 Future research interests include tailoring the entity ranking functions to particular news categories: sport, politics, regional, international, opinion. We are investigating the role of entity relations in generating of the Newscast Semantic Snapshot: usually entities are linked by tight relations extracted from a knowledge base, or simply from the documents collected, in order to generate a directed graph of entities instead of a list. We also plan to refine the ranking process, applying supervised techniques (Learning to Rank) that tailor the solution on particular domains. 
