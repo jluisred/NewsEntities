@@ -181,7 +181,6 @@ By characterizing the entities in terms of their Bernoulli appearance rate acros
 % PageRank
 % Use prior knowledge graph
 
-
 \subsection{Orthogonal Functions}
 \subsubsection{Popularity Function}
 %Even the three ranking algorithms follow different considerations and principles, they end up exploiting the most precise an representative frequency values that the entity expansion process can provide compared to any other analysis over more reduced and probably partial newscast descriptions. 
@@ -210,24 +209,27 @@ The knowledge of experts in the domain, like journalists or newscast editors can
 \section{Gold Standard for Evaluating Newscast Semantic Snapshot}
 \label{sec:GoldStandard}
 We are interested in evaluating ranking strategies for generating semantic snapshots of newscasts, where each snapshot is characterized by a set of named entities. We narrowed down the selection of named entity types to Person, Organization, and Location, since they can be directly translated in \textit{who}, \textit{what}, \textit{when}, a subset of the fundamental questions in journalism known as the 5Ws. To the best of our knowledge there is no evaluation dataset suited to this context. The title of the newscasts and the breakdown figures per entity type are shown in Table~\ref{table:entitydistribution}. The dataset is freely available\footnote{\url{https://github.com/jluisred/NewsConceptExpansion/wiki/Golden-Standard-Creation}}.
-\begin{table}
-\begin{tabular}{| p{6cm} | l| l| l| l|}
+ \begin{table}
+  \resizebox{12cm}{!} {
+
+\begin{tabular}{| p{6cm} | l| l| l| l| l|}
   \hline
-  \textbf{Newscast Title} & \textbf{Person} & \textbf{Organization} &\textbf{Location} & \textbf{Total} \\
+  \textbf{Newscast Title} & \textbf{Date} & \textbf{Person} & \textbf{Organisation} &\textbf{Location} & \textbf{Total} \\
     \hline
-  Fugitive Edward Snowden applies for asylum in Russia & 11 & 7 & 10 & 28 \\
+  Fugitive Edward Snowden applies for asylum in Russia & 2013-07-03 & 11 & 7 & 10 & 28 \\
     \hline
- Egypt's Morsi Vows to Stay in Power & 4 & 5 & 4 & 17 \\
+ Egypt's Morsi Vows to Stay in Power & 2013-07-23 & 4 & 5 & 4 & 17 \\
     \hline
- Fukushima leak causes Japan concern & 7 & 5 & 5 & 13\\
+ Fukushima leak causes Japan concern & 2013-07-24 & 7 & 5 & 5 & 13\\
     \hline
- Rallies in US after Zimmerman Verdict & 9 & 2 & 8 & 19 \\
+ Rallies in US after Zimmerman Verdict & 2013-07-17 & 9 & 2 & 8 & 19 \\
     \hline
- Royal Baby Prince Named George & 15 & 1 & 6 & 22 \\
+ Royal Baby Prince Named George & 2013-07-15& 15 & 1 & 6 & 22 \\
     \hline
-    \textbf{Total}  & 46 & 20 & 33 & 99\\
+    \textbf{Total}  &   & 46 & 20 & 33 & 99\\
   \hline
 \end{tabular}
+}
 \caption[Table caption text]{Breakdown entity figures per type and per newscast.}
 \label{table:entitydistribution}
 \end{table}
@@ -414,7 +416,7 @@ In Table~\ref{table:results} we present the top 20 runs for our approach in gene
 
 \section{Conclusion}
 \label{sec:Conclusion}
-In this paper we have presented an approach for automatically generating Newscast Semantic Snapshots. By following a entity expansion process that retrieves additional event-related documents from the Web, we have been able to enlarge the niche of initial newscast content. The bag of retrieved documents, together with the newscast transcript, is analyzed with the objective of extracting named entities referring to people, organizations, and locations. By increasing the size of the document set, we have increased the completeness of the context and the representativeness of the list of entities, reinforcing relevant entities and finding new ones that are potentially interesting inside the context of that news item. The named entities have been then ranked according to the entity appearance in the sampled collection of documents, popularity of the entity on the Web, and experts' rules. We benchmarked the entire workflow against a gold standard, which is also proposed in this paper. The evaluation has showed the strength of this approach, holding an $MNDCG_{10}$ score of 0.666, outperforming the two studied baselines.
+In this paper we have presented an approach for automatically generating Newscast Semantic Snapshots. By following a entity expansion process that retrieves additional event-related documents from the Web, we have been able to enlarge the niche of initial newscast content. The bag of retrieved documents, together with the newscast transcript, is analyzed with the objective of extracting named entities referring to people, organizations, and locations. By increasing the size of the document set, we have increased the completeness of the context and the representativeness of the list of entities, reinforcing relevant entities and finding new ones that are potentially interesting inside the context of that news item. The named entities have been then ranked according to the entity appearance in the sampled collection of documents, popularity of the entity on the Web, and experts' rules. We assessed the entire workflow against a gold standard, which is also proposed in this paper. The evaluation has showed the strength of this approach, holding an $MNDCG_{10}$ score of 0.666, outperforming the two studied baselines.
 
 %that we can successfully expand the initial set of recognized entities with more relevant concepts not detected by pure named entity recognition approaches and produce a more accurate ranking of important concepts that brings forward entities which user are more interested about.
 
