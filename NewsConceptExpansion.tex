@@ -360,19 +360,16 @@ Organizations have gotten the better weight ($Op _{expert}=0.95$), followed by P
 \end{enumerate}
 \end{itemize}
 
-
 \subsection{Results}
 \label{sec:results}
 
-That makes $5 * 2 * 2 = 20$ different runs 
+Given the different settings for each phase of the approach ($N_runs_{Collection} * Runs_{Filtering} * Runs_{Ranking}$), we have a total of  $20 * 4 * 4 = 320$ different runs that have been launched and ranked according to $MNDCG_{10}$. In addition we have also executed two baseline approaches for comparing them with the better performing strategies in our approach. More details about them are shown below.
 
-20 * 4 * 3
-ranked according to 
-in addition we showed 2 baselines
-Baselines.
-
+\subsubsection{Baseline 1: Former Entity Expansion Implementation}
+As reported in the related work, a previous version of the News Entity Expansion algorithm was already published in~\cite{RedondoGarcia2014}, The characteristics of this approach in terms of the dimensions considered in this paper are the following: Google as source of documents, temporal window of 2 Weeks, no Schema.org selected, no filter strategy applied, and only frequency based ranked function with no orthogonal appliances. Results are reported in Table~\ref{table:results} under the run id \textit{BS1}.
+ 
 \subsubsection{TFIDF-based Function}
-We measure the importance an entity in a document over a corpus of documents $D$ (reducing the absolute frequency of the entity) using the TF-IDF. This measure penalizes those entities appearing more frequently in general. The function is then as follows:
+To compare our absolute frequency and Gaussian based functions with other possible approaches already reported in the literature, we selected the well-know statistic TF-IDF, which measures the importance an entity in a document over a corpus of documents $D$, penalizing those entities appearing more frequently in general. The function, in the context of the named entity annotation domain is as follows:
 
 \begin{equation}
 \begin{matrix}
@@ -380,15 +377,17 @@ tf(e_i,d_j) = 0.5 + \frac{0.5\times f_{a}(e_i,D)}{max\left \{ f_{a}(e_i',D) : e_
 \end{matrix}
 \end{equation}
 
-However in our case the ranking algorithm has to be able to expose the importance of an entity inside the whole corpus $D$, while by definition TF-IDF refers only to the importance of an entity inside a particular document. 
-For this reason we have extended this measure to capture the whole context of the newscast by aggregating the different $tf(e_i,d_j) \times idf(e_i,d_j)$ into a single function $tfidf^{*}(e_i,D)$ via the function $S_{TFIDF}= \frac{ \sum_{j=1}^{n} \sum_{i=1}^{n} tf(e_i,d_j) \times idf(e_i,d_j)} {|D|}$.
+We needed to make some adjustment in the formal since in our case the ranking algorithm has to be able to expose the importance of an entity inside the whole corpus $D$, while by definition TF-IDF refers only to the importance of an entity inside a particular document.  For this reason we have extended this measure to capture the whole context of the newscast by aggregating the different $tf(e_i,d_j) \times idf(e_i,d_j)$ into a single function $tfidf^{*}(e_i,D)$ via the function $S_{TFIDF}(e)= \frac{ \sum_{j=1}^{n}  tf(e,d_j) \times idf(e)} {|D|}$.  Results are reported in Table~\ref{table:results} under the run id \textit{BS2}.
 
+\subsubsection{Launching the Experiments}
 
 \begin{table}[h]
+  \resizebox{12cm}{!} {
+
 \begin{tabular}{llllllllllll}
 \hline
 \multicolumn{1}{|c|}{\multirow{2}{*}{Run}} & \multicolumn{3}{c|}{Collection} & \multicolumn{1}{c|}{\multirow{2}{*}{Filtering}} & \multicolumn{3}{c|}{Functions} & \multicolumn{4}{c|}{Result} \\ \cline{2-4} \cline{6-12} 
-\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{Sources} & \multicolumn{1}{c|}{$T_{Window}$} & \multicolumn{1}{c|}{Schema.org} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{Freq} & \multicolumn{1}{c|}{Pop} & \multicolumn{1}{c|}{Exp} & \multicolumn{1}{c|}{$MNDCG_{10}$} & \multicolumn{1}{c|}{$MAP_{10}$} & \multicolumn{1}{l|}{$MP_{10}$} & \multicolumn{1}{l|}{$MR_{10}$} \\ \hline
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{Sources} & \multicolumn{1}{c|}{$T_{Window}$} & \multicolumn{1}{c|}{Schema.org} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{Freq} & \multicolumn{1}{c|}{Pop} & \multicolumn{1}{c|}{Exp} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{$MAP_{10}$} & \multicolumn{1}{l|}{$MP_{10}$} & \multicolumn{1}{l|}{$MR_{10}$} \\ \hline
 Ex0 & Google & 2W&   & F1+F3 & Freq &   & \checkmark & 0.666 & 0.71 & 0.7 & 0.37 \\
 Ex1 & Google & 2W&   & F3 & Freq &   & \checkmark & 0.661 & 0.72 & 0.68 & 0.36 \\
 Ex2 & Google & 2W&   & F3 & Freq & \checkmark & \checkmark & 0.658 & 0.64 & 0.6 & 0.32 \\
@@ -404,32 +403,39 @@ Ex11 & L1+Google & 2W&   & F3 & Freq &   &   & 0.623 & 0.7 & 0.72 & 0.37 \\
 Ex12 & L2+Google & 2W&   & F3 & Freq &   & \checkmark & 0.623 & 0.68 & 0.66 & 0.35 \\
 Ex13 & L2+Google & 2W&   & F3 & Freq & \checkmark & \checkmark & 0.623 & 0.61 & 0.56 & 0.3 \\
 Ex14 & L2+Google & 2W&   & F3 & Freq &   &   & 0.62 & 0.69 & 0.74 & 0.4 \\
-Ex15 & L1+Google & 2W& Schema & F1+F3 & Freq &   & \checkmark & 0.617 & 0.69 & 0.66 & 0.34 \\
+Ex15 & L1+Google & 2W& \checkmark & F1+F3 & Freq &   & \checkmark & 0.617 & 0.69 & 0.66 & 0.34 \\
 Ex16 & L2+Google & 2W&   & F1 & Freq &   & \checkmark & 0.616 & 0.68 & 0.62 & 0.32 \\
-Ex17 & Google & 2W& Schema & F1+F3 & Freq &   & \checkmark & 0.615 & 0.7 & 0.64 & 0.32 \\
-Ex18 & L1 & 2W& Schema & F3 & Freq & \checkmark & \checkmark & 0.614 & 0.65 & 0.6 & 0.32 \\
+Ex17 & Google & 2W& \checkmark & F1+F3 & Freq &   & \checkmark & 0.615 & 0.7 & 0.64 & 0.32 \\
+Ex18 & L1 & 2W& \checkmark & F3 & Freq & \checkmark & \checkmark & 0.614 & 0.65 & 0.6 & 0.32 \\
 Ex19 & L1+Google & 2W&   & F1+F3 & Freq &   &   & 0.613 & 0.72 & 0.72 & 0.38 \\
 Ex20 & L1+Google & 2W&   & F1+F3 & Freq &   & \checkmark & 0.613 & 0.7 & 0.66 & 0.35 \\
 ... & ...  & ... & ...  & ...  & ...  & ... & ...  & ...  & ...  & ...  & ...  \\
-Ex78 & Google & 2W& Schema & F1+F3 & Gaussian &   & \checkmark & 0.552 & 0.66 & 0.66 & 0.34 \\
-Ex80 & L2+Google & 2W& Schema & F1+F3 & Gaussian &   & \checkmark & 0.55 & 0.69 & 0.7 & 0.36 \\
-Ex82 & L1 & 2W& Schema & F3 & Gaussian &   & \checkmark & 0.549 & 0.68 & 0.64 & 0.33 \\
+Ex78 & Google & 2W& \checkmark & F1+F3 & Gaussian &   & \checkmark & 0.552 & 0.66 & 0.66 & 0.34 \\
+Ex80 & L2+Google & 2W& \checkmark & F1+F3 & Gaussian &   & \checkmark & 0.55 & 0.69 & 0.7 & 0.36 \\
+Ex82 & L1 & 2W& \checkmark & F3 & Gaussian &   & \checkmark & 0.549 & 0.68 & 0.64 & 0.33 \\
 ... & ...  & ... & ...  & ...  & ...  & ... & ...  & ...  & ...  & ...  & ...  \\
 BS2 & Google & 2W&   &   & Freq &   &   & 0.473 & 0.53 & 0.42 & 0.22 \\
 ... & ...  & ... & ...  & ...  & ...  & ... & ...  & ...  & ...  & ...  & ...  \\
 BS1 & Google & 2W&   &   & TFIDF &   &   & 0.063 & 0.08 & 0.06 & 0.03 \\
 \end{tabular}
+}
+\caption[Table caption text]{Executed runs and their configuration settings, ranked by $MNDCG_{10}$}
+\label{table:results}
 \end{table}
 
-Clear results:
+In Table~\ref{table:results} we present the top 20 runs for our approach in generating NSS, together with some lower configurations at position 78 and following that are worth to be reported and the scores of the baseline strategies. Those are the main outcomes of the research. 
 
-1) the better is this good, which is much better than BS2 and by far better BS1. Tradicional tf - iff measures fail. And more when there are no filter
+\begin{itemize}
 
-1) The problem with non strict Named Entities being promoted in TFIDF strategy is clearly alleviated for all filters and combinations. TF strategy has generally improved as well, but in a lower scale.
-2) The TF strategy performs better than the current implementation of TFIDF in ALL cases.
-3) Best Filter for TF strategy is F3 (0.523665971)
-4) Best Filter for TFIDF strategy is the combination F1\_F3
-5) I combined the results for both strategies via a) simple multiplication and b) their average value, see rows 4th and 5th. In both cases, the combination F1\_F3 seems to perform the best.m
+\item Our best approach has obtained a $MNDCG_{10}$ score of 0.662 and a $MAP_{10}$ of 0.71, which are reasonably good in the document retrieval domain.
+\item Our approach performs much better than BS1 and by far better than BS2. The very low score of this last baseline is explained in the fact that tradicional TF-IDF function is designed to measure the relevance of an item referred to the document that contains it and not to the whole collection. In addition, the absence of filters drop drastically the scores.
+\item Regarding the Document Retrieval step, we see that using Google as source alone of together with other WhiteList, give better results than restricting only to particular whitelist. The biggest $T_{Window}$ of 2 weeks performs better in all cases, while the use of Schema.org does not bring anything back except when is apply over the Gaussian function (see runs 78, 80, 82) where it turns to be an influent factor.
+\item the best Filter strategy is F3, followed by the combination F1\_F3. In conclusion, capitalization is a very powerful tool for making a first candidate list with those entities that a priori users consider more interesting.
+\item The absolute frequency function performs better than the Gaussian in ALL top cases.
+\item The Expert Rules based function improves the final NSS for almost every configuration possible.
+\item Popularity based function does not seem to improve significantly the results. However, a further manual study of the promoted entities has revealed that in fact, the method is bringing up relevant entities like for example David Ellsberg\footnote{\url{http://en.wikipedia.org/wiki/Daniel_Ellsberg}} for the query "Fugitive Edward Snowden applies for asylum in Russia". This entity is barely mentioned in some documents collected, but the role in the whole story behind the newscast is quite representative since he published an editorial with high media impact in The Guardian praising the actions of Snowden in revealing top-secret surveillance programs of the NSA. However, there is a limitation in the amount of effort and time that manual annotators can spend for building the Ground Truth, so those entities are not reflected in the gold standard but leave the door open for future studies which goes beyond in what editors and expert can produce in a reasonable amount of time.
+\end{itemize}
+
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%  5. Conclusion  %%%
 %%%%%%%%%%%%%%%%%%%%%%%
