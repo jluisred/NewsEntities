@@ -434,13 +434,15 @@ In Table~\ref{table:results} we present the top 20 runs for our approach in gene
 
 \section{Conclusion}
 \label{sec:Conclusion}
-We presented an approach for context-aware annotating news events, designed to precisely harvest program descriptions starting from named entities recognized in TV video transcripts. Because the entities initially spotted are typically insufficient for covering the broader range of concepts that best describe a particular news clip, we expanded this set by analyzing additional textual documents about the same event.
+We presented an approach for context-aware annotating news events, designed to precisely harvest program descriptions starting from named entities recognized in TV video transcripts. 
 
-The evaluation indicates that we can successfully expand the initial set of recognized entities with more relevant concepts not detected by pure named entity recognition approaches and produce a more accurate ranking of important concepts that brings forward entities which user are more interested about.
+Because the entities initially spotted are typically insufficient for covering the broader range of concepts that best describe a particular news clip, we expanded this set by analyzing additional textual documents about the same event.
 
-Future: tailor ranking to particular types of news: sport, politics, regional, international, opinion, etc. Survey on 15 videos from the BBC about international facts. Evaluated over people in different countries.
-semantic annotation for doing: summarizing topics/entities
+The evaluation MNDCG_{10}$ score of 0.662 against the Ground truth. The different document retrieval, semantic annotation, annotation filtering and clustering and semantic reranking have significantly improved.
+ 
+that we can successfully expand the initial set of recognized entities with more relevant concepts not detected by pure named entity recognition approaches and produce a more accurate ranking of important concepts that brings forward entities which user are more interested about.
 
+Future research interests include tailoring ranking functions to particular news categories: sport, politics, regional, international, opinion, etc. Also, try to detect and formalize relations between entities inside the SNN in order to generate a directed graph of entities instead of a list. Finally, we will work in extending the Golden Standard to consider a bigger number of videos from other temporal periods.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%  Acknowledgments  %%%
