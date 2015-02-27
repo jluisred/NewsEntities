@@ -344,7 +344,7 @@ Given the different settings for each phase of the approach ($N_{runs_{Collectio
 \subsubsection{Baseline 1: Former Entity Expansion Implementation}
 As reported in the related work, a previous version of the News Entity Expansion algorithm was already published in~\cite{RedondoGarcia2014}. The settings are: Google as source of documents, temporal window of 2 Weeks, no Schema.org selected, no filter strategy applied, and only frequency based ranked function with no orthogonal appliances. Results are reported in Table~\ref{table:results} under the run id \textit{BS1}.
  
-\subsubsection{TFIDF-based Function}
+\subsubsection{Baseline 2: TFIDF-based Function}
 To compare our absolute frequency and Gaussian based functions with other possible approaches already reported in the literature, we selected the well-known TF-IDF. It measures the importance an entity in a document over a corpus of documents $D$, penalizing those entities appearing more frequently. The function, in the context of the named entity annotation domain is as follows:
 \begin{equation}
 \begin{matrix}
@@ -417,15 +417,10 @@ In Table~\ref{table:results} we present the top 20 runs for our approach in gene
 
 \section{Conclusion}
 \label{sec:Conclusion}
-We presented an approach for context-aware annotating news events, designed to precisely harvest program descriptions starting from named entities recognized in TV video transcripts. 
+In this paper we have presented an approach for automatically generating Newscast Semantic Snapshot. The followed approach is able to enlarge the niche of initial newscast content, retrieving and analyzing event-related documents from the Web. The bag of retrieved documents, together with the newscast transcript, is processed with the objective of extracting named entities referring to name of people, organizations, and locations. By increasing the size of the document set to analyze, we increase the completeness of the context and the representativeness of the list of entities, reinforcing relevant entities and finding new ones that are potentially interesting inside the context of that news item. The named entities are then ranked according to the entity appearence in the sampled collection of documents, popularity of the entity on the Web, and experts' rules. We benchmarked the entire workflow against a gold standard, which is also proposed in this paper. The evaluation has showed the strenght of this approach, holding an $MNDCG_{10}$ score of 0.666 against.
+%that we can successfully expand the initial set of recognized entities with more relevant concepts not detected by pure named entity recognition approaches and produce a more accurate ranking of important concepts that brings forward entities which user are more interested about.
 
-Because the entities initially spotted are typically insufficient for covering the broader range of concepts that best describe a particular news clip, we expanded this set by analyzing additional textual documents about the same event.
-
-The evaluation MNDCG_{10}$ score of 0.662 against the Ground truth. The different document retrieval, semantic annotation, annotation filtering and clustering and semantic reranking have significantly improved.
- 
-that we can successfully expand the initial set of recognized entities with more relevant concepts not detected by pure named entity recognition approaches and produce a more accurate ranking of important concepts that brings forward entities which user are more interested about.
-
-Future research interests include tailoring ranking functions to particular news categories: sport, politics, regional, international, opinion, etc. Also, try to detect and formalize relations between entities inside the SNN in order to generate a directed graph of entities instead of a list. Finally, we will work in extending the Golden Standard to consider a bigger number of videos from other temporal periods.
+Future research interests include tailoring ranking functions to particular news categories: sport, politics, regional, international, opinion. Also, try to detect and formalize relations between entities inside the NSS in order to generate a directed graph of entities instead of a list. The approach presented in this paper follows an unsupervised pattern. We plan to extend it, applying Learning to Rank (LTR) strategies. We expect that applying it the performance of the approach will improve, depending on the domain explored in the gold standard. We finally plan to extend the gold standard for: increasing the number of newscasts, and refining the entity extraction process . 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%  Acknowledgments  %%%
