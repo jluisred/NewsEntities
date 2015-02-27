@@ -191,7 +191,7 @@ Following a similar principle of the $S_F$, if an entity appears in a big number
 
 \todo{GR: separate the formalization part from the experimental settings, such as using GT, etc etc}
 %Even the three ranking algorithms follow different considerations and principles, they end up exploiting the most precise an representative frequency values that the entity expansion process can provide compared to any other analysis over more reduced and probably partial newscast descriptions. 
-We propose a weighting function based on a mechanism that detects variations in entity popularity values over a time window (commonly named as popularity peaks) around the date of the studied event. The functions proposed above exploit the frequency of the entities in documents as factor to measure its importance. However the frequency based approaches fail to explain the phenomenon of certain found entities which are barely mentioned in related document but suddenly become interesting for viewers. These changes are sometimes unpredictable so the only solution is to rely on external sources that can provide indications about the entity popularity. We then relied on Google Trends\footnote{\url{https://www.google.es/trends}}, which estimates how many times a search-term has been used in a given time-window.
+We propose a weighting function based on a mechanism that detects variations in entity popularity values over a time window (commonly named as popularity peaks) around the date of the studied event. The functions proposed above exploit the frequency of the entities in documents as factor to measure its importance. However the frequency based approaches fail to explain the phenomenon of certain found entities which are barely mentioned in related document but suddenly become interesting for viewers. These changes are sometimes unpredictable so the only solution is to rely on external sources that can provide indications about the entity popularity, like Google Trends\footnote{\url{https://www.google.es/trends}} or Twitter\footnote{\url{https://twitter.com/}}. 
 
 \begin{figure}[h!]
 \centering
@@ -200,7 +200,7 @@ We propose a weighting function based on a mechanism that detects variations in 
 \label{fig:PopularityMeasure}%\end{figure}
 \end{figure}
 
-The procedure for getting $P_{peak}(e_i)$ is depicted in Fig.~\ref{fig:PopularityMeasure}. Using the label of an entity $e_i$, we obtain from Google Trends a list of pairs $[t, P]$ where $P\in[0,100]$ is the popularity score of an entity at the instant of time $t$. Afterward we create three consecutive and equally long temporal windows around $t$, the first one $w_{t}$ containing the date itself, another one just immediately behind $w_{t-1}$ and a last one after the previous two $w_{t+1}$. Given that Google Trends is giving results with a monthly temporal granularity, we have fixed the duration of such windows to 2 months in order to increase the representativity of the samples without compromising too much the validity of the selected values according with the time the event took place. 
+The procedure for getting $P_{peak}(e_i)$ is depicted in Fig.~\ref{fig:PopularityMeasure}. Using the label of an entity $e_i$, we obtain a list of pairs $[t, P]$ where $P\in[0,100]$ is the popularity score of an entity at the instant of time $t$. Afterward we create three consecutive and equally long temporal windows around $t$, the first one $w_{t}$ containing the date itself, another one just immediately behind $w_{t-1}$ and a last one after the previous two $w_{t+1}$. 
 In a next step we approximate the area inside the regions by calculating the average of the points contained in them, obtaining $\overline{w-1}$, $\overline{w}$ and $\overline{w+1}$. The slopes of the lines between $\overline{w-1}$ and $\overline{w}$, and $\overline{w}$ and $\overline{w+1}$ give the values $m_{up}$ and $m_{down}$ respectively, which are normalized and combined into a single score for measuring how significant the variation in volume of searches was for that studied entity label. When aggregating those two gradient, we scored $m_{up}$ higher in order to emphasize the irruption of a change, more than the posterior distribution of the search term.
 %\todo{GR:better phrase this part. This is a pure approximation btw}
 
@@ -266,6 +266,7 @@ We then conducted a crowdsourcing survey with the objective to gather informatio
 During the interview participants were asked to choose at least 3 out of 5 videos according to their preferences. Then they were shown each one of the newscasts. Then they were asked to rate whether they would be interested in receiving more information about the named entities in the context of the news video and on a second screen or similar application. All the named entities from the candidate set related to the last seen video were shown in a list with ratio buttons arranged in a similar way to a three-point Likert-scale. The possible answers were ``Yes'' ``Maybe'' and ``No''. 
 
 \todo{JL:Transforming to scores from 2 to 0}
+\todo{JL:Period of time where the events were happening?}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%  6. Experimental Settings and Evaluation %%%
@@ -282,10 +283,10 @@ In this section we measure the effectiveness of our approach for building the NS
 Inspired in similar studies in Web search engines, we have based our evaluation procedure in measures which try to find as many relevant documents as possible, while  keeping the premise that the top ranked documents are the most important. In order to summarize the effectiveness of a the different algorithm across the entire collection of queries considered in the Ground Truth, we have considered different averaging measurements that are listed below:
 
  \begin{itemize}
-\item Mean precision/recall at rank N. It is the probably the most used measure in this information retrieval task. It is easy to understand and emphasizes the top ranked documents. However it does not distinguish between differences in the rankings at positions 1 to p, which may be considered important for some tasks. For example, the two rankings in Figgure~\ref{fig:precisionRecall} will be the same when measured using precision at 10.
+\item Mean precision/recall at rank N. It is the probably the most used measure in this information retrieval task. It is easy to understand and emphasizes the top ranked documents. However it does not distinguish between differences in the rankings at positions 1 to p, which may be considered important for some tasks. For example, the two rankings in Figure~\ref{fig:precisionRecall} will be the same when measured using precision at 10.
 \item Mean average precision at N. Also called $MAP$, it takes in consideration the order of the relevant items in the top N positions and is an appropriate measure for
 evaluating the task of finding as many relevant documents as possible, while still reflecting the intuition that the top ranked documents are the most important.
-\item Average $NDCG$ at $N$. Normalized discounted cumulative gain has become a popular measure for evaluating Web search and related applications\cite{croft2010}. It is based in the assumption that there are different level of relevance for the documents obtained in results. According to this, the lower the ranked position of a relevant document the less useful it is for the user, since it is less likely to be examined. 
+\item Average Normalized discounted cumulative gain at $N$. $MNDCG$ has become a popular measure for evaluating Web search and related applications\cite{croft2010}. It is based in the assumption that there are different level of relevance for the documents obtained in results. According to this, the lower the ranked position of a relevant document the less useful it is for the user, since it is less likely to be examined. 
  \end{itemize}
 
 As the relevant documents in our Ground Truth are scored in relevance for the user, we have mainly focused on the last mesure since it can provide a more exhaustive judgement about the adequacy of the generated SNN. Concerning the evaluation point N, we have performed an empirical study over the whole set of queries and main ranking functions observing that from  $N=0$ NDCG decreasingly improves until it reaches a stable behavior from $N=10$ on. Finally, we will not perform measures in terms of efficiency. Even this kind of studies are easier to quantify, this falls outside the scope of this paper.
@@ -294,15 +295,14 @@ As the relevant documents in our Ground Truth are scored in relevance for the us
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\textwidth]{figure/precisionRecall}
-\caption{Inability of $P/R$ for considering the order of the relevant documents: rankings A and B share the same Precision and Recall at 10 .}
+\caption{Inability of $P/R$ for considering the order of the relevant documents: rankings 1 and 2 share the same Precision and Recall at 10 .}
 \label{fig:precisionRecall}%\end{figure}
 \end{figure}
 
 \subsection{Experimental Settings}
 \label{sec:experimentalSettings}
-
 \subsubsection{Document retrieval}
-In this regard, we have relied on the Google Custom Search Engine API service\footnote{\fontsize{8pt}{1em}\selectfont  \url{https://www.google.com/cse/all}} by launching a query with the parameters specified in $\text{Query}_{Event}$. Apart of the query itself, the CSE engine considers other parameters that need to be tuned up. First, due to quota restrictions the maximum number of retrieved document is set to 50. As shown in the evaluation described in the Section~\ref{sec:evaluation}, this is enough for significantly extending the initial set of documents. But addition, we have also considered 3 different dimensions that could potentially influence the effectiveness in retrieving related documents:
+We have relied on the Google Custom Search Engine API service\footnote{\fontsize{8pt}{1em}\selectfont  \url{https://www.google.com/cse/all}} by launching a query with the parameters specified by $q= \left [ \text{h}, \text{t} \right ]$. Apart of the query itself, the CSE engine considers other parameters that need to be tuned up. First, due to quota restrictions the maximum number of retrieved document is set to 50. But in addition, we have also considered 3 different dimensions that could potentially influence the effectiveness in retrieving related documents:
 \begin{enumerate}
  \item Web sites to be crawled. Google allows to specify a list of web domains and subdomains where documents can be retrieved from. This reduces the scope of the search task and, depending on the characteristics of the considered sources, influence the nature of the retrieved items: from big online newspapers to user generated content. At the same time, Google allows to prioritize searching over those whitelists while still considering the  whole indexed Web. Based on this, in our study we considered five possible values for this parameter:
 a) AllGoogle: search over the whole set of Web pages indexed by Google.
@@ -312,32 +312,29 @@ a) AllGoogle: search over the whole set of Web pages indexed by Google.
   \item Newspaper whiteList + Google. Prioritize content in Newspaper whitelist but still consider other sites.
   \item Lilia's whitelist + AllGoogle: Prioritize content in Lilia's whitelist but still consider other sites.
  \end{itemize}
- \item Temporal dimension. This variable allows to filter those documents which are not temporarily close from the day where the newscast was published. Assuming that the news item is fresh enough, this date of publication will also be fairly close to the day the event  took place. Taking $\text{PublishingDate}$ as a reference and increasing the window in a certain amount of days $d$,  we end up having $Time_{Window}=\left [ \text{PublishingDate}-d, \text{PublishingDate}+d \right ]$ The reason why we expand the original event period is because documents concerning a news event are not always published during the time of the action is taking place but some hours or days after or before. The final $Time_{Window}$ could vary according to many factors such as the nature of the event itself (whether it is a brief appearance in a media, or part of a longer story with more repercussion) or the kind of documents the search engine is indexing (from very deep and elaborated documents that need time to be published, to short post quickly generated by users). In this study we have considered two possible values for it: 2 weeks and one week temporal windows.
- \item In addition, Google Custom Search Engine makes possible to filter result according to the Schema.org types: 2 values:. Based on the study.
-[NoFilter(Default), Person\&OrganizationFiltered]
+ \item Temporal dimension. This variable allows to filter those documents which are not temporarily close from the day where the newscast was published. Assuming that the news item is fresh enough, this date of publication will also be fairly close to the day the event  took place. Taking $\text{PublishingDate}$ as a reference and increasing the window in a certain amount of days $d$,  we end up having $Time_{Window}=\left [ \text{t}-d, \text{t}+d \right ]$ The reason why we expand the original event period is because documents concerning a news event are not always published during the time of the action is taking place but some hours or days after or before. The final $Time_{Window}$ could vary according to many factors such as the nature of the event itself (whether it is a brief appearance in a media, or part of a longer story with more repercussion) or the kind of documents the search engine is indexing (from very deep and elaborated documents that need time to be published, to short post quickly generated by users). In this study we have considered two possible values for it: 2 weeks and one week temporal windows.
+ \item In addition, Google Custom Search Engine makes possible to filter result according to the Schema.org types: for our experiment we foresee the following configuration values: [NoFilterer, Person\&Organization Filtered]
 \end{enumerate}
 
-That makes $5 * 2 * 2 = 20$ different runs 
-
+That makes in total $5 * 2 * 2 = 20$ different parameter configurations that will be considered 
 that we will study in the Section~\ref{sec:evaluation} in order to discover which configuration optimizes the expansion algorithm.
-* Explain insights obtained from the survey. \% of entities coming from subtitles, form other sources, etc
 
 \subsubsection{Semantic Annotation}
 \label{sec:settingsFilteringClustering}
-Particularities of NERD-ML reported here?
+\todo{JL:Particularities of NERD-ML reported here??}
 
 \subsubsection{Annotation Filtering and Clustering}
 \label{sec:settingsFilteringClustering}
 
-After some first trials it became evident that those many non-pure Named Entities which were not well considered by viewers and expert during the ground truth creation [Lilia] were dramatically dropping the scores for most of the considered ranking strategies. We have foreseen three different filtering approaches for getting rid of those undesired concept annotations:
+After some first trials it became evident that there were many non-pure Named Entities detected in the semantic annotation phase which are not well considered by viewers and expert during in ground truth. Those were dramatically dropping the scores for most of the considered ranking strategies. We have foreseen three different filtering approaches for getting rid of undesired concept annotations that can potentially drop down the scores for most of the considered semantic ranking function:
 
 \begin{enumerate}
-\item Filter by type (F1). Filter annotations according to their NERD type. In our case, only \textbf{nerd:Person}, \textbf{nerd:Location}, and \textbf{nerd:Organization} entities.
-\item Filter by confidence (F2). Second strategy consist on getting ride of entities with confidence score under first quarter of the distribution.
-\item Filter instances (F3). Intuitively, people seems to be more attracted by proper names. Those names are normally uppercased. This filter keeps only concepts matching this rule.
+\item Filter F1. Filter annotations according to their NERD type. In our case, we keep only Person, Location, and Organization.
+\item Filter F2. Consist on getting ride of entities with confidence score under first quarter of the distribution.
+\item Filter F3. Intuitively, people seems to be more attracted by proper names than general terms. Those names are normally capitalized. This filter keeps only concepts matching this rule.
 \end{enumerate}
 
-We executed different runs by applying those filters over the original annotations and their corresponding combinations, manly: (F1 - F2 - F3 - F1\_F2 - F1\_F3 - F2\_F3 - F1\_F2\_F3 ), resulting in significant improvement in the final scores as shown in Section~\ref{sec:FilteringExperiments}, in terms of different measures like Precision, recall, average precision, and NDCG.
+By concatenating those filters, we obtain the following combinations: F1,  F2,  F3,  F1\_F2,  F1\_F3, F2\_F3, F1\_F2\_F3 ). In order to reduce the number of runs to be launched, we did a first preselection of filters by setting the rest of steps of the approach to default values and averaging the scores obtained over the different queries. We ended up discovering that 3 of the filters (F1 and F3, and the combination F1\_F3) were producing the bigger improvement in the final MNDCG, 
 
 \subsubsection{Semantic Annotation Ranking}
 \label{sec:settingsAnnotationRanking}
@@ -347,7 +344,8 @@ For the current experiment we will run both frequency and Gaussian based functio
 Regarding the particular details of the orthogonal functions, we have proceeded as follow:
 
 \begin{itemize}
-\item Popularity: with the aim of being selective enough and keep only those findings backed by strong evidence, we have filtered the entities with peak popularity value higher than $\mu+2*\sigma$ which approximately corresponds to a 2.5\% of the distribution. Those entities will have their former scores combined with the popularity values via the the following equation: $S_{P}\left ( e \right )^{*} =  R_{score}\left ( e \right ) +Pop_{peak}(e)^{2} $.
+\item Popularity: we have relied on Google Trends\footnote{\url{https://twitter.com/}}, which estimates how many times a search-term has been used in a given time-window.
+Given that Google Trends is giving results with a monthly temporal granularity, we have fixed the duration of such $w$ to 2 months in order to increase the representativity of the samples without compromising too much the validity of the selected values according with the time the event took place. With the aim of being selective enough and keep only those findings backed by strong evidence, we have filtered the entities with peak popularity value higher than $\mu+2*\sigma$ which approximately corresponds to a 2.5\% of the distribution. Those entities will have their former scores combined with the popularity values via the the following equation: $S_{P}\left ( e \right )^{*} =  R_{score}\left ( e \right ) +Pop_{peak}(e)^{2} $.
 \item Expert Rules: 
 \begin{enumerate}
 %$S_{expert}\left ( e \right )^{*} =  S_{F-1}\left ( e \right ) *Op _{expert}$, being $Op _{expert}$ 
@@ -368,6 +366,9 @@ Organizations have gotten the better weight ($Op _{expert}=0.95$), followed by P
 
 That makes $5 * 2 * 2 = 20$ different runs 
 
+20 * 4 * 3
+ranked according to 
+in addition we showed 2 baselines
 Baselines.
 
 \subsubsection{TFIDF-based Function}
@@ -421,6 +422,8 @@ BS1 & Google & 2W&   &   & TFIDF &   &   & 0.063 & 0.08 & 0.06 & 0.03 \\
 \end{table}
 
 Clear results:
+
+1) the better is this good, which is much better than BS2 and by far better BS1. Tradicional tf - iff measures fail. And more when there are no filter
 
 1) The problem with non strict Named Entities being promoted in TFIDF strategy is clearly alleviated for all filters and combinations. TF strategy has generally improved as well, but in a lower scale.
 2) The TF strategy performs better than the current implementation of TFIDF in ALL cases.
