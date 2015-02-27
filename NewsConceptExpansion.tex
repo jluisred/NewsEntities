@@ -241,15 +241,15 @@ Subtitles of the videos were not available; therefore, a member of the team manu
 %After obtaining the transcriptions, the following steps were performed in order to obtain a set of unbiased candidate entities. 
 
 \subsection{Newscast Semantic Annotation}
-The annotation process involved two annotators: an expert of the domain and a journalist. The output of this stage is a list of entity candidates. The annotators worked in parallel.
-\\The expert of the domain was asked to detect for each newscast entities from: 
+The annotation process involved two human participants: an annotator and a journalist (expert of the domain). No system bias affected the the annotation process, since each annotator performed the task without any help from automatic systems. The output of this stage is a list of entity candidates. The annotators worked in parallel.
+\\The annotator of the domain was asked to detect for each newscast entities from: 
 \begin{description}
 \item[subtitle]: the newscast subtitle;
 \item[image]: every time a recognizable person, organization or location was portrayed in the newscast, the entity was added to the list;
 \item[image captions]: the named entities appearing in such tags, such as nametag overlays, were added to the candidate set;
 \item[external documents]: the annotator was allowed to use Google Custom Search to look for articles related to the video. The query followed the pattern: title of the newscast, date. The sources were considered: The Guardian, New York Times, and Al Jazeera online (English). The results were filtered of one week time, where the median is represented by the day when event took place.
 \end{description}
-A journalist, with more than 6 years of experience as a writer and editor for important American newspapers and websites, acted as the expert of the domain. He was asked to watch the newscasts and to identify for each the entities either mentioned or not that better serve the objective of showing interesting additional information a final reader. He was completely free to suggest any named entity he wanted. 
+The journalist, with more than 6 years of experience as a writer and editor for important American newspapers and websites, acted as the expert of the domain. He was asked to watch the newscasts and to identify for each the entities either mentioned or not that better serve the objective of showing interesting additional information a final reader. He was completely free to suggest any named entity he wanted. 
 
 \subsection{Quality control and Ranking}
 A quality control, performed by another expert of the domain, refined the set of entities coming from the previous stage, eliminating all named entity duplicates and standardizing names. 
