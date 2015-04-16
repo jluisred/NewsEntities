@@ -1,6 +1,72 @@
-# Gold Standard
+# News Snapshot  Gold Standard
 
-The gold standard is composed by a set of 5 short videos from the [BBC One Minute World News Website ](http://www.bbc.com/news/video_and_audio/) together with a list of Named Entities that better illustrate the context of the facts that is being depicted. Each named entity has an associated score normalized from _-1_ to _1_ in order to indicate its importance inside the whole set of video annotations.
+The gold standard is composed by a set of 5 short videos from the [BBC One Minute World News Website ](http://www.bbc.com/news/video_and_audio/) which have been annotated with a list of Named Entities that illustrate the different facts depicted in them. Each named entity has an associated score normalized from _-1_ to _1_ in order to indicate its importance of that entity inside the whole context of the video.
+
++ Metodology is available in next section
++ Videos and transcript are available
++ Our approach presented to ISWC is described in 
++ 
+
+
+# Methodology for GroundTruth Generation
+
+We selected 5 short videos from the [BBC One Minute World News Website ](http://www.bbc.com/news/video_and_audio/). Each video lasted from 1 to 3 minutes. The selection covered a wide range of subjects specifically: politics, armed conflicts, environmental events, legal disputes, and social news. The intention behind this topic choice was to fit international audiences, since we planned to perform a user study with international participants. 
+Subtitles of the videos were not available; therefore, a member of the team manually transcribed the speech in the videos.  After obtaining the transcriptions, the following steps were performed in order to obtain a set of unbiased candidate entities. We chose to focus only on entities of the types person, organisation and location because they can directly translate or answer three questions: Who is involved? What happened? Where did it take place? These questions are a subset taken from a well known concept in journalism known as the 5Ws (_who_, _what_, _when_, _where_ and _why_), which emphasizes the fundamental dimensions that an informative journalistic text should report on. Regarding the questions _when_ and _why_, there where discarded because in order to acquire meaningfulness they need to be modeled not only by single entities but also by more complex relations between them that are out of the scope of the current paper.
+
+
+## Subtitles
+All entities of the type person, organisation and location were manually extracted from each one of the video subtitles and added to the unfiltered list of entities (candidate set). 
+
+## Image in the video
+The video image was visually analysed by a researcher and every time a recognisable person, organisation or location was portrayed this was also added as an entity to the candidate set. 
+
+## Text in the video image
+The video was analysed for text appearing in the image. Whenever text appeared in the video image, for example in the form of nametag overlays, the named entities appearing in such tags were added to the candidate set. 
+
+## Related entities
+In order to complement the candidate set with entities that might be interesting for the user, but are not necessarily found in the videos, we used the following two strategies:
+
+## Suggestions of an expert
+We collaborated with a journalist with more than 6 years of experience as a writer/editor for important American newspapers and websites.  We configured an online survey to retrieve the expert’s feedback. In the survey we explained what named entities are and which types of named entities we needed. After this introduction we presented the videos to the expert. Following each one we asked him to list the named entities that, according to his criteria, would better serve the objective of showing interesting additional information to the users. The expert didn’t have access to the candidate set, and was completely free to suggest any named entity he wanted. 
+
+## Related articles
+We used Google custom search to look for articles related to the video in three news sources: The Guardian, New York Times, and Al Jazeera online (English). We performed this search using the main terms in the videos’ title, for example, for _Fugitive Edward Snowden applies for asylum in Russia_ we searched for  _Edward_ + _Snowden_ + _asylum_ + _Russia_. We limited the results to + - 3 days from the day when the video was published. We chose one document from each source, the one closest in topic and time to the video. We then extracted all named entities of the types person, organisation and location from the resulting documents. In order to keep the entities within a reasonable number for inclusion in a survey, we kept only the named entities that appeared in at least 2 related articles and dropped all the ones that only appeared in one.  The selected entities were added to the candidate set. 
+
+## Refining the candidate set
+We refined the candidate set  comprised of all found entities by eliminating all duplicated named entities and standardising names. For example, when we had ``Barack Obama'' as an entity and ``Obama'' as another entity we eliminated the shorter one and left the complete name. 
+
+A total of 99 entities were obtained from all videos. For a distribution of entities among types and videos please see next Table :
+
+
+Newscast Title  | Date  | Person  | Organization  | Location  | Total
+------------- | ------------- | ------------- | ------------- | ------------- | -------------
+Fugitive Edward Snowden applies for asylum in Russia  | 2013-07-03  | 11  | 7  | 10  | 28
+Egypt’s Morsi Vows to Stay in Power | 2013-07-23  | 4  | 5  | 4  | 17
+Fukushima leak causes Japan concern | 2013-07-24  | 7  | 5  | 5  | 13
+Rallies in US after Zimmerman Verdict | 2013-07-17  | 9  | 2  | 8  | 19
+Royal Baby Prince Named George  | 2013-07-15  | 15  | 2  | 6  | 22
+Total  |    | 46  | 20  | 33  | 99
+
+
+
+## Online Survey
+We created an online survey with the aim of gathering information about the degree of interestingness of the entities in the candidate set. Based in \cite{vonBrzeski:2007:LCU:1321440.1321537} we define interestingness as to whether an entity is interesting, useful or compelling enough to tear the user away from the main thread of the document. 
+
+Fifty international subjects participated in this online study. They responded an online call distributed via email and social networks. Their age range was between 25 and 54 years with an average age of 30.3 (standard deviation 7.3 years). 18 participants were female and 32 were male. Most of the participants were highly educated and 48 of them had either a university bachelor degree or a postgraduate degree. The main requisite for participation was that they were interested in the news and followed the news regularly, preferably through means that include newscasts.
+During the interview participants were asked to choose at least 3 out of 5 videos according to their preferences. Then they were shown each one of the videos. After each video, they were asked to rate whether they would be interested in receiving more information about the named entities in the context of the news video and on a second screen or similar application. All the named entities from the candidate set related to the last seen video were shown in a list with ratio buttons arranged in a similar way to a three-point Likert-scale. The possible answers were _Yes_ _Maybe_ and _No_. 
+
+## Further details on the online survey
+
+The number of respondents per video were: _Snowden_ 49, _Morsi_ 34, _Fukushima_ 42, _Zimmerman_ 27, and _Royal baby_ 15.
+
+In order to calculate the interestingness scores from the users’ responses, we gave every answer a numerical value: _Yes_ = 1, _Maybe_ = 0 and _No_ = -1.  We then obtained an average score for each entity using the number of participants that rated an entity and the score that each participant gave to that particular entity.  This average was used to obtain a ranking of all the entities in the candidate set according to user preferences. 
+
+With the objective of finding out users preferences regarding the three analysed entity types: _person_, _organization_ and _location_, we calculated an average rating for each one of the entity types. The results in descending order were: organisation = -0,05, person = -0,24  and location = -0,52. These results clearly show a preference from users for the entities of the type organisation and person over those of the type location.
+\end{document}
+
+# Gold Standard Data
+
+Here the different entities that compose the 
 
 ## Video 1: Fugitive Edward Snowden applies for asylum in Russia 
 Entity Label  | Score  
@@ -128,60 +194,3 @@ St Mary's Hospital | -0.5
 England Country | -0.5
 Great Britain | -0.5
 Suzannah Lipscomb | -0.571428571
-
-# Methodology for GroundTruth Generation
-
-We selected 5 short videos from the [BBC One Minute World News Website ](http://www.bbc.com/news/video_and_audio/). Each video lasted from 1 to 3 minutes. The selection covered a wide range of subjects specifically: politics, armed conflicts, environmental events, legal disputes, and social news. The intention behind this topic choice was to fit international audiences, since we planned to perform a user study with international participants. 
-Subtitles of the videos were not available; therefore, a member of the team manually transcribed the speech in the videos.  After obtaining the transcriptions, the following steps were performed in order to obtain a set of unbiased candidate entities. We chose to focus only on entities of the types person, organisation and location because they can directly translate or answer three questions: Who is involved? What happened? Where did it take place? These questions are a subset taken from a well known concept in journalism known as the 5Ws (_who_, _what_, _when_, _where_ and _why_), which emphasizes the fundamental dimensions that an informative journalistic text should report on. Regarding the questions _when_ and _why_, there where discarded because in order to acquire meaningfulness they need to be modeled not only by single entities but also by more complex relations between them that are out of the scope of the current paper.
-
-
-
-## Subtitles
-All entities of the type person, organisation and location were manually extracted from each one of the video subtitles and added to the unfiltered list of entities (candidate set). 
-
-## Image in the video
-The video image was visually analysed by a researcher and every time a recognisable person, organisation or location was portrayed this was also added as an entity to the candidate set. 
-
-## Text in the video image
-The video was analysed for text appearing in the image. Whenever text appeared in the video image, for example in the form of nametag overlays, the named entities appearing in such tags were added to the candidate set. 
-
-## Related entities
-In order to complement the candidate set with entities that might be interesting for the user, but are not necessarily found in the videos, we used the following two strategies:
-
-## Suggestions of an expert
-We collaborated with a journalist with more than 6 years of experience as a writer/editor for important American newspapers and websites.  We configured an online survey to retrieve the expert’s feedback. In the survey we explained what named entities are and which types of named entities we needed. After this introduction we presented the videos to the expert. Following each one we asked him to list the named entities that, according to his criteria, would better serve the objective of showing interesting additional information to the users. The expert didn’t have access to the candidate set, and was completely free to suggest any named entity he wanted. 
-
-## Related articles
-We used Google custom search to look for articles related to the video in three news sources: The Guardian, New York Times, and Al Jazeera online (English). We performed this search using the main terms in the videos’ title, for example, for _Fugitive Edward Snowden applies for asylum in Russia_ we searched for  _Edward_ + _Snowden_ + _asylum_ + _Russia_. We limited the results to + - 3 days from the day when the video was published. We chose one document from each source, the one closest in topic and time to the video. We then extracted all named entities of the types person, organisation and location from the resulting documents. In order to keep the entities within a reasonable number for inclusion in a survey, we kept only the named entities that appeared in at least 2 related articles and dropped all the ones that only appeared in one.  The selected entities were added to the candidate set. 
-
-## Refining the candidate set
-We refined the candidate set  comprised of all found entities by eliminating all duplicated named entities and standardising names. For example, when we had ``Barack Obama'' as an entity and ``Obama'' as another entity we eliminated the shorter one and left the complete name. 
-
-A total of 99 entities were obtained from all videos. For a distribution of entities among types and videos please see next Table :
-
-
-Newscast Title  | Date  | Person  | Organization  | Location  | Total
-------------- | ------------- | ------------- | ------------- | ------------- | -------------
-Fugitive Edward Snowden applies for asylum in Russia  | 2013-07-03  | 11  | 7  | 10  | 28
-Egypt’s Morsi Vows to Stay in Power | 2013-07-23  | 4  | 5  | 4  | 17
-Fukushima leak causes Japan concern | 2013-07-24  | 7  | 5  | 5  | 13
-Rallies in US after Zimmerman Verdict | 2013-07-17  | 9  | 2  | 8  | 19
-Royal Baby Prince Named George  | 2013-07-15  | 15  | 2  | 6  | 22
-Total  |    | 46  | 20  | 33  | 99
-
-
-
-## Online Survey
-We created an online survey with the aim of gathering information about the degree of interestingness of the entities in the candidate set. Based in \cite{vonBrzeski:2007:LCU:1321440.1321537} we define interestingness as to whether an entity is interesting, useful or compelling enough to tear the user away from the main thread of the document. 
-
-Fifty international subjects participated in this online study. They responded an online call distributed via email and social networks. Their age range was between 25 and 54 years with an average age of 30.3 (standard deviation 7.3 years). 18 participants were female and 32 were male. Most of the participants were highly educated and 48 of them had either a university bachelor degree or a postgraduate degree. The main requisite for participation was that they were interested in the news and followed the news regularly, preferably through means that include newscasts.
-During the interview participants were asked to choose at least 3 out of 5 videos according to their preferences. Then they were shown each one of the videos. After each video, they were asked to rate whether they would be interested in receiving more information about the named entities in the context of the news video and on a second screen or similar application. All the named entities from the candidate set related to the last seen video were shown in a list with ratio buttons arranged in a similar way to a three-point Likert-scale. The possible answers were _Yes_ _Maybe_ and _No_. 
-
-## Lessons learned from the online survey
-
-The number of respondents per video were: _Snowden_ 49, _Morsi_ 34, _Fukushima_ 42, _Zimmerman_ 27, and _Royal baby_ 15.
-
-In order to calculate the interestingness scores from the users’ responses, we gave every answer a numerical value: _Yes_ = 1, _Maybe_ = 0 and _No_ = -1.  We then obtained an average score for each entity using the number of participants that rated an entity and the score that each participant gave to that particular entity.  This average was used to obtain a ranking of all the entities in the candidate set according to user preferences. 
-
-With the objective of finding out users preferences regarding the three analysed entity types: _person_, _organization_ and _location_, we calculated an average rating for each one of the entity types. The results in descending order were: organisation = -0,05, person = -0,24  and location = -0,52. These results clearly show a preference from users for the entities of the type organisation and person over those of the type location.
-\end{document}
