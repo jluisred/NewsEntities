@@ -2,11 +2,11 @@
 
 The gold standard is composed by a set of 5 short videos from the [BBC One Minute World News Website ](http://www.bbc.com/news/video_and_audio/) which have been annotated with a list of Named Entities that illustrate the different facts depicted in them. Each named entity has an associated score normalized from _-1_ to _1_ in order to indicate its importance of that entity inside the whole context of the video.
 
-+ Metodology is available in next section
-+ Videos and transcript are available
-+ Our approach presented to ISWC is described in 
-+ 
-
++ Entities and scores per video are available in folder [data](https://github.com/jluisred/NewsEntities/tree/master/data)
++ Metodology is explained in [Section](https://github.com/jluisred/NewsEntities#methodology-for-groundtruth-generation) below
++ [Videos](https://github.com/jluisred/NewsEntities/tree/master/videos) and [transcripts]((https://github.com/jluisred/NewsEntities/tree/master/transcripts) are included in corresponding folders.
++ You can read our [paper](https://github.com/jluisred/NewsEntities/tree/master/papers/icwe2015) in how to automatically recreate those entities by relying on a Web document expansion approach.
++ Gold Standard data is also shown in final [Section](https://github.com/jluisred/NewsEntities#gold-standard-data).
 
 # Methodology for GroundTruth Generation
 
