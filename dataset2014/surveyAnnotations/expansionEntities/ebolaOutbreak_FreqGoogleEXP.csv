@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Ebola virus disease,0.5055747126436787,6,320,1.8466,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Ebola_virus_disease
+Sierra Leone,0.367011494252874,1,255,4.71752,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Sierra_Leone
+World Health Organisation,0.2203448275862067,0,47,3.84898,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/World_Health_Organization
+Ernest Bai Koroma,0.19344827586206895,0,65,1.5602,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Ernest_Bai_Koroma
+Sam,0.16568965517241377,1,112,0.133995,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/American_Samoa
+Guinea Conakry,0.13643678160919542,3,70,1.24126,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Guinea
+Liberia,0.12396551724137932,0,76,1.13482,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Liberia
+Center for Disease Control and Prevention,0.11327586206896545,0,24,4.2684,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Centers_for_Disease_Control_and_Prevention
+Vice President,0.10695402298850566,1,74,0.138511,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Vice_president
+quarantine,0.08459770114942528,7,3,0.74,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Quarantine
+West Africa,0.07672413793103447,0,53,0.7964,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/West_Africa
+FREETOWN Sierra Leone,0.06666666666666665,1,35,2.15777,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Freetown
+Infectious Disease,0.06310344827586203,3,18,5.78357,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Infection
+Google News,0.04781609195402295,1,23,0.8159,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Google_News
+Ministry of Public Health,0.041896551724137934,0,9,0.6342,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Ministry_of_Public_Health_(Thailand)
+Reuters AlertNet,0.03919540229885055,0,25,0.8647,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Reuters
+NewsNow,0.03724137931034481,0,23,0.8044,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/NewsNow
+Global Health,0.03672413793103447,0,24,0.7556,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Global_health
+United States,0.036206896551724134,0,26,0.989127,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_States
+Transmission,0.03114942528735632,2,5,0.0963811,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Transmission_(medicine)
+United Nations,0.030632183908045972,0,25,0.8316,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_Nations
+European Union,0.030229885057471262,0,20,0.8586,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/European_Union
+Avian Influenza,0.02948275862068965,0,19,1.88894,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Avian_influenza
+poorest,0.02931034482758621,2,3,0.6251,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Poverty
+Food,0.029195402298850565,2,4,0.0444654,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Food
+Virus,0.028045977011494246,1,11,0.7578,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Virus
+H7N9,0.027931034482758618,0,18,0.8229,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Influenza_A_virus_subtype_H7N9
+Middle East Respiratory Syndrome,0.027931034482758618,0,18,0.7574,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Middle_East_respiratory_syndrome
+Mar 1,0.026551724137931033,0,19,0.08251,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/March_1
+UPI.com,0.02614942528735632,0,12,0.8889,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_Press_International
+Naval vessels,0.024999999999999994,0,17,0.0294504,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Naval_ship
+English,0.024827586206896554,0,16,0.6977,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_Kingdom
+Pandemic,0.024367816091954028,0,16,0.7658,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Pandemic
+China,0.022931034482758628,0,19,0.871836,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/China
+Mr Sam,0.02287356321839081,0,5,0.6804,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Mr._Sam
+Cholera,0.02235632183908046,1,7,0.868,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Cholera
+Haiti,0.021724137931034483,0,14,0.8664,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Haiti
+Medicine,0.021666666666666667,0,14,0.7018,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Medicine
+Nicol,0.021149425287356322,0,10,0.0217228,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Nicol_Williamson
+Belgium,0.020804597701149424,0,15,0.7983,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Belgium
+Malaria,0.020747126436781612,0,13,1.00572,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Malaria
+AFP,0.020402298850574718,0,17,0.7629,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Agence_France-Presse
+H5N1,0.02017241379310345,0,13,1.90211,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Influenza_A_virus_subtype_H5N1
+Blog,0.02017241379310345,0,13,0.7111,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Blog
+Public transportation,0.019080459770114945,0,15,0.7338,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Public_transport
+Conteh,0.019080459770114945,0,5,0.66,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Kewullay_Conteh
+BBC,0.018965517241379314,0,4,0.7837,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC
+Disease Outbreak,0.018620689655172416,0,12,0.7327,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Outbreak
+Metropolitan State University,0.018620689655172416,0,4,0.8244,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Metropolitan_State_University
+Feb.,0.018505747126436788,0,15,0.0897489,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/February

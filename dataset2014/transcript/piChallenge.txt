@@ -1,0 +1,5 @@
+Tim Peake, you are going to take this Raspberry Pi with a winning competitional idea up to the space tell us how this is gonna work:  
+yes we are going to have a Raspberry Pi on board of a space station and a Raspberry Pi comes with a astronaut pilot, which is a sensor sweep
+is going to be on the space station as well. This like temperature, pressure, humidity, accelerometers, infrared cameras, visible cameras, and 
+it is really up to get some students to design whatever this they want, to code to use the sensor sweep.
+And why this is a bit of laugh you guys whilst a serious experiment to come up with something good? It could be a fun or serious they want to make it, obviously what kind of sensor sweep in space on board of the space station we can do some really good science, actually you got the couple of windows facing windows for example so, some of those cameras with some coding can actually some real observation's science or it could be just a bit of fun on the space station using some of the sensors as well. 

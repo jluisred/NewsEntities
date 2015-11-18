@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Microwave Oven,0.5615652173913037,5,95,1.90406,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Microwave_oven
+Cubic,0.2462608695652176,0,59,0.00854315,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Cubic_foot
+Samsung,0.20765217391304341,0,68,0.8179,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Samsung
+Panasonic,0.19373913043478272,0,46,0.8284,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Panasonic
+Image,0.18104347826086967,0,26,0.00190467,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Image_Comics
+Heat,0.16556521739130436,1,25,0.698,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Heat
+Cooking,0.16417391304347834,0,40,0.7421,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Cooking
+Food,0.1629565217391304,1,25,0.7285,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Food
+Features,0.151304347826087,1,4,0.00533476,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/The_Features
+Step,0.15130434782608698,0,28,0.0169324,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Steppe
+United States Department of Agriculture,0.11217391304347826,0,5,2.13417,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Department_of_Agriculture
+Item,0.10469565217391304,1,12,0.0170867,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Item_response_theory
+National Aeronautics and Space Administration,0.10173913043478261,0,4,7.09848,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/NASA
+LG,0.0968695652173913,0,16,0.688,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/LG_Corp
+Sharp Electronics,0.09339130434782608,0,6,0.8365,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Sharp_Corporation
+American,0.08573913043478261,0,15,0.6132,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_States
+Britain,0.08504347826086955,0,11,0.799426,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_Kingdom
+blue,0.08034782608695652,2,2,0.6743,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Blue
+BBC,0.07826086956521737,0,11,0.929672,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/BBC
+Iraq,0.07669565217391301,0,10,1.22698,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Iraq
+Passover,0.0765217391304348,0,18,0.8765,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Passover
+FDA,0.06834782608695651,0,4,0.7155,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Food_and_Drug_Administration
+camera,0.06573913043478262,1,6,0.6565,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Camera
+Islamic State,0.06539130434782607,0,8,0.7566,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Islamic_state
+Cinder,0.05947826086956518,0,27,0.00616861,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Cinder_cone
+PLA,0.0591304347826087,0,11,0.00767321,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/People%27s_Liberation_Army
+World Service,0.057391304347826085,0,3,0.6284,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC_World_Service
+Internet,0.05478260869565218,1,7,0.685,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Internet
+Norman,0.05391304347826086,0,13,0.00507559,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Normans
+signals,0.052521739130434786,1,3,0.6105,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Military_communications
+Package,0.050956521739130435,0,7,0.713,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Packaging_and_labeling
+Price,0.05078260869565218,0,10,0.0729116,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Price
+Sensor,0.04991304347826088,1,5,0.214767,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Sensor
+phone,0.049217391304347824,1,6,0.233866,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Telephone
+Burgers,0.04904347826086957,1,3,0.7445,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Hamburger
+Jewish,0.04834782608695653,0,6,0.7237,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Jews
+BPA,0.04643478260869565,0,7,0.7989,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Bisphenol_A
+red,0.0462608695652174,1,4,0.6861,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Red
+Facebook,0.0462608695652174,0,8,0.8297,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Facebook
+Low Carb,0.04626086956521738,0,7,0.7233,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Low-carbohydrate_diet
+Nut,0.04434782608695654,0,39,0.7801,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Nut_(fruit)
+Kitchen,0.04434782608695652,0,8,0.7533,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Kitchen
+Vegan,0.04330434782608698,0,21,0.868,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Veganism
+Heinrich Hertz,0.042782608695652175,0,3,1.86683,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Heinrich_Hertz
+Warning,0.041391304347826084,0,4,0.00327742,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Aynsley_Dunbar
+PowerPoint,0.04034782608695652,0,8,0.7188,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Microsoft_PowerPoint
+Soups,0.03982608695652174,1,3,0.7746,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Soup
+Toy,0.03860869565217392,0,7,0.6694,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Toy
+French toast,0.037739130434782615,0,11,0.8721,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/French_toast
+Dr.,0.035652173913043476,0,7,0.0494017,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Doctor_%28title%29

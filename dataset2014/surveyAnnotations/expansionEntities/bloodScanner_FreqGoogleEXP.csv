@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Food and Drug Administration,0.5287500000000019,0,256,4.46665,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Food_and_Drug_Administration
+Methicillin-resistant Staphylococcus aureus,0.5029054054054027,0,576,1.93507,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Methicillin-resistant_Staphylococcus_aureus
+Daisy,0.35783783783783657,0,161,0.00772428,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Daisy_Duck
+U.S.A,0.2726689189189183,0,453,1.06718,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_States
+Staphylococcus aureus,0.19114864864864697,0,246,2.84776,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Staphylococcus_aureus
+PUBMED,0.18449324324324215,0,202,0.8707,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/PubMed
+Securities and Exchange Commission,0.16489864864864864,0,57,1.67588,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/U.S._Securities_and_Exchange_Commission
+Medtronic,0.1436148648648647,0,71,0.922048,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Medtronic
+Physical,0.14290540540540547,4,124,0.7325,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Health
+Company,0.14236486486486488,0,156,0.7313,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Company
+Centers for Disease Control and Prevention,0.14097972972972977,0,56,3.33363,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Centers_for_Disease_Control_and_Prevention
+Medical Instrument,0.1342229729729731,0,186,0.7917,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Medical_device
+PerkinElmer Inc.,0.11945945945945936,0,115,0.8803,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/PerkinElmer
+University of Houston,0.11300675675675662,0,118,1.28145,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/University_of_Houston
+Form 10K,0.09753378378378363,0,98,0.8754,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Form_10-K
+United Kingdom,0.08638513513513506,0,105,0.970189,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_Kingdom
+Patients,0.08320945945945916,1,108,0.7247,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Patient
+Company,0.08216216216216207,0,78,0.7245,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Company
+Googling,0.07932432432432433,0,91,0.776,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Google
+Red Blood Cells,0.07820945945945944,0,65,3.70966,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Red_blood_cell
+AdvaMed,0.07807432432432415,0,116,0.7677,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/AdvaMed
+Environmental Health,0.07317567567567562,0,74,0.7795,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Environmental_health
+Research,0.07057432432432428,0,88,0.7623,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Medical_research
+University of Chicago,0.07054054054054051,0,39,0.8507,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/University_of_Chicago
+Infectious Diseases,0.07030405405405404,0,83,4.89542,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Infection
+National Institutes of Health,0.06922297297297297,0,33,3.22882,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/National_Institutes_of_Health
+Hull,0.06912162162162155,0,62,0.7016,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Kingston_upon_Hull
+Europe,0.06878378378378368,0,93,0.726,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Europe
+Manufacturers,0.0672297297297297,0,84,0.7207,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Manufacturing
+PMC,0.06567567567567562,0,83,0.8051,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/PubMed_Central
+University of Western Ontario,0.06547297297297293,0,37,0.8693,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/University_of_Western_Ontario
+BBC News,0.06516891891891893,0,20,0.8154,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC_News
+East Yorkshire,0.06175675675675672,0,60,0.7512,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/East_Riding_of_Yorkshire
+China,0.05939189189189181,1,70,1.02612,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/China
+Engineering,0.05695945945945933,0,195,0.7358,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Engineering
+Technology,0.05638513513513508,2,91,0.7189,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Technology
+Feb.,0.055641891891891816,0,79,0.0104017,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/February
+International Organization for Standardization,0.05523648648648652,0,24,0.881216,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/International_Organization_for_Standardization
+S,0.053175675675675674,0,59,4.70924E-4,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Cedilla
+CBC,0.051317567567567585,0,42,0.7987,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Complete_blood_count
+Diagnosis,0.050439189189189146,2,43,0.735,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Diagnosis
+Abstract,0.050304054054054095,0,53,0.0555474,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Abstraction
+Genetics,0.04999999999999994,2,58,0.7775,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Genetics
+Future,0.049966216216216226,0,17,9.09017E-4,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/The_Human_League
+Chief Executive Officer,0.04993243243243241,0,54,0.8077,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Chief_executive_officer
+Hospital,0.049358108108108076,0,68,0.7471,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Hospital
+Electrical and Computer Engineering,0.04912162162162152,0,164,4.00387,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Electrical_engineering
+J. Am. Chem. Soc.,0.048817567567567534,0,50,0.8055,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Journal_of_the_American_Chemical_Society
+Blood,0.04652027027027026,1,38,0.7074,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Blood
+CDI,0.04635135135135136,0,46,0.7655,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Contract

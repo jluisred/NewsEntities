@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+HSBC Holdings Plc,1.5893534482758631,6,432,1.50372,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/HSBC
+Center for Public Integrity,0.5075431034482757,1,148,0.8982,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Center_for_Public_Integrity
+BBC,0.2595258620689656,2,60,0.903578,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC
+Switzerland,0.21754310344827602,1,190,0.8206,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Switzerland
+Britons,0.146896551724138,1,121,1.20955,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_Kingdom
+Stephen Green,0.12008620689655174,2,32,0.8809,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Stephen_Green,_Baron_Green_of_Hurstpierpoint
+HM Revenue and Customs,0.1143103448275862,0,36,1.21204,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/HM_Revenue_and_Customs
+Labour party,0.1131465517241379,2,17,0.8283,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Labour_Party_(UK)
+France,0.10525862068965526,1,84,0.8034,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/France
+David Gauke,0.09879310344827585,3,19,0.8996,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/David_Gauke
+Tax,0.09564655172413794,8,25,0.7014,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Tax
+Swiss bank account,0.054827586206896546,0,53,0.912345,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Banking_in_Switzerland
+Conservative,0.05482758620689654,1,10,0.7919,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Conservative_Party_(UK)
+United States,0.053749999999999985,0,48,1.04965,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_States
+Margaret Hodge,0.05224137931034483,0,21,0.9158,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Margaret_Hodge
+Le Monde,0.04913793103448275,2,27,0.7921,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Le_Monde
+French,0.04637931034482758,0,38,0.7068,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/French_language
+U.S. Senate,0.04370689655172415,0,13,0.776,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Senate
+Reuters news agency,0.04176724137931033,0,18,1.76982,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Reuters
+dodge,0.04163793103448275,1,4,0.6556,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Dodge
+Europe,0.038146551724137945,0,30,0.7194,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Europe
+Treasury,0.03762931034482758,0,7,0.6802,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/HM_Treasury
+Italy,0.03685344827586207,0,30,0.8014,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Italy
+London,0.036120689655172414,0,32,0.74,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/London
+Richard Brooks,0.03396551724137931,0,11,0.8713,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Richard_Brooks
+Bank,0.03375,1,29,0.6863,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Bank
+British,0.03314655172413793,1,25,0.7015,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/British_Empire
+Herve Falciani,0.03176724137931035,0,28,0.8685,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Herv%C3%A9_Falciani
+Russian President,0.030000000000000013,0,30,0.8111,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/President_of_Russia
+Zee News,0.029870689655172415,0,10,0.8605,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Zee_News
+Africa,0.028965517241379315,0,25,0.7165,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Africa
+House of Commons,0.028060344827586202,0,5,0.8544,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/House_of_Commons_of_the_United_Kingdom
+Panorama,0.026724137931034474,0,21,0.6928,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Panorama_(TV_series)
+Westminster,0.026206896551724135,2,8,0.6595,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Westminster_system
+Public accounts committee,0.025603448275862067,0,17,0.7711,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Public_Accounts_Committee_(United_Kingdom)
+Hosni Mubarak,0.024827586206896554,0,10,1.78288,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Hosni_Mubarak
+Gennady Timchenko,0.02344827586206897,0,23,0.8902,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Gennady_Timchenko
+IRS,0.023275862068965515,0,5,0.7603,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Internal_Revenue_Service
+The Guardian,0.023146551724137928,0,23,0.876425,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/The_Guardian
+Bashar al-Assad,0.02310344827586207,0,11,1.64521,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Bashar_al-Assad
+Elle Macpherson,0.02293103448275862,0,11,0.8867,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Elle_Macpherson
+trade,0.021982758620689654,2,3,0.0813126,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Trade
+India,0.02090517241379311,0,18,0.8408,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/India
+Argentina,0.020862068965517237,0,23,0.8386,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Argentina
+Rachid Mohamed Rachid,0.020258620689655178,0,8,0.8845,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Rachid_Mohamed_Rachid
+Belgium,0.019913793103448277,0,18,0.8188,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Belgium
+Bahraini,0.019482758620689662,0,18,0.7118,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Bahrain
+Private Bank,0.01948275862068966,1,8,0.7626,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Private_bank
+Morocco,0.019267241379310348,0,18,0.8508,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Morocco
+AFP,0.01887931034482759,0,21,0.7697,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Agence_France-Presse

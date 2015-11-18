@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Blakean,0.6970958904109609,0,271,2.18671,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/William_Blake
+University of Rochester,0.6563835616438363,0,137,1.32117,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/University_of_Rochester
+American,0.4220273972602739,0,157,0.719,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Americans
+U.S.A.,0.3135342465753432,0,349,2.03869,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_States
+Gramercy Park,0.24652054794520523,0,128,2.12265,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Gramercy_Park
+London,0.24032876712328818,0,179,0.7689,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/London
+Dann,0.20602739726027397,0,66,0.0171342,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Jack_Dann
+Charles Dickens,0.20536986301369858,0,79,5.92879,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Charles_Dickens
+University of Cambridge,0.15583561643835606,0,35,0.8855,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/University_of_Cambridge
+New York,0.1505753424657533,0,98,0.7297,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/New_York
+George W. Bush,0.14684931506849314,0,59,0.9376,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/George_W._Bush
+New York City United States,0.14471232876712317,0,82,6.48975,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/New_York_City
+Antarctica,0.14410958904109558,0,125,1.01231,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Antarctica
+Wood,0.14202739726027394,0,61,0.0130676,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/John_Wood_%28English_actor%29
+Books,0.14147945205479423,0,114,0.7036,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Book
+George Washington,0.140054794520548,0,52,0.8209,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/George_Washington
+Pedro Martinez,0.13906849315068504,0,50,0.8957,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Pedro_Mart%C3%ADnez
+Drake,0.13852054794520557,0,79,0.7626,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Drake_(rapper)
+Bentley,0.13824657534246584,0,34,0.7081,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Bentley
+United States Mint,0.1341369863013699,0,29,2.47053,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Mint
+Talbot-Lago,0.13265753424657528,0,29,0.986817,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Talbot-Lago
+British Broadcasting Corporation,0.12958904109589026,1,77,17.7387,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/BBC
+Fairport Convention,0.12608219178082192,1,19,1.21288,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Fairport_Convention
+National Portrait Gallery,0.12586301369863032,0,102,0.8504,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/National_Portrait_Gallery,_London
+England,0.1257534246575341,0,107,0.7727,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/England
+William Morris,0.1178082191780822,0,50,0.8669,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/William_Morris
+Christianity,0.11682191780821906,1,67,0.7853,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Christianity
+Smith,0.11441095890410966,0,52,0.689,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Adam_Smith
+Dulwich College,0.11441095890410961,0,27,0.8875,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Dulwich_College
+Richard the Lionheart,0.1129863013698629,0,48,1.31383,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Richard_I_of_England
+Ber,0.11287671232876703,2,49,0.0114308,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Dov_Ber_of_Mezeritch
+Hungary,0.11161643835616435,2,44,0.982065,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Hungary
+Edelson,0.11112328767123293,0,50,0.0853937,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Edelson
+TV,0.11095890410958904,0,22,0.6704,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Television
+Christmas,0.10898630136986302,0,77,0.7267,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Christmas
+United Kingdom,0.10832876712328754,0,92,1.59254,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_Kingdom
+James Watson,0.10684931506849313,0,40,1.25533,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/James_Watson
+HNS,0.1064657534246574,0,74,0.6821,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Croatian_Football_Federation
+University of Otago,0.1040547945205479,0,45,1.22545,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/University_of_Otago
+Frenchwoman,0.10295890410958898,0,71,0.898671,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/France
+Bonhams,0.1029041095890411,0,19,0.918541,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Bonhams
+New Zealand,0.10241095890410949,0,164,0.991497,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/New_Zealand
+Drake,0.10142465753424662,0,60,0.7453,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Drake_(rapper)
+Alexander,0.10093150684931505,0,48,0.6908,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Alexander_the_Great
+Stuart Little,0.09928767123287671,1,56,0.885,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Stuart_Little_(film)
+SCOTT POLAR RESEARCH INSTITUTE,0.09912328767123293,0,28,1.03923,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Scott_Polar_Research_Institute
+Paris,0.09824657534246575,0,68,0.789,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Paris
+Library,0.09517808219178077,0,74,0.6854,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Library
+Shakespeare,0.09446575342465756,0,40,1.27327,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/William_Shakespeare
+Museum,0.092986301369863,0,71,0.6554,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Museum

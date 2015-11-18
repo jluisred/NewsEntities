@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Nasa,1.075126050420173,2,341,1.67072,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/NASA
+Space Launch System,0.3085154061624643,2,247,2.27967,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Space_Launch_System
+Mars,0.13154061624649865,2,84,1.19086,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Mars
+Utah,0.10173669467787087,0,189,0.8385,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Utah
+Alliant Techsystems,0.08212885154061612,0,100,2.21725,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Alliant_Techsystems
+Rockets,0.06946778711484591,4,23,0.7825,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Rocket
+Booster,0.06308123249299717,3,26,0.7117,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Booster_(rocketry)
+Kingston University,0.056974789915966384,1,6,0.8688,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Kingston_University
+QM,0.05176470588235288,0,44,0.7304,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Quantum_mechanics
+Orion spacecraft,0.04577030812324928,0,46,2.17714,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Orion_(spacecraft)
+United States of America,0.04537815126050417,0,44,1.15439,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_States
+EDT,0.04246498599439776,0,25,0.8601,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Eastern_Time_Zone
+Kennedy Space Center,0.03983193277310926,0,27,3.71923,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Kennedy_Space_Center
+LEO,0.03955182072829131,0,29,0.7661,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Low_Earth_orbit
+Orbital,0.03904761904761902,0,42,0.7376,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Orbital_spaceflight
+Space.com,0.036694677871148454,1,17,0.796,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Space.com
+Eastern Airlines,0.03663865546218488,0,7,0.8187,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Eastern_Air_Lines
+CNN,0.03630252100840335,0,12,0.8446,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/CNN
+TECH,0.03557422969187675,2,10,0.6943,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Technology
+Rocket Motor,0.03478991596638656,2,14,1.45838,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Rocket_engine
+BBC,0.03176470588235294,0,5,0.7707,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC
+Earth,0.03142857142857133,0,58,0.755,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Earth
+News,0.027675070028011207,0,25,0.7069,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/News
+machines,0.026890756302520996,2,7,0.6342,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Machine
+SRB,0.024033613445378132,0,26,0.8433,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Space_Shuttle_Solid_Rocket_Booster
+Copyright,0.02246498599439776,1,12,0.736,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Copyright
+Moon,0.022408963585434174,1,12,0.7624,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Moon
+GMT,0.02207282913165266,0,14,0.7758,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Greenwich_Mean_Time
+Breguet 940 Integral,0.021848739495798325,0,10,0.9181,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Breguet_941
+Astronaut,0.02140056022408963,1,9,0.8169,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Astronaut
+Photos,0.019719887955182074,0,18,0.649,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Photograph
+ignition,0.018935574229691877,1,8,0.6326,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Combustion
+Scientists,0.018711484593837535,0,22,0.264504,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Scientist
+Shuttle program,0.01843137254901961,1,7,0.6985,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Space_Shuttle_program
+France,0.017815126050420172,0,11,0.769,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/France
+Sep,0.01736694677871149,0,11,0.0101772,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/September_11
+Circulation,0.016918767507002802,1,6,0.0102899,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Newspaper_circulation
+senior lecturer,0.0169187675070028,1,3,0.0776695,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Senior_lecturer
+International Space Station,0.016806722689075626,0,33,1.78888,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/International_Space_Station
+launch vehicle,0.016750700280112045,1,7,0.7211,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Launch_vehicle
+Solar Flare,0.01579831932773109,0,9,2.26764,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Solar_flare
+RS-25,0.01568627450980392,0,11,1.43639,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Space_Shuttle_main_engine
+CNNgo,0.015126050420168066,0,5,0.8566,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/CNN_International
+Human Space Flight,0.014621848739495803,0,18,1.89874,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Human_spaceflight
+desert,0.014509803921568629,1,3,0.0683053,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Desert
+Twitter,0.014509803921568627,0,17,0.8558,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Twitter
+fireworks,0.014397759103641458,1,2,0.7342,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Fireworks
+Russian,0.014341736694677872,0,9,0.6706,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Soviet_Union
+Fahrenheit,0.013893557422969188,0,14,0.7765,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Fahrenheit
+Rocket Propulsion,0.013669467787114848,1,5,1.41905,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Spacecraft_propulsion

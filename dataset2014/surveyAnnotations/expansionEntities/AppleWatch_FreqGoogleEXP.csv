@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Apple,0.47472624292008697,11,1545,1.06631,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Apple_Inc.
+Watch,0.26156073001887953,11,782,0.7412,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Watch
+Tim Cook,0.024845814977973574,0,39,1.12713,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Tim_Cook
+BBC News,0.017822529893014475,1,7,0.8226,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC_News
+Rolex,0.017684078036500944,0,48,0.7445,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Rolex
+Instagram,0.017180616740088105,0,16,1.6558,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Instagram
+Uber,0.015896790434235364,0,15,0.254516,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Uber_(company)
+Thorstein Veblen,0.014801762114537447,1,11,1.08349,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Thorstein_Veblen
+MacBook,0.014159848961611078,1,37,0.8005,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/MacBook
+data,0.013215859030837,3,10,0.6882,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Data
+Edition,0.013190685966016358,0,41,0.0361182,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Edition_%28book%29
+Vertu,0.012460667086217745,0,28,0.7172,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Vertu
+Iphone,0.010723725613593454,3,10,0.8458,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/IPhone
+Technology,0.01037130270610447,1,15,0.6926,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Technology
+United States,0.009905601006922593,1,22,0.767331,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_States
+Starwood Hotels,0.009251101321585903,0,8,0.6563,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Starwood_Hotels_and_Resorts_Worldwide
+CEO,0.009225928256765263,0,24,0.7185,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Chief_executive_officer
+Jonathan Ive,0.00893643801132788,0,25,0.9079,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Jonathan_Ive
+Digital,0.008923851478917555,0,33,0.7003,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Digital_data
+Mobile & Wireless,0.008747640025173066,2,7,0.7729,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Mobile_phone
+Steve Jobs,0.008231592196349908,0,23,1.16044,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Steve_Jobs
+Sport,0.00809314033983638,0,28,0.104167,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Sport
+Twitter Inc.,0.007916928886091879,0,25,1.11323,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Twitter
+Android operating system,0.0077407174323473864,0,25,4.33343,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Android_(operating_system)
+Google,0.007677784770295784,0,18,0.852849,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Google
+Samsung,0.00697293895531781,0,19,0.8467,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Samsung
+Internet,0.006947765890497167,0,18,0.7505,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Internet
+Computerworld,0.006809314033983639,0,13,0.7882,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Computerworld
+emails,0.0065953429830081815,2,5,0.6585,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Email
+Testing,0.006582756450597859,0,16,0.117049,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Debian
+Ipad,0.006431718061674009,2,3,0.8532,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/IPad
+Tablets,0.006318439269981121,1,8,0.7899,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Tablet_computer
+Siri,0.006230333543108872,0,27,0.763,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Siri
+American Airlines,0.00619257394587791,0,9,0.8442,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/American_Airlines
+China,0.006167400881057267,0,17,0.7964,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/China
+gadget,0.006016362492133417,2,3,0.6789,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Gadget
+Bluetooth,0.006016362492133416,0,19,1.04935,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Bluetooth
+Pebble,0.005865324103209565,0,19,0.6289,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Pebble_(watch)
+UK,0.005752045311516679,0,18,0.6987,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_Kingdom
+IDG,0.005663939584644432,0,10,0.991621,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/International_Data_Group
+Mobile Apps,0.005475141598489616,0,15,2.31442,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Mobile_app
+Yes,0.0052863436123348016,0,7,0.6801,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Yes_(band)
+Marsh,0.005110132158590308,1,11,0.6268,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Marsh
+Macintosh,0.005097545626179987,0,17,0.8265,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Macintosh
+London,0.0050849590937696665,1,9,0.7352,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/London
+information,0.004959093769666458,1,5,0.6504,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Information
+Search,0.004946507237256137,0,13,0.7339,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Web_search_engine
+Macworld,0.004808055380742607,0,10,0.8613,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Macworld
+Network Software,0.004808055380742606,0,9,0.7967,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Computer_network
+Link,0.00461925739458779,0,12,0.7048,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Chain

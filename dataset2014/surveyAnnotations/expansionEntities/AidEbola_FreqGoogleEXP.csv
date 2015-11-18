@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Band Aid,1.1043216080402025,4,172,1.39825,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Band_Aid_(band)
+Bob Geldof,0.9487437185929654,1,183,2.57019,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Bob_Geldof
+Ebola virus,0.4056281407035177,2,151,0.953371,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Ebola_virus_disease
+One Direction,0.3555778894472363,1,62,0.8302,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/One_Direction
+Chris Martin,0.3417085427135678,1,56,0.9402,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Chris_Martin
+Do They Know It?s Christmas,0.32371859296482436,1,119,0.9414,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Do_They_Know_It's_Christmas%3F
+Bono,0.31175879396984935,0,66,0.8595,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Bono
+West Africa,0.2750753768844222,2,91,0.8007,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/West_Africa
+BBC,0.23246231155778888,1,22,0.9339,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC
+George Michael,0.1981909547738693,0,38,0.9363,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/George_Michael
+Ed Sheeran,0.18753768844221103,0,37,1.59371,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Ed_Sheeran
+Ethiopia,0.18432160804020103,0,65,0.906977,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Ethiopia
+Coldplay,0.15216080402010046,0,31,1.16171,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Coldplay
+Ellie Goulding,0.1507537688442211,0,31,1.16415,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Ellie_Goulding
+Midge Ure,0.13939698492462313,0,48,1.94357,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Midge_Ure
+Britain,0.12502512562814072,0,44,1.115,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_Kingdom
+U2,0.11597989949748741,0,27,0.936,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/U2
+Sinead O'Connor,0.10050251256281405,0,20,0.9416,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Sin%C3%A9ad_O'Connor
+LONDON United Kingdom,0.09889447236180908,0,39,5.67416,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/London
+Emeli Sande,0.09547738693467336,0,16,0.9625,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Emeli_Sand%C3%A9
+Paloma Faith,0.09386934673366833,0,16,0.9533,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Paloma_Faith
+Sam Smith,0.0850251256281407,0,35,0.963,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Sam_Smith_(singer)
+Elbow,0.08482412060301507,0,14,0.8147,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Elbow_(band)
+World Health Organisation,0.08020100502512562,0,11,2.30197,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/World_Health_Organization
+Rita Ora,0.07899497487437188,0,14,0.9614,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Rita_Ora
+Sting,0.07879396984924623,0,15,0.8878,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Sting_(musician)
+Underworld,0.07597989949748743,0,13,0.8185,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Underworld_(band)
+Spotify,0.07447236180904523,0,7,1.08658,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Spotify
+Duran Duran,0.07195979899497487,0,13,0.966339,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Duran_Duran
+Bananarama,0.07035175879396985,0,13,1.07415,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Bananarama
+Sierra Leone,0.06663316582914572,0,27,2.8092,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Sierra_Leone
+Bastille,0.06532663316582912,0,23,0.828,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Bastille_(band)
+Department for International Development,0.06361809045226131,0,5,1.03704,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Department_for_International_Development
+Florence Welch,0.06291457286432163,0,11,0.9345,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Florence_Welch
+Adele,0.06261306532663315,0,25,0.8488,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Adele
+Guinea,0.062110552763819084,0,21,0.7673,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Guinea
+Sonia,0.06090452261306532,1,3,0.8096,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Sonia_(singer)
+Live Aid,0.05628140703517587,0,18,0.9209,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Live_Aid
+Liberia,0.056180904522613054,0,26,0.9101,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Liberia
+Will Young,0.055678391959799,0,9,0.9481,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Will_Young
+Dizzee Rascal,0.05467336683417086,0,9,0.9441,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Dizzee_Rascal
+Ultravox,0.04884422110552764,0,9,0.9248,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Ultravox
+France,0.04653266331658291,0,16,0.7779,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/France
+Number One,0.04381909547738693,0,9,0.7518,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Record_chart
+People,0.043718592964824124,1,7,0.12811,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/People_%28magazine%29
+Foals,0.0436180904522613,0,8,0.8188,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Foals
+United States,0.0428140703517588,0,15,0.819191,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_States
+Seal,0.0422110552763819,0,10,0.788,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Seal_(musician)
+Queen,0.041608040201005024,0,9,0.77,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Queen_(band)
+The X Factor,0.04030150753768845,0,17,0.9132,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/The_X_Factor_(UK_TV_series)

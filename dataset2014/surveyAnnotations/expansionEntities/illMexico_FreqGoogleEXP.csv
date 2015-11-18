@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Bangla TV,1.842484472049686,0,103,0.9367,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Bangla_TV
+Bengali,0.7453416149068304,0,125,0.8562,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Bengali_language
+Rene,0.5398757763975152,0,67,0.0088383,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Rene_Russo
+Essiac Tea,0.502484472049689,0,99,0.8861,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Essiac
+Palliative Care,0.4240993788819877,9,52,2.10267,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Palliative_care
+RTV,0.3756521739130437,0,21,0.7849,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/RTV_(Bangladesh)
+Food and Drug Administration,0.3667080745341613,0,33,6.18705,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Food_and_Drug_Administration
+Channel I,0.338385093167702,1,16,0.7927,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Channel_i
+Physician,0.3318012422360249,8,36,0.7339,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Physician
+Cancer Therapy,0.31788819875776436,0,67,5.37236,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Cancer
+TV news,0.2967701863354039,0,52,0.6298,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/News_program
+Estados Unidos,0.24732919254658398,0,63,18.7569,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_States
+Canada,0.24608695652173912,0,54,0.7923,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Canada
+Human Rights Watch,0.23068322981366457,2,5,2.38968,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Human_Rights_Watch
+Outpatient,0.2057142857142858,5,22,0.7153,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Patient
+Mexican,0.2048447204968944,2,39,0.919008,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Mexico
+Health Care Services,0.20360248447204973,0,46,3.17114,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Health_care
+US Senator,0.19751552795031047,0,33,0.7799,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Senate
+Oregon,0.18298136645962737,0,81,0.8138,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Oregon
+Dignity in Dying,0.17701863354037267,0,23,0.8853,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Dignity_in_Dying
+Ministry of Health,0.1751552795031056,0,12,0.7152,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Department_of_Health_(United_Kingdom)
+International,0.1704347826086957,1,36,0.176813,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/International
+ER,0.16049689440993795,0,37,0.0217767,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Engineer
+Talk Show,0.15875776397515537,1,23,0.7804,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Talk_show
+BBC,0.15204968944099376,0,9,0.783,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC
+Therapy,0.15105590062111807,0,36,0.7422,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Therapy
+Media Watch,0.1503105590062112,0,26,0.7662,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Media_Watch_(TV_program)
+Democrat,0.1498136645962733,0,17,0.8089,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Democratic_Party_(United_States)
+Project,0.14869565217391306,0,9,0.0380208,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Manhattan_Project
+Hospice,0.14732919254658408,0,45,0.7665,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Hospice
+Online,0.14385093167701857,0,32,0.0613758,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Online_and_offline
+Rudolfo Anaya,0.14161490683229813,0,25,0.8996,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Rudolfo_Anaya
+Live,0.1401242236024845,0,10,0.0135515,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Live_%28band%29
+California,0.13677018633540375,0,62,0.7845,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/California
+Abril,0.13664596273291926,0,14,0.0155141,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Victoria_Abril
+Montana,0.13291925465838508,0,39,0.8571,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Montana
+Regina,0.12757763975155284,4,6,0.0588463,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Regina,_Saskatchewan
+New York City,0.1224844720496895,0,37,0.8223,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/New_York_City
+England,0.12173913043478253,0,32,0.7528,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/England
+Bangladesh,0.11925465838509323,0,20,1.29008,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Bangladesh
+Imperial College,0.11888198757763974,0,13,0.6913,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Imperial_College_London
+Mai,0.11677018633540373,0,15,0.022551,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Mai_Kuraki
+Dr.,0.1154037267080745,0,31,0.026577,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Doctor_%28title%29
+Italy,0.11478260869565213,2,18,1.04229,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Italy
+Cause of death,0.11130434782608695,2,14,0.7005,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Death
+Europe,0.10720496894409934,0,24,0.7366,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Europe
+Roma,0.10670807453416149,0,20,0.7326,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Rome
+Corporation,0.1043478260869565,0,21,0.158665,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Corporation
+Los Angeles City,0.10409937888198743,2,51,2.68344,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Los_Angeles
+Mi,0.10397515527950309,0,8,0.0261701,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/MI5

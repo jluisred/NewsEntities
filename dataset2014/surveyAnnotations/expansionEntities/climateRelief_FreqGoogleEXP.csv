@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Lima Peru,0.5267137809187279,6,259,1.02227,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Lima
+Paris,0.3900353356890464,3,196,0.7583,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Paris
+United Nations,0.3798586572438169,1,187,0.8307,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_Nations
+United States of America,0.31236749116607737,0,215,1.56136,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_States
+Green Climate Fund,0.25886925795053,0,147,0.9032,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Green_Climate_Fund
+India,0.21363957597173153,0,125,0.8422,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/India
+Chinese government,0.2096113074204941,0,164,1.1494,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/China
+United Nations Security Council,0.1725795053003533,0,34,3.77926,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_Nations_Security_Council
+Barack Obama,0.13773851590106007,0,84,7.17701,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Barack_Obama
+Intergovernmental Panel on Climate Change,0.1371731448763251,0,24,3.21413,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Intergovernmental_Panel_on_Climate_Change
+United States Senate,0.13144876325088345,0,26,1.40383,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Senate
+E.U.,0.13060070671378066,0,101,6.5824,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/European_Union
+Republican Party,0.1282685512367491,0,29,0.8287,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Republican_Party_(United_States)
+European Commission,0.12572438162544175,0,38,0.854161,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/European_Commission
+State Department,0.12445229681978795,0,40,0.7556,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Department_of_State
+SBI,0.12318021201413429,0,23,0.00968992,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/State_Bank_of_India
+United Nations Framework Convention on Climate Change,0.12148409893992929,0,53,2.69867,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_Nations_Framework_Convention_on_Climate_Change
+Greenpeace,0.11363957597173144,0,21,0.8739,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Greenpeace
+Vidal,0.1129328621908127,0,23,0.0513636,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Gore_Vidal
+Global climate change,0.109469964664311,3,44,5.12727,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Global_warming
+United Nations Framework Convention on Climate Change,0.10678445229681989,1,97,2.57894,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_Nations_Framework_Convention_on_Climate_Change
+Arctic,0.10530035335689032,0,73,0.7631,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Arctic
+Secretary general of the UN,0.10452296819787985,0,62,1.05846,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Secretary-General_of_the_United_Nations
+Earth Day Network,0.10374558303886916,0,61,0.9001,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Earth_Day
+Secretary of State John Kerry,0.10219081272084808,0,32,1.67524,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/John_Kerry
+JAPAN,0.09922261484098939,0,21,0.8223,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Japan
+Greenie,0.09151943462897531,0,50,0.7515,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Environmentalist
+South Sudan,0.08770318021201412,0,41,1.01641,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/South_Sudan
+James Hansen,0.08692579505300352,0,25,1.04747,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/James_Hansen
+News,0.08593639575971729,1,36,0.115023,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/News
+Australia,0.08551236749116607,0,69,0.8042,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Australia
+Peru,0.08127208480565377,0,42,0.8632,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Peru
+Prime Minister,0.08014134275618377,0,44,0.7406,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Prime_minister
+NASA,0.07823321554770318,0,15,0.8677,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/NASA
+Carbon Dioxide,0.07802120141342754,0,54,7.74136,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Carbon_dioxide
+Europe,0.07731448763250885,0,80,0.7215,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Europe
+Moscow,0.07568904593639575,0,11,0.8095,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Moscow
+Countries,0.07356890459363961,1,30,0.0849308,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Country
+Ban Ki-moon,0.07166077738515901,0,20,1.67108,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Ban_Ki-moon
+South Africa,0.07067137809187285,0,50,0.8526,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/South_Africa
+Ebola virus disease,0.07067137809187275,0,45,1.60496,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Ebola_virus_disease
+United Nations Development Programme,0.06784452296819786,0,18,1.11047,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_Nations_Development_Programme
+Reducing Emissions from Deforestation and forest Degradation,0.06756183745583043,0,42,0.93472,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Reducing_emissions_from_deforestation_and_forest_degradation
+Governments,0.06607773851590104,0,34,0.7227,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Government
+Kyoto Protocol,0.06452296819787992,0,50,4.03643,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Kyoto_Protocol
+Australian Labor Party,0.06275618374558306,0,14,2.31319,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Australian_Labor_Party
+Pulgar,0.06106007067137809,0,25,0.7615,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Hernando_del_Pulgar
+Christiana Figueres,0.0604946996466431,0,14,0.8708,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Christiana_Figueres
+World Bank,0.05978798586572441,1,54,0.973565,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/World_Bank
+Democrat,0.05809187279151945,0,11,0.7904,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Democratic_Party_(United_States)

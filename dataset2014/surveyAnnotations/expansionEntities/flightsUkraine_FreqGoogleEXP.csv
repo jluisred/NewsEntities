@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Russian Federation,0.47393258426966617,9,943,1.80348,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Russia
+Southeastern Ukraine,0.30475995914198156,3,648,9.67494,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Ukraine
+E.U.,0.22271705822267662,4,452,9.67761,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/European_Union
+Nato troops,0.09781409601634314,0,103,7.23703,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/NATO
+Moscow,0.07771195097037803,2,152,0.999819,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Moscow
+Rosneft,0.07495403472931561,0,53,1.74792,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Rosneft
+United States,0.06958120531154244,1,123,1.18262,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_States
+Vladimir Putin,0.06555669050051069,1,129,4.27537,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Vladimir_Putin
+Gazprom,0.05558733401430027,0,38,1.38516,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Gazprom
+Western world,0.054688457609805924,2,99,0.7631,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Western_world
+Dmitry Medvedev,0.053360572012257364,1,62,3.09604,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Dmitry_Medvedev
+Crimean peninsula,0.0516036772216547,0,106,4.5746,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Crimea
+BBC,0.04136874361593463,0,14,0.7622,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC
+Herman Van Rompuy,0.04122574055158324,0,41,1.61894,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Herman_Van_Rompuy
+Ukrainians,0.04077630234933605,0,36,0.8362,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Ukrainians
+Brussels,0.03920326864147088,0,56,0.833,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Brussels
+Kiev,0.03767109295199178,0,81,0.987958,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Kiev
+European,0.034565883554647577,0,74,0.0987155,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Citizenship_of_the_European_Union
+Europe,0.03317671092951991,0,85,0.7554,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Europe
+Reuters Television,0.032298263534218594,0,19,0.923454,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Reuters
+Russian empire,0.02678243105209395,0,79,1.32319,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Russian_Empire
+Russian president,0.02572012257405515,0,51,0.8305,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/President_of_Russia
+Seychelles,0.024821246169560766,0,27,0.886,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Seychelles
+Western countries,0.02390194075587334,2,20,0.714,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Western_world
+Kremlin,0.0222267620020429,2,26,0.7856,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Kremlin
+President Barack Obama,0.021532175689479065,0,23,6.25517,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Barack_Obama
+Petro Poroshenko,0.021409601634320742,0,40,1.90168,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Petro_Poroshenko
+Viktor Yanukovych,0.020592441266598566,0,21,2.84868,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Viktor_Yanukovych
+Asia,0.02042900919305413,1,31,0.7803,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Asia
+China,0.02014300306435138,1,36,1.11333,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/China
+Regulation,0.017160367722165476,0,34,0.7147,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Regulation
+United Kingdom,0.01521961184882533,0,30,1.17576,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_Kingdom
+News,0.01481103166496425,0,21,0.107214,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/News
+Poland,0.014545454545454537,0,38,0.889474,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Poland
+Canada,0.013524004085801839,0,17,0.7951,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Canada
+Richard Branson,0.013401430030643513,0,9,1.06576,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Richard_Branson
+Australia,0.013381001021450458,1,21,0.8194,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Australia
+Financial Times,0.013319713993871298,0,20,0.8546,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Financial_Times
+Donetsk,0.013319713993871296,0,32,0.8126,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Donetsk
+Etihad Airways,0.013299284984678245,0,6,1.06815,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Etihad_Airways
+Mariupol,0.012911133810010215,0,21,0.945569,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Mariupol
+Government,0.012482124616956075,0,25,0.6829,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Government
+Sanctions,0.011848825331971399,0,25,0.0489562,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Sanctions_%28law%29
+Angela Merkel,0.011521961184882532,0,14,2.22621,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Angela_Merkel
+Emirates,0.011154239019407559,0,5,0.6901,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Emirates_(airline)
+Soviet Union,0.010990806945863124,0,24,2.26685,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Soviet_Union
+Politics,0.010459652706843722,0,21,0.6517,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Politics
+General,0.010112359550561799,0,20,0.0573928,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/General_%28United_States%29
+Malaysia Airlines,0.009499489274770173,0,9,0.8751,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Malaysia_Airlines
+Science,0.009152196118488254,0,10,0.137909,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Science

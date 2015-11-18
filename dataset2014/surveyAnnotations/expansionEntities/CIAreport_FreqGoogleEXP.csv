@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Central Intelligence Agency,0.5779928315412182,4,530,6.5382,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Central_Intelligence_Agency
+United States Senate,0.5067741935483872,1,168,0.8632,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Senate
+United States of America,0.4034408602150532,7,349,1.68418,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_States
+George W. Bush,0.19053763440860208,0,93,9.20781,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/George_W._Bush
+US president,0.16924731182795694,2,41,0.996442,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/President_of_the_United_States
+United States Senate,0.1658064516129032,0,37,1.25592,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Senate
+US Department of Justice,0.1588172043010753,0,46,3.43372,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Department_of_Justice
+American,0.15232974910394265,0,67,0.6965,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Americans
+Barack Obama's,0.13648745519713265,0,75,8.97632,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Barack_Obama
+Torture,0.13168458781362008,2,113,0.7958,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Torture
+George W. Bush administration,0.11677419354838707,0,53,2.24539,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Presidency_of_George_W._Bush
+Democratic Party,0.09688172043010751,0,33,0.870846,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Democratic_Party_(United_States)
+Republican Party,0.08623655913978497,0,29,1.35898,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Republican_Party_(United_States)
+Defense Intelligence Agency,0.07935483870967742,0,21,2.01395,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Defense_Intelligence_Agency
+The Washington Post,0.07931899641577059,2,64,0.8981,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/The_Washington_Post
+Poland,0.07896057347670249,2,64,0.777,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Polish_People's_Republic
+ABC News,0.078494623655914,0,23,0.8666,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/ABC_News
+CNN.com,0.07827956989247314,0,21,2.78623,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/CNN
+Interrogation,0.07670250896057347,1,66,0.7456,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Interrogation
+Afghanistan,0.07293906810035841,2,66,1.16457,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Afghanistan
+El Universo,0.07290322580645162,1,11,0.7306,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/El_Universo
+Dianne Feinstein,0.06716845878136204,0,33,1.40806,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Dianne_Feinstein
+Human Rights,0.06523297491039423,3,44,0.7666,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Human_rights
+HARLOW,0.06308243727598568,0,22,0.7288,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Harry_Harlow
+United Nations Security Council,0.0629032258064516,0,17,4.35692,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_Nations_Security_Council
+FBI agent,0.061935483870967756,0,16,3.69409,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Federal_Bureau_of_Investigation
+Abu Zubaydah,0.05591397849462365,0,26,1.85467,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Abu_Zubaydah
+Foreign Minister,0.0557347670250896,2,41,0.263082,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Foreign_minister
+The New York Times,0.05344086021505373,0,44,1.07922,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/The_New_York_Times
+White House,0.05275985663082435,1,46,0.8267,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/White_House
+Al Qaeda,0.05043010752688173,0,20,4.49338,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Al-Qaeda
+Jean-Marie Le Pen,0.05017921146953404,0,28,1.37419,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Jean-Marie_Le_Pen
+China,0.04935483870967744,1,47,1.04707,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/China
+John Brennan,0.04795698924731183,0,20,0.8704,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/John_O._Brennan
+United Nations,0.0478494623655914,2,39,0.8333,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/United_Nations
+U.S. Department of Defense,0.03838709677419354,0,15,0.8428,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Department_of_Defense
+Islamic terrorism,0.037347670250896046,1,27,0.949031,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Islamic_terrorism
+Iran,0.036523297491039414,1,29,0.8817,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Iran
+Russia,0.036129032258064436,0,54,1.35316,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Russia
+John McCain,0.035985663082437266,0,17,4.43605,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/John_McCain
+Khalid Sheikh Mohammed,0.03505376344086022,0,16,1.57277,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Khalid_Sheikh_Mohammed
+Geneva Conventions,0.03444444444444446,1,28,3.40768,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Geneva_Conventions
+U.S. government,0.03412186379928316,2,22,0.6904,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Federal_government_of_the_United_States
+Guantanamo Bay detention center,0.032903225806451615,0,41,2.18553,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Guantanamo_Bay_detention_camp
+Detainee,0.03261648745519714,1,22,0.7164,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Detention_(imprisonment)
+MARK UDALL,0.03218637992831542,0,12,0.8999,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Mark_Udall
+Sept. 11 attacks,0.03168458781362008,1,26,5.71743,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/September_11_attacks
+Secretary of State John Kerry,0.03146953405017921,0,14,1.88159,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/John_Kerry
+NPR News,0.030967741935483864,0,8,1.34076,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/NPR
+Aleksander Kwasniewski,0.030250896057347657,0,22,0.8947,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Aleksander_Kwa%C5%9Bniewski

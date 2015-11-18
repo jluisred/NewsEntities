@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Stephen Hawking,1.2255350553505484,2,526,2.37181,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Stephen_Hawking
+Eddie Redmayne,0.45461254612546215,4,164,0.99918,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Eddie_Redmayne
+University of Cambridge,0.24332103321033216,0,65,0.8794,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/University_of_Cambridge
+Theory of Everything,0.1637269372693728,2,125,0.9092,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Theory_of_everything
+Felicity Jones,0.13099630996309972,1,51,0.9279,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Felicity_Jones
+Jane's,0.11254612546125478,0,99,0.0846231,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Jane%27s_Information_Group
+BBC,0.07594095940959408,1,22,0.984485,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC
+Benedict Cumberbatch,0.06752767527675274,0,41,1.78435,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Benedict_Cumberbatch
+Dan,0.06055350553505534,1,11,0.0303016,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Steely_Dan
+James Marsh,0.059963099630996296,0,55,0.9339,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/James_Marsh_(director)
+Academy Award,0.057047970479704814,2,44,2.12382,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Academy_Awards
+Lou Gehrig's disease,0.0497047970479705,1,40,1.14093,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Amyotrophic_lateral_sclerosis
+Eton College,0.04859778597785979,0,12,0.964469,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Eton_College
+Isobel,0.0381549815498155,1,9,0.0676366,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Isobel_Campbell
+Elaine,0.03476014760147602,0,23,0.0344541,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/The_Winner_Takes_It_All
+Artificial Intelligence,0.034354243542435395,0,52,4.45864,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Artificial_intelligence
+Toronto International Film Festival,0.03265682656826568,0,26,3.97264,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Toronto_International_Film_Festival
+Anthony McCarten,0.032029520295202944,0,26,0.892,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Anthony_McCarten
+Mary,0.03114391143911439,0,13,0.0754316,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Mary_I_of_England
+Intel,0.030590405904059044,0,38,0.8137,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Intel
+London,0.02937269372693728,0,26,0.7429,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/London
+Wild,0.02915129151291514,0,26,0.0325264,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/The_Wild
+United Kingdom,0.028523985239852397,0,27,1.01581,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_Kingdom
+The Simpsons,0.02697416974169742,3,4,0.9123,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/The_Simpsons
+Yes,0.026273062730627305,0,10,0.6679,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Yes_(band)
+BAFTA,0.025571955719557192,0,6,0.957676,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/British_Academy_of_Film_and_Television_Arts
+Man on Wire,0.023468634686346863,0,21,0.9065,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Man_on_Wire
+Ben Affleck,0.0229520295202952,0,10,0.9101,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Ben_Affleck
+A Brief History of Time,0.022287822878228784,0,20,0.9085,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/A_Brief_History_of_Time
+Nick,0.021697416974169742,0,8,0.0499418,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Nickelodeon_%28TV_channel%29
+Jonathan,0.02166051660516605,0,17,0.0316028,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Jonathan_Livingston_Seagull
+Keira Knightley,0.02066420664206642,0,12,0.9078,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Keira_Knightley
+Charlie Cox,0.02066420664206642,0,9,0.917,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Charlie_Cox
+Lucy,0.02,0,6,0.0516193,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Lucy_Maud_Montgomery
+Earth,0.019889298892988932,0,24,0.728,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Earth
+Locke,0.019372693726937278,0,19,0.0242711,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/John_Locke_%28Lost%29
+Professor of mathematics,0.018929889298893,0,21,0.704816,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Professor
+Rob Marshall,0.01845018450184502,0,10,0.8817,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Rob_Marshall
+science,0.018118081180811808,2,3,0.6578,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Science
+English,0.017638376383763844,0,19,0.6766,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/English_language
+Daniel Day-Lewis,0.017416974169741695,0,8,0.9129,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Daniel_Day-Lewis
+Les Mis,0.01675276752767528,0,15,0.7969,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Les_Mis%C3%A9rables_(musical)
+Infinity,0.016752767527675273,0,18,0.6917,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Infinity
+Academy Award for Best Actor,0.016715867158671585,0,13,4.89668,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Academy_Award_for_Best_Actor
+Albert?Einstein,0.016457564575645758,0,10,0.8951,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Albert_Einstein
+My Life,0.016383763837638374,0,10,0.0599721,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Isadora_Duncan
+God,0.015350553505535056,0,15,0.6683,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/God
+The Hollywood Reporter,0.015276752767527671,0,23,0.9218,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/The_Hollywood_Reporter
+Golden Globe Award,0.015129151291512913,0,12,10.182,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Golden_Globe_Award
+MIT,0.015055350553505535,0,6,0.8011,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Massachusetts_Institute_of_Technology

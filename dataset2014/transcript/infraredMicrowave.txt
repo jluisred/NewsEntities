@@ -1,0 +1,13 @@
+The concept of putting the LCD in front of the microwave that I will show you a 
+heat map of your food, so for example in the case of eating a frozen a burger 
+alright you put that in there the first is all blue, but as soon as it gets warmer to 
+it goes to the temperature scale and visual goes from blue, to yellow, to red, to white 
+once it is like fully cooked. 
+But it even goes even beyond that because you could, you know, put some soups in the microwave 
+and you can go upstairs and you can wirelessly send that signals to your phone
+so you can keep track in another room, fairly straightforward in the fact of having 
+an IR sensor camera at the top of the microwave and that there is a microprocessor 
+that sort of takes the images and from there it feeds in a LCD screen.
+I think all these concepts of Internet of Things and everything being connected it is only a matter of time. You can even like have a connected microwave that crowdsources, 
+you work with other microwaves still all work together for finding the perfect time 
+for any individual product, so I got another variation on how to go.

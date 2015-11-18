@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Scotland,0.5870306038048027,1,1193,1.36842,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Scotland
+United Kingdom of Great Britain and Northern Ireland,0.23778329197683992,0,502,33.8761,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_Kingdom
+Holyrood Parliament,0.21677419354838656,0,132,4.01644,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Scottish_Parliament
+Scottish Nationalist Party,0.20585607940446615,0,139,2.54211,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Scottish_National_Party
+Alex Salmond,0.19460711331679034,0,191,2.91162,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Alex_Salmond
+Parliament of the United Kingdom,0.18267990074441653,0,102,10.6739,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Parliament_of_the_United_Kingdom
+Prime Minister David Cameron,0.16936311000827126,0,161,3.63574,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/David_Cameron
+BBC,0.14506203473945412,0,96,1.02459,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC
+Labour Party,0.1288833746898263,0,82,1.14162,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Labour_Party_(UK)
+Yes campaign,0.11042183622828788,1,72,0.163785,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Yes_Scotland
+Conservative Party,0.08501240694789085,0,55,0.977936,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Conservative_Party_(UK)
+England,0.06848635235732002,0,141,0.8543,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Kingdom_of_England
+EDINBURGH SCOTLAND,0.047460711331679124,0,97,7.16541,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Edinburgh
+Glasgow,0.037684036393713836,0,80,0.8433,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Glasgow
+Scottish nationalists,0.0350537634408602,0,76,2.02497,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Scottish_independence
+Lib Dems,0.03359801488833747,0,22,3.92997,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Liberal_Democrats
+EU,0.031612903225806455,0,67,0.7395,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Europe
+Nicola Sturgeon,0.031298593879239035,0,32,1.81383,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Nicola_Sturgeon
+Queen Elizabeth II,0.030901571546732832,0,31,6.29673,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Elizabeth_II
+London,0.030818858560794065,0,68,0.7557,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/London
+Scottish independence referendum 2014,0.030190239867659233,0,59,1.85173,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Scottish_independence_referendum,_2014
+ABERDEENSHIRE,0.029826302729528572,0,57,0.926,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Aberdeenshire
+Scotland,0.02942928039702238,4,78,1.18142,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Scotland
+Welsh,0.028866832092638555,0,52,0.817,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Wales
+Northern Ireland,0.027808105872622012,0,57,1.17795,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Northern_Ireland
+MPs,0.02744416873449132,0,51,0.818514,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Member_of_parliament
+European Union,0.027262200165425986,0,61,1.14504,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/European_Union
+Scottish people,0.027129859387923914,0,36,0.7813,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Scottish_people
+Westminster,0.02577336641852773,0,52,0.7587,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Palace_of_Westminster
+Prime Minister Gordon Brown,0.025012406947890812,0,29,3.58735,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Gordon_Brown
+West Lothian Question,0.023755169561621194,0,42,2.07258,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/West_Lothian_question
+Kingdom of Fife,0.023523573200992562,3,26,0.983852,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Fife
+Sky News,0.02253101736972704,0,17,0.8823,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Sky_News
+Better Together,0.02205128205128208,0,49,0.8719,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Better_Together_(campaign)
+Alistair Darling,0.0213564929693962,0,42,1.51248,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Alistair_Darling
+First Minister,0.0210421836228288,0,40,0.7397,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/First_Minister_of_Wales
+English,0.01973531844499587,0,43,0.7644,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/England
+British Prime Minister,0.017402812241521914,0,42,7.12032,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Prime_Minister_of_the_United_Kingdom
+Ed Miliband,0.01703887510339123,0,14,2.92765,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Ed_Miliband
+Dundee,0.01657568238213401,0,38,0.8536,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Dundee
+British Empire,0.015301902398676594,0,32,0.7949,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/British_Empire
+Lord Smith of Kelvin,0.01511993382961125,0,12,0.8493,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Robert_Smith,_Baron_Smith_of_Kelvin
+Scottish Socialist Party,0.015086848635235732,0,9,2.40005,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Scottish_Socialist_Party
+Robert the Bruce,0.015053763440860218,0,20,1.31794,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Robert_the_Bruce
+Scottish people,0.014987593052109185,0,18,0.8065,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Scottish_people
+UK constitution,0.014044665012406952,0,25,0.8972,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Constitution_of_the_United_Kingdom
+British Treasury,0.013796526054590572,0,14,0.7779,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/HM_Treasury
+Nick Clegg,0.013465674110835402,0,11,3.2652,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Nick_Clegg
+Clackmannanshire,0.013449131513647641,0,27,1.17002,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Clackmannanshire
+House of Commons,0.013200992555831263,0,9,0.963683,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/House_of_Commons_of_the_United_Kingdom

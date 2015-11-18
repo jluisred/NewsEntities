@@ -1,0 +1,51 @@
+Entity Label,RANKING,appearancesVideo,appearancesDocuments,maxExtractorRelevance,URI
+Arctic,0.6192880258899665,10,269,0.7727,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Arctic
+NOx,0.41359223300970827,0,179,0.7795,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/NOx
+United States,0.4087378640776693,1,264,1.09357,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/United_States
+Russia,0.2829126213592237,2,151,1.16962,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Russia
+OPEC,0.24446601941747576,0,43,1.26518,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/OPEC
+Exxon Mobil,0.196116504854369,0,37,2.81642,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/ExxonMobil
+Rosneft,0.18349514563106806,0,37,1.98267,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Rosneft
+Chinese government,0.16834951456310684,0,108,1.36774,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/China
+Crude oil,0.16783171521035586,4,64,6.79849,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Petroleum
+Environmental Protection Agency,0.16291262135922333,0,43,4.65085,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Environmental_Protection_Agency
+National Weather Service,0.15126213592233012,0,45,0.9016,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/National_Weather_Service
+Royal Dutch Shell,0.1497734627831715,1,75,4.16191,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Royal_Dutch_Shell
+Noble Drilling Corporation,0.14640776699029165,1,93,0.9119,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Noble_Corporation
+Pemex,0.14543689320388348,0,25,1.57402,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Pemex
+Energy,0.1411650485436894,1,87,0.7351,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Energy
+H.,0.1398058252427185,0,20,0.00333417,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Tool_%28band%29
+Canada,0.12770226537216828,0,72,0.794,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Canada
+L.,0.1253074433656958,0,27,0.0224109,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/Carl_Linnaeus
+Durham University,0.11708737864077673,0,17,0.8746,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Durham_University
+Senator,0.11689320388349518,0,25,0.7496,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/United_States_Senate
+Statoil,0.10932038834951459,1,14,1.26929,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Statoil
+University of Washington,0.10737864077669906,0,19,0.8714,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/University_of_Washington
+North America,0.1071197411003237,0,72,0.7711,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/North_America
+Mar.,0.106925566343042,0,56,0.00455852,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Gospel_of_Mark
+Saudi Arabia,0.10440129449838187,0,55,6.59537,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Saudi_Arabia
+Alaska,0.09818770226537192,2,77,0.8405,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Alaska
+Mexico,0.09728155339805823,0,50,0.7897,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Mexico
+Custard,0.09689320388349515,0,51,0.7214,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Custard
+Feb.,0.09475728155339799,0,43,0.00330887,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/February
+Brent crude,0.09449838187702263,1,42,1.01417,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Brent_Crude
+Bromine,0.09126213592233005,0,40,0.8766,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Bromine
+Iraq,0.0911974110032362,0,50,1.29913,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Iraq
+W.,0.08699029126213594,0,19,0.0278023,http://nerd.eurecom.fr/ontology#Person,http://dbpedia.org/resource/George_W._Bush
+Earth,0.08699029126213581,0,71,0.7393,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Earth
+BBC Empire Service,0.0846601941747573,0,12,2.14399,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BBC_World_Service
+Series,0.08427184466019416,0,17,0.017147,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/BMW
+Ozone,0.07941747572815533,0,35,0.8033,http://nerd.eurecom.fr/ontology#Product,http://dbpedia.org/resource/Ozone
+Organization for Economic Cooperation and Development,0.0792233009708738,0,40,3.06891,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Organisation_for_Economic_Co-operation_and_Development
+Greenland,0.07909385113268606,0,39,0.8997,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Greenland
+Europe,0.07883495145631068,0,50,0.7483,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Europe
+PNM,0.07864077669902914,0,9,0.00171979,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/People%27s_National_Movement
+Atlantic Ocean,0.0767637540453074,0,40,1.04525,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Atlantic_Ocean
+B.,0.07572815533980581,0,37,0.0449907,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Bachelor_of_Science
+Reactivity,0.07521035598705501,1,27,0.6672,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Chemical_reaction
+US EIA,0.07475728155339807,0,21,0.8135,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Energy_Information_Administration
+Asia,0.07333333333333333,0,38,0.7376,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Asia
+Department of Chemistry,0.07223300970873783,0,34,2.5344,http://nerd.eurecom.fr/ontology#Thing,http://dbpedia.org/resource/Chemistry
+Brazil,0.06912621359223303,0,40,0.8713,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Brazil
+Gazprom,0.0679611650485437,0,14,1.36886,http://nerd.eurecom.fr/ontology#Organization,http://dbpedia.org/resource/Gazprom
+Japan,0.06673139158576048,0,32,0.8394,http://nerd.eurecom.fr/ontology#Location,http://dbpedia.org/resource/Japan
