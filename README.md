@@ -154,7 +154,7 @@ National Association for the Advancement of Colored People (NAACP) | -0.03703703
 Rachel Jeantel | -0.185185185
 General Eric Holder | -0.222222222
 Rev. Lowman Oliver | -0.259259259
-Mark OMara | -0.259259259
+Mark O'Mara | -0.259259259
 Sanford | -0.333333333
 Angela Corey | -0.37037037
 United States Department of Justice | -0.407407407
